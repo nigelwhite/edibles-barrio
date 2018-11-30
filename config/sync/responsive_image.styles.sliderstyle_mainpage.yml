@@ -1,0 +1,61 @@
+uuid: 4b956a39-7f11-442e-9267-31f6d3c105c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.medium
+    - image.style.slide_main
+    - image.style.slidemain_maxw_1300
+    - image.style.slidemain_maxw_220
+    - image.style.slidemain_maxw_325
+    - image.style.slidemain_maxw_480
+    - image.style.slidemain_maxw_650
+    - image.style.slidemain_maxw_900
+  theme:
+    - bootstrap_barrio
+id: sliderstyle_mainpage
+label: 'Sliderstyle mainpage'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap_barrio.extra
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - slide_main
+        - slidemain_maxw_1300
+  -
+    breakpoint_id: bootstrap_barrio.large
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - slide_main
+        - slidemain_maxw_1300
+        - slidemain_maxw_900
+  -
+    breakpoint_id: bootstrap_barrio.medium
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - slidemain_maxw_1300
+        - slidemain_maxw_480
+        - slidemain_maxw_650
+        - slidemain_maxw_900
+  -
+    breakpoint_id: bootstrap_barrio.small
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - slidemain_maxw_220
+        - slidemain_maxw_325
+        - slidemain_maxw_480
+        - slidemain_maxw_650
+breakpoint_group: bootstrap_barrio
+fallback_image_style: medium

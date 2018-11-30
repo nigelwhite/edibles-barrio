@@ -1,0 +1,84 @@
+uuid: a5aa0253-637b-46e6-a4d5-beec4900d0d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homeslider_image.field_enabled
+    - field.field.node.homeslider_image.field_for_page
+    - field.field.node.homeslider_image.field_image
+    - node.type.homeslider_image
+    - responsive_image.styles.sliderstyle_mainpage
+  module:
+    - ds
+    - field_formatter_class
+    - responsive_image
+    - taxonomy
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - node_title
+        - field_enabled
+        - field_for_page
+        - field_image
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+id: node.homeslider_image.default
+targetEntityType: node
+bundle: homeslider_image
+mode: default
+content:
+  field_enabled:
+    type: boolean
+    weight: 1
+    region: main
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  field_for_page:
+    type: entity_reference_rss_category
+    weight: 2
+    region: main
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 3
+    label: hidden
+    settings:
+      responsive_image_style: sliderstyle_mainpage
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: responsive_image
+    region: main
+hidden:
+  links: true

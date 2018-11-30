@@ -1,0 +1,64 @@
+uuid: d5730ae1-02bb-4f27-88c5-6458931aabde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.subslider_image.field_enabled
+    - field.field.node.subslider_image.field_for_page
+    - field.field.node.subslider_image.field_image
+    - image.style.thumbnail
+    - node.type.subslider_image
+  module:
+    - image_widget_crop
+id: node.subslider_image.default
+targetEntityType: node
+bundle: subslider_image
+mode: default
+content:
+  field_enabled:
+    weight: 26
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_for_page:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_image:
+    weight: 2
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - slide_sub_crop
+      crop_types_required:
+        - slide_sub_crop
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

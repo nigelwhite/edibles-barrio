@@ -1,0 +1,25 @@
+uuid: ec7e7d85-d515-435b-aafa-1aa41fcdb6d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.slide_main_crop
+  module:
+    - crop
+name: slidemain_maxw_650
+label: 'Slidemain maxw 650'
+effects:
+  aad5f4f2-1e57-42c1-87cd-af674430c751:
+    uuid: aad5f4f2-1e57-42c1-87cd-af674430c751
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: slide_main_crop
+  b447c943-4116-426d-bc70-09815d26f9b3:
+    uuid: b447c943-4116-426d-bc70-09815d26f9b3
+    id: image_scale
+    weight: 2
+    data:
+      width: 650
+      height: null
+      upscale: false

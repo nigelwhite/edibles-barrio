@@ -1,0 +1,29 @@
+uuid: 566eb41f-2ec7-4c41-9f83-3af5f9ce5a11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_for_page
+    - node.type.subslider_image
+    - taxonomy.vocabulary.page_on_site
+id: node.subslider_image.field_for_page
+field_name: field_for_page
+entity_type: node
+bundle: subslider_image
+label: 'for page'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      page_on_site: page_on_site
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

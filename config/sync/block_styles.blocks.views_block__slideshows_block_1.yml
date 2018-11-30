@@ -1,0 +1,8 @@
+uuid: 93efe9a9-fe9d-4e01-8ec7-b52e690dce24
+langcode: en
+status: true
+dependencies: {  }
+id: views_block__slideshows_block_1
+theme: block__clean
+text: ''
+classes: ''

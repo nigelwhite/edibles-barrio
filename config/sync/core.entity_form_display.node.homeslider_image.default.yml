@@ -1,0 +1,64 @@
+uuid: 7daecf46-01f7-420d-8dc7-b85f493dfef2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homeslider_image.field_enabled
+    - field.field.node.homeslider_image.field_for_page
+    - field.field.node.homeslider_image.field_image
+    - image.style.thumbnail
+    - node.type.homeslider_image
+  module:
+    - image_widget_crop
+id: node.homeslider_image.default
+targetEntityType: node
+bundle: homeslider_image
+mode: default
+content:
+  field_enabled:
+    weight: 26
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_for_page:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_image:
+    weight: 2
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - slide_main_crop
+      crop_types_required:
+        - slide_main_crop
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
