@@ -1,0 +1,4 @@
+name: ed-barrio
+recipe: drupal8
+config:
+  webroot: web
