@@ -59,11 +59,15 @@ display:
         type: views_bootstrap_carousel
         options:
           grouping: {  }
-          interval: '5000'
+          interval: '2000'
+          keyboard: 0
+          ride: 0
           navigation: 0
           indicators: 0
-          pause: 1
+          pause: 0
+          use_caption: 0
           wrap: 1
+          effect: 'slide carousel-fade'
           image: field_image
           title: ''
           description: ''
