@@ -1,6 +1,6 @@
 uuid: 96f9b411-af3d-4856-a2be-6a595065985a
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - barrio_sub

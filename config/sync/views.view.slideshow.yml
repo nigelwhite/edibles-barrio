@@ -59,9 +59,9 @@ display:
         type: views_bootstrap_carousel
         options:
           grouping: {  }
-          interval: '2000'
+          interval: '5000'
           keyboard: 0
-          ride: 0
+          ride: 1
           navigation: 0
           indicators: 0
           pause: 0
@@ -206,7 +206,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Slideshow
+      title: '<none>'
       header: {  }
       footer: {  }
       empty: {  }

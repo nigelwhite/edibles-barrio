@@ -1,5 +1,66 @@
-/**
- * @file
- * Subtheme specific CSS.
- */
+/* Resets */
 
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
+
+ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#block-barrio-sub-main-menu {
+    display: block;
+  text-align: center;
+  font-size: 1.6vw;
+  font-weight: 500;
+  /* margin: 0 auto; */
+  width: 95%;
+  /* float: left; */
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  z-index: 99;
+}
+
+#block-barrio-sub-main-menu ul {
+  display: inline-block;
+  list-style: none;
+  /* border: 1px solid black; */
+}
+
+#block-barrio-sub-main-menu li {
+  display: inline-block;
+  margin: 1em;
+}
+
+#block-barrio-sub-main-menu a {
+  float: left;
+  color: white;
+  padding: 1px 0.5vw;
+  text-transform: lowercase;
+}
+
+#navbar-main {
+    padding: 0;
+}
+
+/* Larger screens */
+
+.navbar-brand {
+    display: none;
+}
