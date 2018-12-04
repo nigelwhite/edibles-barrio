@@ -85,6 +85,9 @@
             "drush/Commands/{$name}": ["type:drupal-drush"]
         },
         "patches": {
+            "drupal/block_styles": {
+                "Drupal sort error on config of block": "https://www.drupal.org/files/issues/2642010-7-fix-block-notice.patch"
+            },
             "drupal/views_bootstrap": {
                 "Drupal apply fade effects to carousel": "https://www.drupal.org/files/issues/2018-12-01/support_bootstrap_carousel4.0_4.1-12873822-11.patch"
             }
