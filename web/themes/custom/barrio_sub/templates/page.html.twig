@@ -1,9 +1,8 @@
-{% extends "@barrio_sub/page.html.twig" %}
-
 {#
 /**
- * NW override - to remove footer
  * @file
+ * NW override to allow page--front.html.twig to extend it
+ * NW removed footer
  * Bootstrap Barrio's theme implementation to display a single page.
  *
  * The doctype, html, head and body tags are not in this template. Instead they
@@ -63,14 +62,17 @@
  * - content_attributes: Items for the header region.
  * - sidebar_first_attributes: Items for the highlighted region.
  * - sidebar_second_attributes: Items for the primary menu region.
+ * - sidebar_collapse: If the sidebar_first will collapse.
  *
  * @see template_preprocess_page()
  * @see bootstrap_barrio_preprocess_page()
  * @see html.html.twig
  */
 #}
-
-{% block head %}
+<div id="page-wrapper">
+  <div id="page">
+    <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
+      {% block head %}
         {% if page.secondary_menu or page.top_header or page.top_header_form %}
           <nav{{ navbar_top_attributes }}>
           {% if container_navbar %}
@@ -111,9 +113,26 @@
           </div>
           {% endif %}
         </nav>
-{% endblock %}
-
-{% block content %}
+      {% endblock %}
+    </header>
+    {% if page.highlighted %}
+      <div class="highlighted">
+        <aside class="{{ container }} section clearfix" role="complementary">
+          {{ page.highlighted }}
+        </aside>
+      </div>
+    {% endif %}
+    {% if page.featured_top %}
+      {% block featured %}
+        <div class="featured-top">
+          <aside class="featured-top__inner section {{ container }} clearfix" role="complementary">
+            {{ page.featured_top }}
+          </aside>
+        </div>
+      {% endblock %}
+    {% endif %}
+    <div id="main-wrapper" class="layout-main-wrapper clearfix">
+      {% block content %}
         <div id="main" class="{{ container }}">
           {{ page.breadcrumb }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
@@ -139,4 +158,17 @@
             {% endif %}
           </div>
         </div>
-{% endblock %}
+      {% endblock %}
+    </div>
+    {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
+      <div class="featured-bottom">
+        <aside class="{{ container }} clearfix" role="complementary">
+          {{ page.featured_bottom_first }}
+          {{ page.featured_bottom_second }}
+          {{ page.featured_bottom_third }}
+        </aside>
+      </div>
+    {% endif %}
+
+  </div>
+</div>
