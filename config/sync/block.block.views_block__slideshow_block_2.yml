@@ -1,0 +1,38 @@
+uuid: 928ca768-fa6d-4290-ad75-176cb2d3c81d
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slideshow
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - barrio_sub
+id: views_block__slideshow_block_2
+theme: barrio_sub
+region: featured_top
+weight: 0
+provider: null
+plugin: 'views_block:slideshow-block_2'
+settings:
+  id: 'views_block:slideshow-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /events-courses
+    negate: false
+    context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

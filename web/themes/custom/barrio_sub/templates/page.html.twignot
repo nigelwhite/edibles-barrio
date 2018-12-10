@@ -1,9 +1,9 @@
 {#
 /**
  * @file
- * Bootstrap Barrio's theme implementation to display a single page.
- * NW override of page.html.twig
+ * NW override to allow page--front.html.twig to extend it
  * NW removed footer
+ * Bootstrap Barrio's theme implementation to display a single page.
  *
  * The doctype, html, head and body tags are not in this template. Instead they
  * can be found in the html.html.twig template normally located in the
@@ -131,7 +131,7 @@
         </div>
       {% endblock %}
     {% endif %}
-    <div id="main-wrapper" class="layout-main-wrapper front-only clearfix">
+    <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
         <div id="main" class="{{ container }}">
           {{ page.breadcrumb }}
@@ -169,5 +169,6 @@
         </aside>
       </div>
     {% endif %}
+
   </div>
 </div>

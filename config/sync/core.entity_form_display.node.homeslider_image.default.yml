@@ -16,23 +16,14 @@ bundle: homeslider_image
 mode: default
 content:
   field_enabled:
-    weight: 26
+    weight: 2
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_for_page:
-    weight: 1
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_image:
-    weight: 2
+    weight: 1
     settings:
       show_default_crop: true
       warn_multiple_usages: true
@@ -57,6 +48,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_for_page: true
   path: true
   promote: true
   status: true
