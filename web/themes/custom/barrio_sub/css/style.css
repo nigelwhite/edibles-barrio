@@ -10,9 +10,10 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a.nav-link:hover {
     text-decoration: underline;
 }
+
 
 /* Carousel */
 
@@ -90,6 +91,83 @@ ul.menu {
 
     #main-wrapper {
         padding-top: 0;
+    }
+
+    /* =========================================
+    Hero Navigation (homepage only) on large
+    ============================================ */
+
+    /* .block-views-block-subsliders-block-4 {
+      position: relative;
+    } */
+
+    #block-heronav {
+      /* border: 1px solid black; */
+        display: block;
+      width: 35%;
+      height: auto;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 30%);
+      z-index: 1;
+    }
+
+    #block-heronav ul {
+      display: block;
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      font-size: 2vw;
+      font-weight: 600;
+      width: 90%;
+      /* border: 1px solid black; */
+    }
+
+    #block-heronav li {
+      display: inline-block;
+      margin: 0 1vw;
+    }
+
+    #block-heronav a {
+      color: white;
+      padding: 1px 0.5vw;
+    }
+
+    /* =========================================
+    Social Navigation (homepage only) on large
+    ============================================ */
+
+    #block-socialnav {
+        display: block;
+      border-radius: 20px;
+      width: 15%;
+      height: auto;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      left: 90%;
+      transform: translate(-50%, 150%);
+      z-index: 1;
+      background-color: rgb(213, 219, 208, 0.5);
+    }
+
+    #block-socialnav ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1.25vw;
+      font-weight: 400;
+      width: 100%;
+    }
+
+    #block-socialnav li {
+      text-align: center;
+      width: 100%;
+    }
+
+    #block-socialnav a {
+      color: white;
     }
 
 }
