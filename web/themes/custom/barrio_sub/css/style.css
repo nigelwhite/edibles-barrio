@@ -14,6 +14,9 @@ a.nav-link:hover {
     text-decoration: underline;
 }
 
+.bg-primary {
+    background-color: rgb(221, 247, 200);
+}
 
 /* Carousel */
 
@@ -47,7 +50,15 @@ ul.menu {
   list-style: none;
 }
 
-/* Small devices (landscape phones, 576px and up) */
+#main-wrapper {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+/* =========================================
+Small devices (landscape phones, 576px and up)
+============================================ */
 @media (min-width: 576px) {
 
     /* Navigation */
@@ -60,10 +71,13 @@ ul.menu {
       /* margin: 0 auto; */
       width: 95%;
       /* float: left; */
+    margin: auto;
       position: absolute;
-      top: 0%;
+      top: 0; left: 0; bottom: 0; right: 0;
+      /* top: 0%;
       left: 50%;
-      transform: translate(-50%, 5%);
+      -webkit-transform: translateX(-50%, 5%);
+      transform: translateX(-50%, 5%); */
       z-index: 99;
     }
 
@@ -93,13 +107,7 @@ ul.menu {
         padding-top: 0;
     }
 
-    /* =========================================
-    Hero Navigation (homepage only) on large
-    ============================================ */
-
-    /* .block-views-block-subsliders-block-4 {
-      position: relative;
-    } */
+    /* Hero Navigation */
 
     #block-heronav {
       /* border: 1px solid black; */
@@ -108,9 +116,9 @@ ul.menu {
       height: auto;
       overflow: hidden;
       position: absolute;
-      top: 50%;
+      top: 10%;
       left: 50%;
-      transform: translate(-50%, 30%);
+      transform: translate(-50%, 1%);
       z-index: 1;
     }
 
@@ -135,9 +143,7 @@ ul.menu {
       padding: 1px 0.5vw;
     }
 
-    /* =========================================
-    Social Navigation (homepage only) on large
-    ============================================ */
+    /* Social Navigation */
 
     #block-socialnav {
         display: block;
@@ -146,9 +152,9 @@ ul.menu {
       height: auto;
       overflow: hidden;
       position: absolute;
-      top: 50%;
+      top: 25%;
       left: 90%;
-      transform: translate(-50%, 150%);
+      transform: translate(-50%, 1%);
       z-index: 1;
       background-color: rgb(213, 219, 208, 0.5);
     }
@@ -170,4 +176,67 @@ ul.menu {
       color: white;
     }
 
+    #main-wrapper {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+}
+
+/* =========================================
+Medium devices (tablets, 768px and up)
+============================================ */
+@media (min-width: 768px) {
+
+    /* Hero Navigation */
+    #block-heronav {
+      top: 12%;
+    }
+
+    /* Social Navigation */
+    #block-socialnav {
+      top: 35%;
+    }
+}
+
+/* =========================================
+Large devices (desktops, 992px and up)
+============================================ */
+@media (min-width: 992px) {
+
+    /* Hero Navigation */
+    #block-heronav {
+      top: 15%;
+    }
+
+    /* Social Navigation */
+    #block-socialnav {
+      top: 45%;
+    }
+
+    #main-wrapper {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+}
+
+/* =========================================
+Extra large devices (large desktops, 1200px and up)
+============================================ */
+@media (min-width: 1200px) {
+
+    /* Hero Navigation */
+    #block-heronav {
+      top: 20%;
+    }
+
+    /* Social Navigation */
+    #block-socialnav {
+      top: 55%;
+    }
+
+    #main-wrapper {
+        margin-top: 3%;
+    }
 }
