@@ -50,6 +50,10 @@ ul.menu {
   list-style: none;
 }
 
+#block-articlemenubackground {
+    display: none;
+}
+
 #main-wrapper {
     margin-right: 5%;
     margin-left: 5%;
@@ -61,12 +65,12 @@ Small devices (landscape phones, 576px and up)
 ============================================ */
 @media (min-width: 576px) {
 
-    /* Navigation */
+    /* Primary Navigation */
 
     #block-barrio-sub-main-menu {
         display: block;
       text-align: center;
-      font-size: 1.6vw;
+      font-size: 1.8vw;
       font-weight: 500;
       /* margin: 0 auto; */
       width: 95%;
@@ -79,6 +83,14 @@ Small devices (landscape phones, 576px and up)
       -webkit-transform: translateX(-50%, 5%);
       transform: translateX(-50%, 5%); */
       z-index: 99;
+    }
+
+    #block-articlemenubackground {
+        display: block;
+        /* background-color: #292929; */
+        background-color: #3b3b3b;
+        height: 6vw;
+        width: 100%;
     }
 
     #block-barrio-sub-main-menu ul {
@@ -147,6 +159,7 @@ Small devices (landscape phones, 576px and up)
 
     #block-socialnav {
         display: block;
+        padding-top: 1em;
       border-radius: 20px;
       width: 15%;
       height: auto;
@@ -162,7 +175,8 @@ Small devices (landscape phones, 576px and up)
     #block-socialnav ul {
       list-style: none;
       padding-left: 0;
-      font-size: 1.25vw;
+      font-size: 1.4vw;
+      line-height: 1.5em;
       font-weight: 400;
       width: 100%;
     }
@@ -174,6 +188,7 @@ Small devices (landscape phones, 576px and up)
 
     #block-socialnav a {
       color: white;
+      text-transform: lowercase;
     }
 
     #main-wrapper {
