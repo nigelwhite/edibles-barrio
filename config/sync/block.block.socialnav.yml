@@ -1,0 +1,31 @@
+uuid: 208edb95-be8b-437a-9e39-30e2e514a51d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:570d1961-3345-46df-adcb-4a3fe61881ab'
+  module:
+    - block_content
+    - system
+  theme:
+    - barrio_sub
+id: socialnav
+theme: barrio_sub
+region: featured_top
+weight: 0
+provider: null
+plugin: 'block_content:570d1961-3345-46df-adcb-4a3fe61881ab'
+settings:
+  id: 'block_content:570d1961-3345-46df-adcb-4a3fe61881ab'
+  label: 'Social nav'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

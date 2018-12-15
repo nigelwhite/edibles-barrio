@@ -1,0 +1,32 @@
+uuid: b793eb61-93d0-4c7b-8c98-75b5db9b5cf2
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.second-navigation
+  module:
+    - node
+    - system
+  theme:
+    - barrio_sub
+id: secondnavigation
+theme: barrio_sub
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:second-navigation'
+settings:
+  id: 'system_menu_block:second-navigation'
+  label: 'Second navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,23 @@
+uuid: 94ba3986-44d4-4047-b7c4-a7fd182f9cec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_order
+    - node.type.produce
+  module:
+    - link
+id: node.produce.field_order
+field_name: field_order
+entity_type: node
+bundle: produce
+label: Order
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

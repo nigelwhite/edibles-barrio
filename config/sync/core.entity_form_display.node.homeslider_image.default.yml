@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.homeslider_image.field_enabled
-    - field.field.node.homeslider_image.field_for_page
     - field.field.node.homeslider_image.field_image
     - image.style.thumbnail
     - node.type.homeslider_image
@@ -48,7 +47,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_for_page: true
   path: true
   promote: true
   status: true

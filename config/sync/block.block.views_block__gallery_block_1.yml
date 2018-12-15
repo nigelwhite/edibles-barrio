@@ -1,0 +1,30 @@
+uuid: ef4898d9-9f88-4222-abf9-4a2f118b4a52
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.gallery
+  module:
+    - system
+    - views
+  theme:
+    - barrio_sub
+id: views_block__gallery_block_1
+theme: barrio_sub
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:gallery-block_1'
+settings:
+  id: 'views_block:gallery-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /produce
+    negate: false
+    context_mapping: {  }

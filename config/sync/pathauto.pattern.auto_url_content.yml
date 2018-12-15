@@ -9,15 +9,16 @@ label: auto-url-content
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  d4f912a6-e448-458c-a545-1d0757faea38:
+  a0756922-87f8-4a48-bd72-45f5aa2cdbc4:
     id: node_type
     bundles:
       article: article
       page: page
+      produce: produce
     negate: false
     context_mapping:
       node: node
-    uuid: d4f912a6-e448-458c-a545-1d0757faea38
+    uuid: a0756922-87f8-4a48-bd72-45f5aa2cdbc4
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -1,0 +1,30 @@
+uuid: ff0d3cbe-e19a-42c2-a73c-9a68112d619f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slideshow
+  module:
+    - system
+    - views
+  theme:
+    - barrio_sub
+id: views_block__slideshow_block_3
+theme: barrio_sub
+region: featured_top
+weight: 0
+provider: null
+plugin: 'views_block:slideshow-block_3'
+settings:
+  id: 'views_block:slideshow-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }

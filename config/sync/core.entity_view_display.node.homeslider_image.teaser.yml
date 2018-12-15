@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.homeslider_image.field_for_page
+    - field.field.node.homeslider_image.field_enabled
     - field.field.node.homeslider_image.field_image
     - node.type.homeslider_image
   module:
@@ -20,5 +20,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_for_page: true
+  field_enabled: true
   field_image: true

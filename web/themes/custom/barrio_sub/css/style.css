@@ -18,6 +18,40 @@ a.nav-link:hover {
     background-color: rgb(221, 247, 200);
 }
 
+.feature-image picture img {
+    border-radius: 20px;
+    box-shadow: 0.75vw 0.75vw 5px #bfbcbc;
+}
+
+/* Card */
+
+.card {
+    width: 13rem;
+    border-radius: 20px;
+    box-shadow: 0.5vw 0.5vw 5px #bfbcbc;
+}
+
+.card-img picture img {
+    margin-bottom: 0;
+}
+
+.card-header {
+    padding-top: 0.52rem;
+    padding-bottom: 0.1rem;
+}
+
+.card-body {
+    padding: 0.3rem 1rem;
+}
+
+.card-body p {
+    margin: 0.25rem 0;
+}
+
+.card-footer {
+    padding: 0.3rem 1.25rem;
+}
+
 /* Carousel */
 
 #views-bootstrap-slideshow-block-1 .carousel-inner .carousel-item {

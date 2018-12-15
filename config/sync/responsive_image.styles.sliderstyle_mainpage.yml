@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.medium
     - image.style.slide_main
     - image.style.slidemain_maxw_1300
     - image.style.slidemain_maxw_220
@@ -23,8 +22,8 @@ image_style_mappings:
     image_mapping:
       sizes: 100vw
       sizes_image_styles:
-        - slide_main
         - slidemain_maxw_1300
+        - slide_main
   -
     breakpoint_id: bootstrap_barrio.large
     multiplier: 1x
@@ -32,9 +31,9 @@ image_style_mappings:
     image_mapping:
       sizes: 100vw
       sizes_image_styles:
-        - slide_main
         - slidemain_maxw_1300
         - slidemain_maxw_900
+        - slide_main
   -
     breakpoint_id: bootstrap_barrio.medium
     multiplier: 1x
@@ -57,5 +56,6 @@ image_style_mappings:
         - slidemain_maxw_325
         - slidemain_maxw_480
         - slidemain_maxw_650
+        - slidemain_maxw_900
 breakpoint_group: bootstrap_barrio
-fallback_image_style: medium
+fallback_image_style: slidemain_maxw_650

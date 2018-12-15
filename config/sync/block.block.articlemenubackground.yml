@@ -1,0 +1,34 @@
+uuid: be7c5b4c-b9fc-4527-9324-fe9515909a43
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dcca6b07-7edf-418d-81a4-e815ff90277f'
+  module:
+    - block_content
+    - node
+  theme:
+    - barrio_sub
+id: articlemenubackground
+theme: barrio_sub
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'block_content:dcca6b07-7edf-418d-81a4-e815ff90277f'
+settings:
+  id: 'block_content:dcca6b07-7edf-418d-81a4-e815ff90277f'
+  label: 'Article menu background'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      produce: produce
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,15 @@
+card:
+  label: Card
+  category: MY LAYOUTS
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: templates/layouts/card/card
+  regions:
+    header:
+      label: Header
+    image:
+      label: Image
+    body:
+      label: Body
+    footer:
+      label: Footer

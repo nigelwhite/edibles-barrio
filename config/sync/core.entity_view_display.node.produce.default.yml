@@ -1,21 +1,24 @@
-uuid: a5aa0253-637b-46e6-a4d5-beec4900d0d5
+uuid: 46e5d9b1-6c8d-493a-809e-5d70702d0491
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.homeslider_image.field_enabled
-    - field.field.node.homeslider_image.field_image
-    - node.type.homeslider_image
-    - responsive_image.styles.sliderstyle_mainpage
+    - field.field.node.produce.body
+    - field.field.node.produce.field_enabled
+    - field.field.node.produce.field_image
+    - field.field.node.produce.field_order
+    - node.type.produce
+    - responsive_image.styles.square
   module:
     - ds
     - field_formatter_class
     - responsive_image
+    - text
     - user
 third_party_settings:
   ds:
     layout:
-      id: bs_1col
+      id: bs_2col
       library: null
       disable_css: false
       entity_classes: all_classes
@@ -27,49 +30,54 @@ third_party_settings:
           add_layout_class: 1
           attributes: ''
         regions:
-          main:
+          left:
             wrapper: div
             classes:
-              col-sm-12: col-sm-12
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
             add_region_classes: 1
             attributes: ''
     regions:
-      main:
-        - node_title
-        - field_enabled
-        - field_for_page
+      left:
         - field_image
+      right:
+        - node_title
+        - body
     fields:
       node_title:
         plugin_id: node_title
-        weight: 0
+        weight: 1
         label: hidden
         formatter: default
-id: node.homeslider_image.default
+id: node.produce.default
 targetEntityType: node
-bundle: homeslider_image
+bundle: produce
 mode: default
 content:
-  field_enabled:
-    type: boolean
-    weight: 1
-    region: main
-    label: inline
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
     third_party_settings: {  }
+    region: right
   field_image:
-    weight: 3
+    weight: 0
     label: hidden
     settings:
-      responsive_image_style: sliderstyle_mainpage
+      responsive_image_style: square
       image_link: ''
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: feature-image
     type: responsive_image
-    region: main
+    region: left
 hidden:
+  field_enabled: true
+  field_order: true
   links: true

@@ -1,0 +1,96 @@
+uuid: 52145b95-e6ae-4bd2-8802-38a22a0fd58a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.produce.body
+    - field.field.node.produce.field_enabled
+    - field.field.node.produce.field_image
+    - field.field.node.produce.field_order
+    - node.type.produce
+    - responsive_image.styles.square
+  module:
+    - ds
+    - field_formatter_class
+    - responsive_image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: card
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          image: div
+          body: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      header:
+        - node_title
+      image:
+        - field_image
+      body:
+        - body
+      footer:
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 3
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': ''
+          wrapper: ''
+          class: 'btn btn-sm btn-outline-danger'
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h2
+          class: h4
+          link: false
+id: node.produce.card
+targetEntityType: node
+bundle: produce
+mode: card
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 75
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: body
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      responsive_image_style: square
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: card-img
+    type: responsive_image
+    region: image
+hidden:
+  field_enabled: true
+  field_order: true
+  links: true
