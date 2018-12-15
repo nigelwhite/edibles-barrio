@@ -9,6 +9,6 @@ label: 'Website feedback'
 recipients:
   - webdev@permaculture.org.uk
 reply: ''
-weight: 0
+weight: 1
 message: 'Your message has been sent.'
 redirect: ''

@@ -1,0 +1,31 @@
+uuid: 358a54e7-7a02-40ca-abc2-1648d052234e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ed302ab1-4a4e-415d-abf9-ca03dbeb8151'
+  module:
+    - block_content
+    - system
+  theme:
+    - barrio_sub
+id: specificpagesmenubackground
+theme: barrio_sub
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'block_content:ed302ab1-4a4e-415d-abf9-ca03dbeb8151'
+settings:
+  id: 'block_content:ed302ab1-4a4e-415d-abf9-ca03dbeb8151'
+  label: 'Specific pages menu background'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact/edibles
+    negate: false
+    context_mapping: {  }

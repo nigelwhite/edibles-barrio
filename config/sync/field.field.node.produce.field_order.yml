@@ -11,7 +11,7 @@ id: node.produce.field_order
 field_name: field_order
 entity_type: node
 bundle: produce
-label: Order
+label: Pay
 description: ''
 required: false
 translatable: false

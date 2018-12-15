@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:dcca6b07-7edf-418d-81a4-e815ff90277f'
 settings:
   id: 'block_content:dcca6b07-7edf-418d-81a4-e815ff90277f'
-  label: 'Article menu background'
+  label: 'Article + Produce menu background'
   provider: block_content
   label_display: '0'
   status: true

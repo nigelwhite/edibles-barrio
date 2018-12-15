@@ -51,7 +51,7 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          'link text': 'Read more'
+          'link text': Order
           'link class': ''
           wrapper: ''
           class: 'btn btn-sm btn-outline-danger'

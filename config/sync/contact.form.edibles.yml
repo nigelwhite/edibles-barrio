@@ -1,0 +1,12 @@
+uuid: fd0f32af-b3df-4be4-a6f0-d012ff2254f5
+langcode: en
+status: true
+dependencies: {  }
+id: edibles
+label: Edibles
+recipients:
+  - rosie@edibles.org.uk
+reply: ''
+weight: 0
+message: 'Thank you for contacting Edibles. We will get back to you soon.'
+redirect: /about

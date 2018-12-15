@@ -434,7 +434,7 @@ display:
         type: default
         options:
           row_class: col
-          default_row_class: true
+          default_row_class: false
           uses_fields: false
       defaults:
         style: false
