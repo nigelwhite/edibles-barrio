@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:dcca6b07-7edf-418d-81a4-e815ff90277f'
 settings:
   id: 'block_content:dcca6b07-7edf-418d-81a4-e815ff90277f'
-  label: 'Article + Produce menu background'
+  label: 'Menu bg no-slide'
   provider: block_content
   label_display: '0'
   status: true
@@ -28,6 +28,7 @@ visibility:
     id: node_type
     bundles:
       article: article
+      basic_page_2: basic_page_2
       produce: produce
     negate: false
     context_mapping:

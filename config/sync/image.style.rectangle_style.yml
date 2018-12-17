@@ -1,0 +1,25 @@
+uuid: 88d294f3-2a56-4d49-8d96-c73af50d87de
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.rectangle_crop
+  module:
+    - crop
+name: rectangle_style
+label: 'Rectangle style'
+effects:
+  68af66ac-0827-4eeb-b830-27099eaa077f:
+    uuid: 68af66ac-0827-4eeb-b830-27099eaa077f
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: rectangle_crop
+  19aaa7fa-e9b5-4d79-9afb-6e0804b5293f:
+    uuid: 19aaa7fa-e9b5-4d79-9afb-6e0804b5293f
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 400
+      height: 240
+      anchor: center-center

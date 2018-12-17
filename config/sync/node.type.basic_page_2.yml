@@ -1,4 +1,4 @@
-uuid: 6dfcc3b7-14c3-4096-976d-86298357a3ca
+uuid: e84a4fd7-25e2-418e-9e69-6892fd2681c8
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Produce category'
-type: produce
-description: 'Broad categories of produce (eg fruit, vegetables, preserves)'
+name: 'Basic page 2'
+type: basic_page_2
+description: 'Static or overview page, with no slideshow'
 help: ''
 new_revision: true
 preview_mode: 1

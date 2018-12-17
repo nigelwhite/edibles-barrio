@@ -27,6 +27,16 @@ a.nav-link:hover {
     box-shadow: 0.75vw 0.75vw 5px #bfbcbc;
 }
 
+.article-image img {
+    box-shadow: 0.5vw 0.5vw 5px #bfbcbc;
+    margin-bottom: 10px;
+}
+
+.blog-teaser-image img {
+    box-shadow: 0.5vw 0.5vw 5px #bfbcbc;
+    margin-bottom: 0;
+}
+
 /* Card */
 
 .card {

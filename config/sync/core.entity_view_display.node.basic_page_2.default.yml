@@ -1,17 +1,12 @@
-uuid: a7957a34-a1d8-4358-8091-2169d14579d2
+uuid: 7b7a97d4-31a3-4424-b091-bd5ae359ce44
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.article.body
-    - field.field.node.article.field_enabled
-    - field.field.node.article.field_image
-    - image.style.rectangle_style
-    - node.type.article
+    - field.field.node.basic_page_2.body
+    - node.type.basic_page_2
   module:
     - ds
-    - field_formatter_class
-    - image
     - text
     - user
 third_party_settings:
@@ -37,33 +32,18 @@ third_party_settings:
             attributes: ''
     regions:
       main:
-        - field_image
         - body
-_core:
-  default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
-id: node.article.default
+id: node.basic_page_2.default
 targetEntityType: node
-bundle: article
+bundle: basic_page_2
 mode: default
 content:
   body:
+    label: hidden
     type: text_default
-    weight: 1
-    region: main
+    weight: 0
     settings: {  }
     third_party_settings: {  }
-    label: hidden
-  field_image:
-    type: image
-    weight: 0
     region: main
-    settings:
-      image_style: rectangle_style
-      image_link: ''
-    third_party_settings:
-      field_formatter_class:
-        class: article-image
-    label: hidden
 hidden:
-  field_enabled: true
   links: true
