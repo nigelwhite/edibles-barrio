@@ -7,7 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_enabled
     - field.field.node.article.field_image
-    - image.style.medium
+    - image.style.rectangle_style_w_300
     - node.type.article
   module:
     - ds
@@ -18,7 +18,7 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: bs_2col
+      id: bs_1col
       library: null
       disable_css: false
       entity_classes: all_classes
@@ -30,22 +30,15 @@ third_party_settings:
           add_layout_class: 1
           attributes: ''
         regions:
-          left:
+          main:
             wrapper: div
             classes:
-              col-sm-6: col-sm-6
-            add_region_classes: 1
-            attributes: ''
-          right:
-            wrapper: div
-            classes:
-              col-sm-6: col-sm-6
+              col-sm-12: col-sm-12
             add_region_classes: 1
             attributes: ''
     regions:
-      left:
+      main:
         - field_image
-      right:
         - node_title
         - body
     fields:
@@ -68,7 +61,7 @@ content:
   body:
     type: text_summary_or_trimmed
     weight: 2
-    region: right
+    region: main
     settings:
       trim_length: 200
     third_party_settings:
@@ -78,9 +71,9 @@ content:
   field_image:
     type: image
     weight: 0
-    region: left
+    region: main
     settings:
-      image_style: medium
+      image_style: rectangle_style_w_300
       image_link: content
     third_party_settings:
       field_formatter_class:

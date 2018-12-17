@@ -14,6 +14,7 @@ dependencies:
     - node
     - text
     - user
+    - views_bootstrap
 id: blog
 label: Blog
 module: views
@@ -76,7 +77,24 @@ display:
             last: 'Last »'
           quantity: 9
       style:
-        type: default
+        type: views_bootstrap_table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+          columns: {  }
+          default: ''
+          info: {  }
+          override: true
+          sticky: false
+          order: asc
+          caption: ''
+          summary: ''
+          description: ''
+          empty_table: false
+          bootstrap_styles: {  }
+          responsive: false
       row:
         type: 'ds_entity:node'
         options:
@@ -351,6 +369,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: row
     cache_metadata:
       max-age: -1
       contexts:

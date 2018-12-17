@@ -7,7 +7,7 @@ dependencies:
   module:
     - crop
 name: rectangle_style
-label: 'Rectangle style'
+label: 'Rectangle style w400'
 effects:
   68af66ac-0827-4eeb-b830-27099eaa077f:
     uuid: 68af66ac-0827-4eeb-b830-27099eaa077f

@@ -13,7 +13,7 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: bs_2col
+      id: bs_1col
       library: null
       disable_css: false
       entity_classes: all_classes
@@ -27,7 +27,7 @@ third_party_settings:
         link_attribute: ''
         link_custom: ''
     regions:
-      left:
+      main:
         - links
         - body
 id: node.basic_page_2.teaser
@@ -42,10 +42,10 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    region: content
+    region: left
   links:
     weight: 100
-    region: content
+    region: left
     settings: {  }
     third_party_settings: {  }
 hidden: {  }

@@ -1,0 +1,15 @@
+uuid: 0febec6a-bf28-45b7-a0db-bdf2d68f84a5
+langcode: en
+status: true
+dependencies: {  }
+name: rectangle_style_w_300
+label: 'Rectangle style w 300'
+effects:
+  1599bdae-7d93-41c1-a5b6-00c643026a14:
+    uuid: 1599bdae-7d93-41c1-a5b6-00c643026a14
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 180
+      anchor: center-center
