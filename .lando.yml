@@ -1,4 +1,4 @@
-name: ed-barrio
+name: edibles-barrio
 recipe: drupal8
 config:
   webroot: web
