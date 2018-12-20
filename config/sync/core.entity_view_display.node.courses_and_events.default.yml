@@ -38,10 +38,9 @@ third_party_settings:
     regions:
       main:
         - node_title
+        - field_media_asset
         - body
         - field_date_and_time
-        - field_media_asset
-        - field_new_remote_video
     fields:
       node_title:
         plugin_id: node_title
@@ -56,12 +55,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: main
   field_date_and_time:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       timezone_override: Europe/London
@@ -73,20 +72,13 @@ content:
     region: main
   field_media_asset:
     type: entity_reference_entity_view
-    weight: 3
+    weight: 1
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: main
-  field_type:
-    weight: 4
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
 hidden:
+  field_type: true
   links: true

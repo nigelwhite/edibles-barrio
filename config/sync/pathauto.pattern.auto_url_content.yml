@@ -9,16 +9,18 @@ label: auto-url-content
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  a0756922-87f8-4a48-bd72-45f5aa2cdbc4:
+  c242fbac-d0c4-48a5-8f4b-30a56822d282:
     id: node_type
     bundles:
+      courses_and_events: courses_and_events
       article: article
+      basic_page_2: basic_page_2
       page: page
       produce: produce
     negate: false
     context_mapping:
       node: node
-    uuid: a0756922-87f8-4a48-bd72-45f5aa2cdbc4
+    uuid: c242fbac-d0c4-48a5-8f4b-30a56822d282
 selection_logic: and
 weight: -5
 relationships: {  }
