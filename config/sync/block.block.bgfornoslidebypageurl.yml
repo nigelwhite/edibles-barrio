@@ -1,0 +1,31 @@
+uuid: ba53a3c3-a1d7-4483-b16c-0c5b8c7e79c6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ed302ab1-4a4e-415d-abf9-ca03dbeb8151'
+  module:
+    - block_content
+    - system
+  theme:
+    - barrio_sub
+id: bgfornoslidebypageurl
+theme: barrio_sub
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'block_content:ed302ab1-4a4e-415d-abf9-ca03dbeb8151'
+settings:
+  id: 'block_content:ed302ab1-4a4e-415d-abf9-ca03dbeb8151'
+  label: 'bg for no-slide by page url'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }

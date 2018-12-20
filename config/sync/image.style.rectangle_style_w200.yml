@@ -1,0 +1,15 @@
+uuid: eda0892e-46fa-49fc-b8ea-a9772e3dddb9
+langcode: en
+status: true
+dependencies: {  }
+name: rectangle_style_w200
+label: 'Rectangle style w200'
+effects:
+  4f7fdcdc-12bc-45f7-ac57-4da040f01694:
+    uuid: 4f7fdcdc-12bc-45f7-ac57-4da040f01694
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 120
+      anchor: center-center

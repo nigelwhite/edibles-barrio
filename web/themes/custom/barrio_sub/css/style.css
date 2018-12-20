@@ -29,7 +29,7 @@ a.nav-link:hover {
 
 .article-image img {
     box-shadow: 0.5vw 0.5vw 5px #bfbcbc;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .blog-teaser-image img {
@@ -110,6 +110,10 @@ ul.menu {
     margin-top: 5%;
 }
 
+.blogrow {
+    margin-bottom: 1.5rem;
+}
+
 /* =========================================
 Small devices (landscape phones, 576px and up)
 ============================================ */
@@ -135,10 +139,14 @@ Small devices (landscape phones, 576px and up)
       z-index: 99;
     }
 
-    #block-articlemenubackground,
-    #block-specificpagesmenubackground {
+    #block-articlemenubackground {
         display: block;
-        /* background-color: #292929; */
+        background-color: #707070;
+        height: 6vw;
+        width: 100%;
+    }
+
+    #block-bgfornoslidebypageurl {
         background-color: #707070;
         height: 6vw;
         width: 100%;
