@@ -1,0 +1,40 @@
+uuid: eddb73d7-2b58-428e-920f-2656a1b53f56
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_browser_entity_form
+name: assets_library
+label: 'Assets library'
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  435fae8e-80ef-4f28-88d6-82e31905b28f:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Select files'
+    uuid: 435fae8e-80ef-4f28-88d6-82e31905b28f
+    weight: 1
+    label: 'Upload image'
+    id: media_image_upload
+  3bf684b7-3d09-48c3-9779-231a00b32129:
+    settings:
+      entity_type: media
+      bundle: remote_video
+      form_mode: default
+      submit_text: 'Save entity'
+    uuid: 3bf684b7-3d09-48c3-9779-231a00b32129
+    weight: 2
+    label: 'Remote video'
+    id: entity_form

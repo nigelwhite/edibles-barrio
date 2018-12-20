@@ -1,0 +1,92 @@
+uuid: 3a521941-4535-48cc-83f5-bbfb99f82e0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.courses_and_events.body
+    - field.field.node.courses_and_events.field_date_and_time
+    - field.field.node.courses_and_events.field_media_asset
+    - field.field.node.courses_and_events.field_type
+    - node.type.courses_and_events
+  module:
+    - datetime
+    - ds
+    - field_formatter_class
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - node_title
+        - body
+        - field_date_and_time
+        - field_media_asset
+        - field_new_remote_video
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+id: node.courses_and_events.default
+targetEntityType: node
+bundle: courses_and_events
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: main
+  field_date_and_time:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: Europe/London
+      format_type: medium
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: datetime_default
+    region: main
+  field_media_asset:
+    type: entity_reference_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: main
+  field_type:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  links: true

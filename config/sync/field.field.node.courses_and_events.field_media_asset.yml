@@ -1,0 +1,30 @@
+uuid: 07f0a51c-1a55-4b76-a3ca-28904d00d054
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_asset
+    - media.type.image
+    - media.type.remote_video
+    - node.type.courses_and_events
+id: node.courses_and_events.field_media_asset
+field_name: field_media_asset
+entity_type: node
+bundle: courses_and_events
+label: 'Image (or video already in library)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: image
+field_type: entity_reference

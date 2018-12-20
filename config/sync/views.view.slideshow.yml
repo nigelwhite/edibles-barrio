@@ -14,7 +14,6 @@ dependencies:
     - 'taxonomy_term:page_on_site:6c84b80a-bae3-4d68-a4ba-bfe186789319'
     - 'taxonomy_term:page_on_site:8adbbb20-9fac-4e23-a975-99c58def7763'
     - 'taxonomy_term:page_on_site:9e5664ac-f691-4223-bcd0-3d875a6083a3'
-    - 'taxonomy_term:page_on_site:c097659e-208f-474a-84d7-4fb8c7a09fd2'
   module:
     - node
     - responsive_image

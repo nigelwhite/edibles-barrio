@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:dcca6b07-7edf-418d-81a4-e815ff90277f'
 settings:
   id: 'block_content:dcca6b07-7edf-418d-81a4-e815ff90277f'
-  label: 'Menu bg no-slide'
+  label: 'Menu bg no-slide by content type'
   provider: block_content
   label_display: '0'
   status: true
@@ -29,6 +29,7 @@ visibility:
     bundles:
       article: article
       basic_page_2: basic_page_2
+      courses_and_events: courses_and_events
       produce: produce
     negate: false
     context_mapping:
