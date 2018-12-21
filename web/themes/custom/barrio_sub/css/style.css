@@ -68,9 +68,18 @@ a.nav-link:hover {
     text-align: center;
 }
 
-.experi {
-    border: solid 1px black;
-    background-color: red;
+#block-views-block-events-block-1 h5,
+#block-views-block-events-block-2 h5,
+#block-views-block-events-block-3 h5 {
+    background-color: #707070;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.event-teaser-image a img {
+    max-width: 200px;
 }
 
 /* Carousel */

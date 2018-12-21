@@ -5,26 +5,81 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.courses_and_events.body
+    - field.field.node.courses_and_events.field_date_and_time
+    - field.field.node.courses_and_events.field_media_asset
+    - field.field.node.courses_and_events.field_type
+    - image.style.rectangle_style
     - node.type.courses_and_events
   module:
-    - text
+    - datetime
+    - ds
+    - field_formatter_class
+    - media
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - node_title
+        - field_date_and_time
+        - field_media_asset
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h4
+          class: ''
 id: node.courses_and_events.teaser
 targetEntityType: node
 bundle: courses_and_events
 mode: teaser
 content:
-  body:
+  field_date_and_time:
+    type: datetime_default
+    weight: 1
+    region: main
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
     settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-hidden: {  }
+      timezone_override: ''
+      format_type: vshort_t
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+  field_media_asset:
+    type: media_thumbnail
+    weight: 2
+    region: main
+    label: hidden
+    settings:
+      image_style: rectangle_style
+      image_link: content
+    third_party_settings:
+      field_formatter_class:
+        class: event-teaser-img
+hidden:
+  body: true
+  field_type: true
+  links: true

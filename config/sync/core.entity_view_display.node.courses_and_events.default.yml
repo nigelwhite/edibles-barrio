@@ -38,9 +38,9 @@ third_party_settings:
     regions:
       main:
         - node_title
+        - field_date_and_time
         - field_media_asset
         - body
-        - field_date_and_time
     fields:
       node_title:
         plugin_id: node_title
@@ -55,12 +55,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: main
   field_date_and_time:
-    weight: 3
+    weight: 1
     label: hidden
     settings:
       timezone_override: Europe/London
@@ -72,7 +72,7 @@ content:
     region: main
   field_media_asset:
     type: entity_reference_entity_view
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       view_mode: default
