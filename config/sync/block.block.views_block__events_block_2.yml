@@ -11,8 +11,8 @@ dependencies:
     - barrio_sub
 id: views_block__events_block_2
 theme: barrio_sub
-region: content
-weight: 0
+region: events_group
+weight: -10
 provider: null
 plugin: 'views_block:events-block_2'
 settings:

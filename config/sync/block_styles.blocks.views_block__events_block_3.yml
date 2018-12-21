@@ -5,4 +5,4 @@ dependencies: {  }
 id: views_block__events_block_3
 theme: ''
 text: ''
-classes: ''
+classes: col-md-4

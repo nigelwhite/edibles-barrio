@@ -68,6 +68,11 @@ a.nav-link:hover {
     text-align: center;
 }
 
+.experi {
+    border: solid 1px black;
+    background-color: red;
+}
+
 /* Carousel */
 
 #views-bootstrap-slideshow-block-1 .carousel-inner .carousel-item {
