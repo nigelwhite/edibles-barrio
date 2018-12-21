@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Vertical Card Display Suite Layout
+ * Based on Bootstrap 4 card component
+ *
+ * Available variables:
+ * - image
+
+ */
+#}
+<{{ outer_wrapper }}{{ attributes }}>
+{{ title_suffix.contextual_links }}
+<div class="card gallery">
+    {% if image|render %}
+      {{ image }}
+    {% endif %}
+</div>
+</{{ outer_wrapper }}>

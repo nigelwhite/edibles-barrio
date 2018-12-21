@@ -1,52 +1,39 @@
-uuid: 1164387b-7b39-4239-bbb0-ffbd96169013
+uuid: 49964151-4baf-4e57-9ef0-a2db2f26072c
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.gallery_teaser
     - field.field.media.image.field_description
     - field.field.media.image.field_media_image
     - field.field.media.image.field_visible_in_gallery
-    - image.style.rectangle_style_w_300
+    - image.style.rectangle_style_w200
     - media.type.image
   module:
     - field_formatter_class
     - image
-    - text
 _core:
   default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
-id: media.image.default
+id: media.image.gallery_teaser
 targetEntityType: media
 bundle: image
-mode: default
+mode: gallery_teaser
 content:
-  field_description:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_media_image:
     label: hidden
     settings:
-      image_style: rectangle_style_w_300
-      image_link: ''
+      image_style: rectangle_style_w200
+      image_link: content
     third_party_settings:
       field_formatter_class:
         class: ''
     type: image
-    weight: 1
-    region: content
-  name:
-    type: string
     weight: 0
     region: content
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
 hidden:
   created: true
+  field_description: true
   field_visible_in_gallery: true
+  name: true
   thumbnail: true
   uid: true

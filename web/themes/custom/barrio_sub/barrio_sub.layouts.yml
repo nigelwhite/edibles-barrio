@@ -13,3 +13,19 @@ card:
       label: Body
     footer:
       label: Footer
+
+cardimage:
+  label: Cardimage
+  category: MY LAYOUTS
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: templates/layouts/card/cardimage
+  regions:
+    header:
+      label: Header
+    image:
+      label: Image
+    body:
+      label: Body
+    footer:
+      label: Footer
