@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/user/*\r\n/media/*"
+    pages: "/user/*\r\n/media/*\r\n/contact/edibles"
     negate: false
     context_mapping: {  }

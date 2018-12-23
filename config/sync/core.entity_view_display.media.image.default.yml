@@ -6,7 +6,7 @@ dependencies:
     - field.field.media.image.field_description
     - field.field.media.image.field_media_image
     - field.field.media.image.field_visible_in_gallery
-    - image.style.rectangle_style_w_300
+    - image.style.rectangle_style_w900
     - media.type.image
   module:
     - field_formatter_class
@@ -29,7 +29,7 @@ content:
   field_media_image:
     label: hidden
     settings:
-      image_style: rectangle_style_w_300
+      image_style: rectangle_style_w900
       image_link: ''
     third_party_settings:
       field_formatter_class:

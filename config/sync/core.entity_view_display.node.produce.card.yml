@@ -45,6 +45,15 @@ third_party_settings:
       footer:
         - node_link
     fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: h4
       node_link:
         plugin_id: node_link
         weight: 3
@@ -55,15 +64,6 @@ third_party_settings:
           'link class': ''
           wrapper: ''
           class: 'btn btn-sm btn-outline-danger'
-      node_title:
-        plugin_id: node_title
-        weight: 0
-        label: hidden
-        formatter: default
-        settings:
-          wrapper: h2
-          class: h4
-          link: false
 id: node.produce.card
 targetEntityType: node
 bundle: produce
@@ -84,7 +84,7 @@ content:
     label: hidden
     settings:
       responsive_image_style: square
-      image_link: ''
+      image_link: content
     third_party_settings:
       field_formatter_class:
         class: card-img

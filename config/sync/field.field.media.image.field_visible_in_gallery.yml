@@ -11,11 +11,11 @@ entity_type: media
 bundle: image
 label: 'Visible in Gallery'
 description: ''
-required: true
+required: false
 translatable: false
 default_value:
   -
-    value: 0
+    value: 1
 default_value_callback: ''
 settings:
   on_label: 'Yes'

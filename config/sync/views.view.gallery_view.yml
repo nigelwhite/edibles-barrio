@@ -60,7 +60,7 @@ display:
         type: views_bootstrap_grid
         options:
           grouping: {  }
-          row_class: ''
+          row_class: mb-4
           default_row_class: true
           alignment: horizontal
           col_xs: col-xs-12
