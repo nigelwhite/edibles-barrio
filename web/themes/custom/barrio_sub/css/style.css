@@ -22,6 +22,28 @@ a.nav-link:hover {
     background-color: #707070!important;
 }
 
+#block-heronav {
+    display: none;
+}
+
+#block-socialnavigation {
+    display: block;
+  width: 100%;
+}
+
+#block-socialnavigation ul {
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  font-weight: 400;
+  width: 100%;
+}
+
+#block-socialnavigation li {
+  text-align: center;
+  width: 100%;
+}
+
 .feature-image picture img {
     border-radius: 20px;
     box-shadow: 0.2vw 0.2vw 5px #bfbcbc;
@@ -87,7 +109,7 @@ a.nav-link:hover {
 /* Carousel */
 
 #views-bootstrap-slideshow-block-1 .carousel-inner .carousel-item {
-  height: 100vh;
+  /* height: 100vh; only used on larger displays */
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -139,6 +161,12 @@ img.image-style-gallery-image-style {
 Small devices (landscape phones, 576px and up)
 ============================================ */
 @media (min-width: 576px) {
+
+    /* Carousel */
+
+    #views-bootstrap-slideshow-block-1 .carousel-inner .carousel-item {
+      height: 100vh; /* so scroll bars don't show */
+      }
 
     /* Primary Navigation */
 
@@ -237,7 +265,7 @@ Small devices (landscape phones, 576px and up)
 
     /* Social Navigation */
 
-    #block-socialnav {
+    #block-socialnavigation {
         display: block;
         padding-top: 1em;
       border-radius: 20px;
@@ -252,21 +280,21 @@ Small devices (landscape phones, 576px and up)
       background-color: rgb(213, 219, 208, 0.5);
     }
 
-    #block-socialnav ul {
+    /* #block-socialnavigation ul {
       list-style: none;
       padding-left: 0;
       font-size: 1.4vw;
       line-height: 1.5em;
       font-weight: 400;
       width: 100%;
-    }
+    } */
 
-    #block-socialnav li {
+    /* #block-socialnavigation li {
       text-align: center;
       width: 100%;
-    }
+    } */
 
-    #block-socialnav a {
+    #block-socialnavigation a {
       color: white;
       text-transform: lowercase;
     }
@@ -305,7 +333,7 @@ Large devices (desktops, 992px and up)
     }
 
     /* Social Navigation */
-    #block-socialnav {
+    #block-socialnavigation {
       top: 45%;
     }
 
@@ -327,7 +355,7 @@ Extra large devices (large desktops, 1200px and up)
     }
 
     /* Social Navigation */
-    #block-socialnav {
+    #block-socialnavigation {
       top: 55%;
     }
 
