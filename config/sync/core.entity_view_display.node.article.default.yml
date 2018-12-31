@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_enabled
     - field.field.node.article.field_image
+    - field.field.node.article.field_tags
     - image.style.rectangle_style
     - node.type.article
   module:
@@ -40,6 +41,7 @@ third_party_settings:
         - node_title
         - field_image
         - body
+        - field_tags
     fields:
       node_title:
         plugin_id: node_title
@@ -71,6 +73,19 @@ content:
       field_formatter_class:
         class: article-image
     label: hidden
+  field_tags:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
+    region: main
 hidden:
   field_enabled: true
   links: true

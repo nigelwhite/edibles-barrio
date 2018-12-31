@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Produce category'
 type: produce
-description: 'Broad categories of produce (eg fruit, vegetables, preserves)'
+description: 'Broad categories of produce (eg fruit, vegetables, preserves). Optionally show/hide. Requires a square image 650-850px each side. Max 1MB file.'
 help: ''
 new_revision: true
 preview_mode: 1

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_enabled
     - field.field.node.article.field_image
+    - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
   module:
@@ -57,6 +58,15 @@ content:
       progress_indicator: throbber
       show_crop_area: false
     third_party_settings: {  }
+  field_tags:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   path:
     type: path
     weight: 8

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.courses_and_events.body
     - field.field.node.courses_and_events.field_date_and_time
     - field.field.node.courses_and_events.field_media_asset
+    - field.field.node.courses_and_events.field_tags2
     - field.field.node.courses_and_events.field_type
     - node.type.courses_and_events
   module:
@@ -41,6 +42,7 @@ third_party_settings:
         - field_date_and_time
         - field_media_asset
         - body
+        - field_tags2
     fields:
       node_title:
         plugin_id: node_title
@@ -78,6 +80,19 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
+    region: main
+  field_tags2:
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
     region: main
 hidden:
   field_type: true

@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Basic page 2'
 type: basic_page_2
-description: 'Static or overview page, with no slideshow'
+description: 'Static page, with no slideshow. Grey background to main navigation.'
 help: ''
 new_revision: true
 preview_mode: 1

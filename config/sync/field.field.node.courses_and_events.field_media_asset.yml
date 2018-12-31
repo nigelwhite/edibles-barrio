@@ -12,7 +12,7 @@ field_name: field_media_asset
 entity_type: node
 bundle: courses_and_events
 label: 'Image (or video already in library)'
-description: ''
+description: 'New images can be uploaded. Images or remote videos already in the library can be added.'
 required: false
 translatable: false
 default_value: {  }

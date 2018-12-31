@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Subslider image'
 type: subslider_image
-description: ''
+description: 'New images for the sequence of slides on each of the secondary pages. Pick which page they will appear on. Min size 2600 x 677 px! Optionally disable display of each image.'
 help: ''
 new_revision: true
 preview_mode: 1

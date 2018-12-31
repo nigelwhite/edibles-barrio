@@ -1,0 +1,29 @@
+uuid: f0352353-1135-42ed-a5d8-b3769cd77936
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-navigation
+  module:
+    - system
+  theme:
+    - barrio_sub
+id: socialnavigation
+theme: barrio_sub
+region: featured_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:social-navigation'
+settings:
+  id: 'system_menu_block:social-navigation'
+  label: 'Social navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
