@@ -44,7 +44,7 @@ a.nav-link:hover {
   width: 100%;
 }
 
-.feature-image picture img {
+.feature-image img {
     border-radius: 20px;
     box-shadow: 0.2vw 0.2vw 5px #bfbcbc;
 }
