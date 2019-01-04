@@ -41,3 +41,4 @@ permissions:
   - 'perform backup'
   - 'use advanced search'
   - 'view own unpublished content'
+  - 'view the administration theme'

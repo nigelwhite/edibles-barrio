@@ -1,0 +1,32 @@
+uuid: 8d49758b-ffc3-4826-a50f-ea4d97f6c46f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+    - user
+  theme:
+    - barrio_sub
+id: useraccountmenu
+theme: barrio_sub
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Editor menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      editor: editor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

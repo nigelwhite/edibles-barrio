@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: Event
 type: courses_and_events
-description: 'Anything happening at a date+time. 3 listings available - Events, Courses, Other. A new image can be uploaded. Images and remote videos already in the library can be added. Will stop being displayed when time is passed.'
+description: 'Anything happening at a date+time. 3 listings available - Events, Courses, Other. A new image can be uploaded (i.5mb max). Images and remote videos already in the library can be added. Will stop being displayed when time is passed.'
 help: ''
 new_revision: true
 preview_mode: 1

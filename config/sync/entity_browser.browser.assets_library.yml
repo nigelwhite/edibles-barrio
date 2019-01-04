@@ -2,8 +2,11 @@ uuid: eddb73d7-2b58-428e-920f-2656a1b53f56
 langcode: en
 status: true
 dependencies:
+  config:
+    - views.view.media_library
   module:
     - entity_browser_entity_form
+    - views
 name: assets_library
 label: 'Assets library'
 display: iframe
@@ -38,3 +41,13 @@ widgets:
     weight: 2
     label: 'Remote video'
     id: entity_form
+  dbd99141-fc7f-4ccb-8402-b9133dcfe340:
+    settings:
+      view: media_library
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: dbd99141-fc7f-4ccb-8402-b9133dcfe340
+    weight: 3
+    label: Library
+    id: view

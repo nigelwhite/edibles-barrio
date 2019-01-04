@@ -27,8 +27,10 @@ module:
   devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
+  embed: 0
   entity_browser: 0
   entity_browser_entity_form: 0
+  entity_embed: 0
   field: 0
   field_formatter_class: 0
   field_group: 0

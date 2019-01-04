@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.media.image.field_description
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_tags
     - field.field.media.image.field_visible_in_gallery
     - image.style.thumbnail
     - media.type.image
@@ -41,6 +42,15 @@ content:
     third_party_settings: {  }
     type: image_widget_crop
     weight: 1
+    region: content
+  field_tags:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_visible_in_gallery:
     weight: 2
