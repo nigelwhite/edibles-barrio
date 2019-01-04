@@ -66,6 +66,10 @@ a.nav-link:hover {
     font-size: 1.5rem;
 }
 
+.tag-term ul li .taxonomy-term h2 {
+    font-size: 1.5rem;
+}
+
 /* Card */
 
 .card {
