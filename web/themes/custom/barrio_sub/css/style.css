@@ -61,6 +61,11 @@ a.nav-link:hover {
     border-radius: 5px;
 }
 
+.tags-header {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
 /* Card */
 
 .card {

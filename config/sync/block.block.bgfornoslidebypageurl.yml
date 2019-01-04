@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/user/*\r\n/media/*\r\n/taxonomy/term/*"
+    pages: "/user/*\r\n/media/*\r\n/taxonomy/term/*\r\n/term/*\r\n/tags/*"
     negate: false
     context_mapping: {  }

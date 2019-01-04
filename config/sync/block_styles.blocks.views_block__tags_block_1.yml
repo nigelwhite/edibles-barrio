@@ -1,0 +1,8 @@
+uuid: 47dcbf45-efc2-41e8-b0e3-1f4d56bad0ff
+langcode: en
+status: true
+dependencies: {  }
+id: views_block__tags_block_1
+theme: ''
+text: ''
+classes: ''

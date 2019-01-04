@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79f7cc32e93eb42c7d6d43d10f1665d9",
+    "content-hash": "810c8012e1407de93c4ecf417a991468",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3980,6 +3980,52 @@
                 "issues": "https://www.drupal.org/project/issues/views_slideshow",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             }
+        },
+        {
+            "name": "drupal/views_taxonomy_term_name_depth",
+            "version": "dev-6.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_taxonomy_term_name_depth",
+                "reference": "cc2d12fbaa9f29c04b5f0ea3be645c32785efca5"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-6.x": "6.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-6.x-dev",
+                    "datestamp": "1531928921",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "manojapare",
+                    "homepage": "https://www.drupal.org/user/2825053"
+                },
+                {
+                    "name": "rakesh.gectcr",
+                    "homepage": "https://www.drupal.org/user/1177822"
+                }
+            ],
+            "description": "The module provides the Views plugin for Contextual filter with Taxonomy Term Name Depth.",
+            "homepage": "https://www.drupal.org/project/views_taxonomy_term_name_depth",
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_taxonomy_term_name_depth"
+            },
+            "time": "2018-12-26T03:30:05+00:00"
         },
         {
             "name": "drush/drush",
@@ -9470,7 +9516,8 @@
         "drupal/inline_entity_form": 5,
         "drupal/rules": 15,
         "drupal/stage_file_proxy": 15,
-        "drupal/views_bootstrap": 20
+        "drupal/views_bootstrap": 20,
+        "drupal/views_taxonomy_term_name_depth": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
