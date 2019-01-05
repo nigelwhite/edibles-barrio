@@ -166,6 +166,22 @@ img.image-style-gallery-image-style {
     box-shadow: 0.2vw 0.2vw 5px #bfbcbc;
 }
 
+figcaption {
+    background-color: rgb(223, 227, 222);
+}
+
+.embedded-entity img {
+    border-radius: 4px 4px 0 0;
+}
+
+.embedded-entity.align-right {
+    margin-left: 2rem;
+}
+
+.embedded-entity.align-left {
+    margin-right: 2rem;
+}
+
 /* =========================================
 Small devices (landscape phones, 576px and up)
 ============================================ */
