@@ -70,6 +70,10 @@ a.nav-link:hover {
     font-size: 1.5rem;
 }
 
+.tag-term .field__item .taxomony-term h2 a .field__item {
+    font-size: 1.5rem;
+}
+
 /* Card */
 
 .card {
