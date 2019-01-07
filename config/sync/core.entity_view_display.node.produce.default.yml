@@ -42,6 +42,7 @@ third_party_settings:
         - node_title
         - field_image
         - body
+        - field_tags
     fields:
       node_title:
         plugin_id: node_title
@@ -73,12 +74,17 @@ content:
     region: main
   field_tags:
     weight: 3
-    label: above
+    label: hidden
     settings:
       link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
+      view_mode: default
+    third_party_settings:
+      field_formatter_class:
+        class: tag-term
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
+    region: main
 hidden:
   field_enabled: true
   field_order: true

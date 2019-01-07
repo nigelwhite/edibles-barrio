@@ -23,7 +23,7 @@ widgets:
   435fae8e-80ef-4f28-88d6-82e31905b28f:
     settings:
       extensions: 'jpg jpeg png gif'
-      media_type: image
+      media_type: embedded_image
       upload_location: 'public://'
       multiple: '1'
       submit_text: 'Select files'

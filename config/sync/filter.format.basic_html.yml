@@ -50,6 +50,12 @@ filters:
     status: true
     weight: -49
     settings: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: false
+    weight: -43
+    settings: {  }
   filter_url:
     id: filter_url
     provider: filter
@@ -62,12 +68,6 @@ filters:
     provider: filter
     status: false
     weight: -44
-    settings: {  }
-  filter_autop:
-    id: filter_autop
-    provider: filter
-    status: false
-    weight: -43
     settings: {  }
   filter_htmlcorrector:
     id: filter_htmlcorrector

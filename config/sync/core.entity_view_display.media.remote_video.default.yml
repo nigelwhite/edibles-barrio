@@ -8,6 +8,8 @@ dependencies:
     - field.field.media.remote_video.field_tags
     - media.type.remote_video
   module:
+    - ds
+    - field_formatter_class
     - media
     - text
 _core:
@@ -37,9 +39,14 @@ content:
     weight: 3
     label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: tag-term
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
     region: content
   name:
     type: string

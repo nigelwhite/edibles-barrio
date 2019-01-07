@@ -10,6 +10,7 @@ dependencies:
     - image.style.rectangle_style_w900
     - media.type.image
   module:
+    - ds
     - field_formatter_class
     - image
     - text
@@ -43,8 +44,13 @@ content:
     label: above
     settings:
       link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+      view_mode: default
+    third_party_settings:
+      field_formatter_class:
+        class: tag-term
+      ds:
+        ds_limit: ''
+    type: entity_reference_entity_view
     region: content
   name:
     type: string

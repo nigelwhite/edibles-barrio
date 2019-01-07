@@ -81,7 +81,7 @@ content:
       link: false
     third_party_settings:
       field_formatter_class:
-        class: ''
+        class: tag-term
       ds:
         ds_limit: ''
     type: entity_reference_entity_view
