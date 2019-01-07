@@ -66,11 +66,7 @@ a.nav-link:hover {
     font-size: 1.5rem;
 }
 
-.tag-term ul li .taxonomy-term h2 {
-    font-size: 1.5rem;
-}
-
-.tag-term .field__item .taxomony-term h2 a .field__item {
+.tag-link {
     font-size: 1.5rem;
 }
 
@@ -184,6 +180,14 @@ figcaption {
 
 .embedded-entity.align-left {
     margin-right: 2rem;
+}
+
+.event-date .datetime {
+    font-weight: bold;
+}
+
+.event-image {
+    padding-top: 1.5rem;
 }
 
 /* =========================================
