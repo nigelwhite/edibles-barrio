@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.courses_and_events.body
+    - field.field.node.courses_and_events.field_date2
     - field.field.node.courses_and_events.field_date_and_time
     - field.field.node.courses_and_events.field_media_asset
     - field.field.node.courses_and_events.field_tags2
@@ -11,6 +12,7 @@ dependencies:
     - node.type.courses_and_events
   module:
     - datetime
+    - datetime_range
     - media_library
     - path
     - text
@@ -34,6 +36,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_date2:
+    weight: 126
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
   field_date_and_time:
     weight: 122
     settings: {  }

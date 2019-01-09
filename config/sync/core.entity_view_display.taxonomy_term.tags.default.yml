@@ -38,7 +38,7 @@ third_party_settings:
         formatter: default
         settings:
           link: true
-          wrapper: p
+          wrapper: span
           class: tag-link
 id: taxonomy_term.tags.default
 targetEntityType: taxonomy_term

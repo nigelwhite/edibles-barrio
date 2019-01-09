@@ -1,0 +1,8 @@
+uuid: a78d514c-804b-4dd0-9861-bde885ea939f
+langcode: en
+status: true
+dependencies: {  }
+id: rosie_long
+label: 'Rosie long'
+locked: false
+pattern: 'l jS F Y  g.i a'

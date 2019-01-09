@@ -68,7 +68,7 @@ display:
         type: views_bootstrap_carousel
         options:
           grouping: {  }
-          interval: '3000'
+          interval: '4000'
           keyboard: 0
           ride: 1
           navigation: 0

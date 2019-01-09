@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.courses_and_events.body
+    - field.field.node.courses_and_events.field_date2
     - field.field.node.courses_and_events.field_date_and_time
     - field.field.node.courses_and_events.field_media_asset
     - field.field.node.courses_and_events.field_tags2
@@ -11,6 +12,7 @@ dependencies:
     - node.type.courses_and_events
   module:
     - datetime
+    - datetime_range
     - ds
     - field_formatter_class
     - text
@@ -40,6 +42,7 @@ third_party_settings:
       main:
         - node_title
         - field_date_and_time
+        - field_date2
         - field_media_asset
         - body
         - field_tags2
@@ -57,16 +60,28 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
+    region: main
+  field_date2:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: rosie_long
+      separator: ' - '
+    third_party_settings:
+      field_formatter_class:
+        class: event-date
+    type: daterange_default
     region: main
   field_date_and_time:
     weight: 1
     label: hidden
     settings:
       timezone_override: Europe/London
-      format_type: medium
+      format_type: long
     third_party_settings:
       field_formatter_class:
         class: event-date
@@ -74,7 +89,7 @@ content:
     region: main
   field_media_asset:
     type: entity_reference_entity_view
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       view_mode: event_image
@@ -84,14 +99,14 @@ content:
         class: event-image
     region: main
   field_tags2:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings:
       field_formatter_class:
-        class: tag-term
+        class: ''
       ds:
         ds_limit: ''
     type: entity_reference_entity_view

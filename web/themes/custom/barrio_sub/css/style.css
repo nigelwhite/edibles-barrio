@@ -66,8 +66,13 @@ a.nav-link:hover {
     font-size: 1.5rem;
 }
 
-.tag-link {
-    font-size: 1.5rem;
+.tag-link a {
+    font-size: 0.75rem;
+}
+
+.field--name-field-tags2 .field__item {
+    display: inline-block;
+    margin-right: 0.5rem;
 }
 
 /* Card */
@@ -188,6 +193,10 @@ figcaption {
 
 .event-image {
     padding-top: 1.5rem;
+}
+
+.event-row {
+    min-height: 1rem;
 }
 
 /* =========================================
