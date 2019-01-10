@@ -5,13 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.courses_and_events.body
+    - field.field.node.courses_and_events.field_date2
     - field.field.node.courses_and_events.field_date_and_time
     - field.field.node.courses_and_events.field_media_asset
+    - field.field.node.courses_and_events.field_tags2
     - field.field.node.courses_and_events.field_type
     - image.style.rectangle_style
     - node.type.courses_and_events
   module:
-    - datetime
+    - datetime_range
     - ds
     - field_formatter_class
     - media
@@ -39,13 +41,13 @@ third_party_settings:
             attributes: ''
     regions:
       main:
-        - node_title
-        - field_date_and_time
         - field_media_asset
+        - node_title
+        - field_date2
     fields:
       node_title:
         plugin_id: node_title
-        weight: 0
+        weight: 1
         label: hidden
         formatter: default
         settings:
@@ -57,20 +59,19 @@ targetEntityType: node
 bundle: courses_and_events
 mode: teaser
 content:
-  field_date_and_time:
-    type: datetime_default
-    weight: 1
+  field_date2:
+    type: daterange_default
+    weight: 2
     region: main
     label: hidden
     settings:
+      separator: '-'
+      format_type: medium
       timezone_override: ''
-      format_type: vshort_t
-    third_party_settings:
-      field_formatter_class:
-        class: ''
+    third_party_settings: {  }
   field_media_asset:
     type: media_thumbnail
-    weight: 2
+    weight: 0
     region: main
     label: hidden
     settings:
@@ -81,5 +82,7 @@ content:
         class: event-teaser-img
 hidden:
   body: true
+  field_date_and_time: true
+  field_tags2: true
   field_type: true
   links: true

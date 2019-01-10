@@ -195,7 +195,7 @@ figcaption {
     padding-top: 1.5rem;
 }
 
-.event-row {
+.grid .row {
     min-height: 1rem;
 }
 

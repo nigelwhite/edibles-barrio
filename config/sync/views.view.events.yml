@@ -64,10 +64,15 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 6
+          items_per_page: 20
           offset: 0
           id: 0
           total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -76,11 +81,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
           quantity: 9
       style:
         type: default
@@ -866,7 +866,7 @@ display:
           col_xs: col-xs-12
           col_sm: col-sm-6
           col_md: col-md-4
-          col_lg: col-lg-3
+          col_lg: col-lg-4
       row:
         type: 'ds_entity:node'
         options:
