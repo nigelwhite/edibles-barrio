@@ -1,0 +1,27 @@
+uuid: 7bbd8f0b-c693-47e8-a861-4d1b48126517
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attach
+    - node.type.article
+  module:
+    - file
+id: node.article.field_attach
+field_name: field_attach
+entity_type: node
+bundle: article
+label: Attach
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx pdf rtf odt ott'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

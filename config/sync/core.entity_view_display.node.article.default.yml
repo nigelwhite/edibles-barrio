@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
+    - field.field.node.article.field_attach
     - field.field.node.article.field_enabled
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
@@ -12,6 +13,7 @@ dependencies:
   module:
     - ds
     - field_formatter_class
+    - file
     - image
     - text
     - user
@@ -41,6 +43,7 @@ third_party_settings:
         - node_title
         - field_image
         - body
+        - field_attach
         - field_tags
     fields:
       node_title:
@@ -62,6 +65,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     label: hidden
+  field_attach:
+    weight: 3
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_table
+    region: main
   field_image:
     type: image
     weight: 1
@@ -74,7 +85,7 @@ content:
         class: article-image
     label: hidden
   field_tags:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       view_mode: default

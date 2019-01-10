@@ -4,14 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
+    - field.field.node.article.field_attach
     - field.field.node.article.field_enabled
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
   module:
+    - file
     - image_widget_crop
-    - path
     - text
 _core:
   default_config_hash: vPb_yvhA-xuNoV_yOmOwYxGuHNRIH1CoMK2qi7BSga0
@@ -29,12 +30,13 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
-  created:
-    type: datetime_timestamp
-    weight: 5
-    region: content
-    settings: {  }
+  field_attach:
+    weight: 6
+    settings:
+      progress_indicator: throbber
     third_party_settings: {  }
+    type: file_generic
+    region: content
   field_enabled:
     weight: 3
     settings:
@@ -59,7 +61,7 @@ content:
       show_crop_area: false
     third_party_settings: {  }
   field_tags:
-    weight: 26
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -67,31 +69,11 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  path:
-    type: path
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 6
-    region: content
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 7
+    weight: 4
     region: content
     third_party_settings: {  }
   title:
@@ -102,13 +84,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 4
-    region: content
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true
