@@ -11,7 +11,7 @@ id: node.courses_and_events.field_date2
 field_name: field_date2
 entity_type: node
 bundle: courses_and_events
-label: Date2
+label: 'Date and times'
 description: ''
 required: true
 translatable: false

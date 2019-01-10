@@ -5,13 +5,11 @@ dependencies:
   config:
     - field.field.node.courses_and_events.body
     - field.field.node.courses_and_events.field_date2
-    - field.field.node.courses_and_events.field_date_and_time
     - field.field.node.courses_and_events.field_media_asset
     - field.field.node.courses_and_events.field_tags2
     - field.field.node.courses_and_events.field_type
     - node.type.courses_and_events
   module:
-    - datetime
     - datetime_range
     - ds
     - field_formatter_class
@@ -75,17 +73,6 @@ content:
       field_formatter_class:
         class: event-date
     type: daterange_default
-    region: main
-  field_date_and_time:
-    weight: 1
-    label: hidden
-    settings:
-      timezone_override: Europe/London
-      format_type: long
-    third_party_settings:
-      field_formatter_class:
-        class: event-date
-    type: datetime_default
     region: main
   field_media_asset:
     type: entity_reference_entity_view

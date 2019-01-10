@@ -199,6 +199,26 @@ figcaption {
     min-height: 1rem;
 }
 
+.event-wrapper {
+    min-height: 18rem;
+}
+
+.event-list-title a {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.event-list-title {
+    margin-bottom: 0;
+}
+
+.event-teaser-img {
+    margin-bottom: 0.2rem;
+}
+
+.event-list-date :nth-child(2){
+    display: none;
+}
 /* =========================================
 Small devices (landscape phones, 576px and up)
 ============================================ */

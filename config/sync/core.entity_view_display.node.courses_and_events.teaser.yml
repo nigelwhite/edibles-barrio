@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.courses_and_events.body
     - field.field.node.courses_and_events.field_date2
-    - field.field.node.courses_and_events.field_date_and_time
     - field.field.node.courses_and_events.field_media_asset
     - field.field.node.courses_and_events.field_tags2
     - field.field.node.courses_and_events.field_type
@@ -16,6 +15,7 @@ dependencies:
     - datetime_range
     - ds
     - field_formatter_class
+    - field_group
     - media
     - user
 third_party_settings:
@@ -41,19 +41,39 @@ third_party_settings:
             attributes: ''
     regions:
       main:
+        - group_div
         - field_media_asset
         - node_title
         - field_date2
     fields:
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 2
         label: hidden
         formatter: default
         settings:
           link: true
-          wrapper: h4
-          class: ''
+          wrapper: p
+          class: event-list-title
+  field_group:
+    group_div:
+      children:
+        - field_media_asset
+        - node_title
+        - field_date2
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: event-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: event-wrapper
 id: node.courses_and_events.teaser
 targetEntityType: node
 bundle: courses_and_events
@@ -61,17 +81,19 @@ mode: teaser
 content:
   field_date2:
     type: daterange_default
-    weight: 2
+    weight: 3
     region: main
     label: hidden
     settings:
-      separator: '-'
-      format_type: medium
       timezone_override: ''
-    third_party_settings: {  }
+      format_type: vshort
+      separator: ''
+    third_party_settings:
+      field_formatter_class:
+        class: event-list-date
   field_media_asset:
     type: media_thumbnail
-    weight: 0
+    weight: 1
     region: main
     label: hidden
     settings:
@@ -82,7 +104,6 @@ content:
         class: event-teaser-img
 hidden:
   body: true
-  field_date_and_time: true
   field_tags2: true
   field_type: true
   links: true
