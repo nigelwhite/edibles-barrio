@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.courses_and_events.body
+    - field.field.node.courses_and_events.field_attach
     - field.field.node.courses_and_events.field_date2
     - field.field.node.courses_and_events.field_media_asset
     - field.field.node.courses_and_events.field_tags2
@@ -11,8 +12,8 @@ dependencies:
     - node.type.courses_and_events
   module:
     - datetime_range
+    - file
     - media_library
-    - path
     - text
 id: node.courses_and_events.default
 targetEntityType: node
@@ -21,33 +22,34 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 7
+    weight: 1
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
     region: content
-  created:
-    type: datetime_timestamp
-    weight: 2
-    region: content
-    settings: {  }
+  field_attach:
+    weight: 6
+    settings:
+      progress_indicator: throbber
     third_party_settings: {  }
+    type: file_generic
+    region: content
   field_date2:
-    weight: 9
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
     region: content
   field_media_asset:
     type: media_library_widget
-    weight: 10
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
   field_tags2:
-    weight: 12
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -56,38 +58,11 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_type:
-    weight: 11
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
-  path:
-    type: path
-    weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 3
-    region: content
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 6
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 4
-    region: content
-    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -96,13 +71,10 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 1
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

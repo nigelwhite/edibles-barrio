@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.basic_page_2.body
+    - field.field.node.basic_page_2.field_attach
     - node.type.basic_page_2
   module:
     - ds
+    - file
     - text
     - user
 third_party_settings:
@@ -33,6 +35,7 @@ third_party_settings:
     regions:
       main:
         - body
+        - field_attach
 id: node.basic_page_2.default
 targetEntityType: node
 bundle: basic_page_2
@@ -44,6 +47,14 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: main
+  field_attach:
+    weight: 1
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_table
     region: main
 hidden:
   links: true

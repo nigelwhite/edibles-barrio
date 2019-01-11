@@ -1,0 +1,27 @@
+uuid: 69394723-a71c-472d-a45a-2ba2c2f23b9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attach
+    - node.type.basic_page_2
+  module:
+    - file
+id: node.basic_page_2.field_attach
+field_name: field_attach
+entity_type: node
+bundle: basic_page_2
+label: Attach
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx pdf rtf odt ott'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

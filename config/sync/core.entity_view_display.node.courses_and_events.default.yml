@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.courses_and_events.body
+    - field.field.node.courses_and_events.field_attach
     - field.field.node.courses_and_events.field_date2
     - field.field.node.courses_and_events.field_media_asset
     - field.field.node.courses_and_events.field_tags2
@@ -13,6 +14,7 @@ dependencies:
     - datetime_range
     - ds
     - field_formatter_class
+    - file
     - text
     - user
 third_party_settings:
@@ -39,10 +41,10 @@ third_party_settings:
     regions:
       main:
         - node_title
-        - field_date_and_time
         - field_date2
         - field_media_asset
         - body
+        - field_attach
         - field_tags2
     fields:
       node_title:
@@ -58,12 +60,20 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 4
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: main
+  field_attach:
+    weight: 4
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_table
+    region: main
   field_date2:
-    weight: 2
+    weight: 1
     label: hidden
     settings:
       timezone_override: ''
@@ -76,7 +86,7 @@ content:
     region: main
   field_media_asset:
     type: entity_reference_entity_view
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       view_mode: event_image
