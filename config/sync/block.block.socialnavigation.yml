@@ -10,8 +10,8 @@ dependencies:
     - barrio_sub
 id: socialnavigation
 theme: barrio_sub
-region: featured_top
-weight: 0
+region: sidebar_second
+weight: -13
 provider: null
 plugin: 'system_menu_block:social-navigation'
 settings:
@@ -24,6 +24,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "<front>\r\n/test-page"
     negate: false
     context_mapping: {  }

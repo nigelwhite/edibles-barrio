@@ -58,6 +58,8 @@ module:
   responsive_image: 0
   search: 0
   shortcut: 0
+  social_media_links: 0
+  social_media_links_field: 0
   stage_file_proxy: 0
   styles_api: 0
   system: 0
@@ -66,6 +68,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  twitter_feed: 0
   update: 0
   user: 0
   views_bootstrap: 0

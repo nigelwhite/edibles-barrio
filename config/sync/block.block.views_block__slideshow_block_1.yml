@@ -1,6 +1,6 @@
 uuid: 720fa280-f05e-4ced-a6db-f8675a49d5e4
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.slideshow
@@ -12,7 +12,7 @@ dependencies:
 id: views_block__slideshow_block_1
 theme: barrio_sub
 region: featured_top
-weight: -4
+weight: -12
 provider: null
 plugin: 'views_block:slideshow-block_1'
 settings:

@@ -221,6 +221,10 @@ figcaption {
     display: none;
 }
 
+#block-socialmedialinks {
+    z-index: 999;
+}
+
 /* =========================================
 Small devices (landscape phones, 576px and up)
 ============================================ */
