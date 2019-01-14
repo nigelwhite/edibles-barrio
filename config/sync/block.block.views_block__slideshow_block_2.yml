@@ -13,7 +13,7 @@ dependencies:
 id: views_block__slideshow_block_2
 theme: barrio_sub
 region: featured_top
-weight: -9
+weight: -10
 provider: null
 plugin: 'views_block:slideshow-block_2'
 settings:

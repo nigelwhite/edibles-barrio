@@ -12,7 +12,7 @@ dependencies:
 id: heronav
 theme: barrio_sub
 region: featured_top
-weight: -11
+weight: -12
 provider: null
 plugin: 'block_content:959c03e1-fa37-4713-a7b4-e58281286a57'
 settings:

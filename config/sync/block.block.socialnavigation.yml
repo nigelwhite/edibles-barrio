@@ -10,8 +10,8 @@ dependencies:
     - barrio_sub
 id: socialnavigation
 theme: barrio_sub
-region: sidebar_second
-weight: -13
+region: side_block_group
+weight: -11
 provider: null
 plugin: 'system_menu_block:social-navigation'
 settings:

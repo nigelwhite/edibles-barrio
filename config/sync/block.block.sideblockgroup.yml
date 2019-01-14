@@ -1,0 +1,28 @@
+uuid: f378a969-cb93-4865-b743-4465cb983225
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.side_block_group
+  module:
+    - blockgroup
+    - system
+  theme:
+    - barrio_sub
+id: sideblockgroup
+theme: barrio_sub
+region: featured_top
+weight: 0
+provider: null
+plugin: 'block_group:65a67127-f92d-4e5f-8b1d-4cb0e292a299'
+settings:
+  id: 'block_group:65a67127-f92d-4e5f-8b1d-4cb0e292a299'
+  label: 'Side block group'
+  provider: blockgroup
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
