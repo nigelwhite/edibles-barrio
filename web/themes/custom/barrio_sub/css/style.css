@@ -33,7 +33,7 @@ a.nav-link:hover {
 
 #block-socialnavigation ul {
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5em;
   font-weight: 400;
   width: 100%;
@@ -354,7 +354,7 @@ Small devices (landscape phones, 576px and up)
     #block-socialnavigation ul {
       list-style: none;
       padding-left: 0;
-      font-size: 1.4vw;
+      font-size: 1.2vw;
       line-height: 1em;
       font-weight: 400;
       width: 100%;
@@ -389,9 +389,6 @@ Medium devices (tablets, 768px and up)
 
     /* Social Navigation */
 
-    #block-socialnavigation li {
-      text-align: left;
-    }
     #block-sideblockgroup {
       top: 20%;
     }
