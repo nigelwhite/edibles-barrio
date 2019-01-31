@@ -10,7 +10,7 @@ field_name: field_visible_in_gallery
 entity_type: media
 bundle: image
 label: 'Visible in Gallery'
-description: ''
+description: 'If ticked, the image will appear on the Gallery page.'
 required: false
 translatable: false
 default_value:

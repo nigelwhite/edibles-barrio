@@ -10,7 +10,7 @@ field_name: field_enabled
 entity_type: node
 bundle: article
 label: Display
-description: 'Display in Blog stream?'
+description: 'Display on Blog page?'
 required: false
 translatable: true
 default_value:

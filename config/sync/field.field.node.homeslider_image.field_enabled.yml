@@ -9,7 +9,7 @@ id: node.homeslider_image.field_enabled
 field_name: field_enabled
 entity_type: node
 bundle: homeslider_image
-label: Enabled
+label: 'Insert in slide sequence'
 description: ''
 required: false
 translatable: true

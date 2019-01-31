@@ -9,7 +9,7 @@ id: node.subslider_image.field_enabled
 field_name: field_enabled
 entity_type: node
 bundle: subslider_image
-label: Enabled
+label: 'Insert in slide sequence'
 description: ''
 required: false
 translatable: false

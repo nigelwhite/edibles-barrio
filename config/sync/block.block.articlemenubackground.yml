@@ -30,7 +30,9 @@ visibility:
       article: article
       basic_page_2: basic_page_2
       courses_and_events: courses_and_events
+      homeslider_image: homeslider_image
       produce: produce
+      subslider_image: subslider_image
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

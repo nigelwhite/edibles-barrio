@@ -10,7 +10,7 @@ field_name: field_enabled
 entity_type: node
 bundle: produce
 label: Available
-description: ''
+description: 'Is this category of produce available at the moment. If ticked, the category will appear on the Produce page.'
 required: false
 translatable: true
 default_value:

@@ -17,16 +17,16 @@ field_name: field_media_file
 entity_type: media
 bundle: file
 label: File
-description: ''
+description: 'It is best to convert your file to .pdf before attaching. PDF means Portable Document Format and it is designed so anyone can view it, on any device.'
 required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'txt rtf doc docx ppt pptx xls xlsx pdf odf odg odp ods odt fodt fods fodp fodg key numbers pages'
+  file_extensions: pdf
   max_filesize: ''
+  description_field: false
   handler: 'default:file'
   handler_settings: {  }
-  description_field: false
 field_type: file
