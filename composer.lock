@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af666eaf81d7a8805bc953082ef08924",
+    "content-hash": "2a0116f5ad9ebcbc55db2ac685c73e5d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3999,11 +3999,17 @@
         },
         {
             "name": "drupal/views_bootstrap",
-            "version": "dev-4.x",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views_bootstrap",
-                "reference": "c2f2d6b553194aa0f8cedfc082d350e44fac08fb"
+                "reference": "8.x-4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_bootstrap-8.x-4.1.zip",
+                "reference": "8.x-4.1",
+                "shasum": "61e907ad7e2aebf1d2132a206ad1818ef3a6491a"
             },
             "require": {
                 "drupal/core": "*"
@@ -4014,14 +4020,13 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.x-dev",
-                    "datestamp": "1547543884",
+                    "version": "8.x-4.1",
+                    "datestamp": "1548889080",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -4049,8 +4054,7 @@
             "homepage": "https://www.drupal.org/project/views_bootstrap",
             "support": {
                 "source": "http://cgit.drupalcode.org/views_bootstrap"
-            },
-            "time": "2019-01-15T09:35:30+00:00"
+            }
         },
         {
             "name": "drupal/views_slideshow",
@@ -9713,7 +9717,6 @@
         "drupal/inline_entity_form": 5,
         "drupal/rules": 15,
         "drupal/stage_file_proxy": 15,
-        "drupal/views_bootstrap": 20,
         "drupal/views_taxonomy_term_name_depth": 20
     },
     "prefer-stable": true,
