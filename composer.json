@@ -26,6 +26,7 @@
         "drupal/bootstrap_barrio": "^4.17",
         "drupal/bootstrap_layouts": "^5.1",
         "drupal/coffee": "^1.0@beta",
+        "drupal/commerce": "^2.11",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
         "drupal/crop": "^1.5",
