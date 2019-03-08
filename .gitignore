@@ -18,5 +18,5 @@
 # Ignore .env files as they are personal
 /.env
 
-# Ignore lando exports and imports
+# Ignore local storage
 /app/
