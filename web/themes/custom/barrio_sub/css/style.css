@@ -266,6 +266,12 @@ figcaption {
     font-size: 0.9rem;
 }
 
+/* Shopping Cart stuff */
+
+.salad-title {
+    display: block;
+}
+
 /* =========================================
 Medium devices (tablets, 768px and up)
 ============================================ */
