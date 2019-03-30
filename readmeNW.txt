@@ -8,6 +8,7 @@ css tweaks for events overview listing
 Edibles Barrio Processes
 
 Top db backup on Digital Ocean
+echo4 9.3.19 before changing anything
 echo 14.2.19 start of day - all good. Downloaded into lando
 echo3 11.2.19 trying to config commerce. $string ("Price") must be a string error http://178.128.162.13/oyster/node/748
 echo2 10.2.19 after core updates and install of commerce modules. Before any config in commerce
