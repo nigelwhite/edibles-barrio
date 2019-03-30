@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de257116b5567eacebf2729170e9bcf1",
+    "content-hash": "96b9a58d2ed00b0920bf69d4f5ed85ba",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4810,21 +4810,21 @@
         },
         {
             "name": "drupal/profile",
-            "version": "1.0.0-rc2",
+            "version": "1.0.0-rc4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/profile",
-                "reference": "8.x-1.0-rc2"
+                "reference": "8.x-1.0-rc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.0-rc2.zip",
-                "reference": "8.x-1.0-rc2",
-                "shasum": "1631e533f10a7820d845bc6af44c162f24695900"
+                "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.0-rc4.zip",
+                "reference": "8.x-1.0-rc4",
+                "shasum": "0dffde8100312f33bec9f1e999797a1b4c995c17"
             },
             "require": {
-                "drupal/core": "~8.5",
-                "drupal/entity": "^1.0@beta"
+                "drupal/core": "^8.5",
+                "drupal/entity": "^1.0-rc1"
             },
             "require-dev": {
                 "drupal/token": "1.0"
@@ -4835,8 +4835,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc2",
-                    "datestamp": "1551998880",
+                    "version": "8.x-1.0-rc4",
+                    "datestamp": "1552407486",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
