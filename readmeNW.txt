@@ -1,4 +1,4 @@
-31.3.19 Trying to configure card. Can't find it in views.... Not enough tutorials available.
+31.3.19 Trying to configure cart. Can't find it in views.... Not enough tutorials available. Exported progress to Digial Ocean and told Rosie. Made content changes there and imported the db to local at end of day.
 
 8.3.19 update to D8.6.10, snapshot
 
@@ -10,11 +10,11 @@ css tweaks for events overview listing
 Edibles Barrio Processes
 
 Top db backup on Digital Ocean
+echo4 31.3.19pm before changing anything
 echo4 9.3.19 before changing anything
 echo 14.2.19 start of day - all good. Downloaded into lando
 echo3 11.2.19 trying to config commerce. $string ("Price") must be a string error http://178.128.162.13/oyster/node/748
 echo2 10.2.19 after core updates and install of commerce modules. Before any config in commerce
-echo4 10.2.19pm before changing anything
 
 To connect to local hero images:
 on local
