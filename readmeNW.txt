@@ -1,3 +1,5 @@
+31.3.19 Trying to configure card. Can't find it in views.... Not enough tutorials available.
+
 8.3.19 update to D8.6.10, snapshot
 
 11.1.19
