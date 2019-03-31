@@ -266,10 +266,14 @@ figcaption {
     font-size: 0.9rem;
 }
 
-/* Shopping Cart stuff */
+/* Commerce stuff */
 
 .salad-title {
     display: block;
+}
+
+.product-title-buythis {
+    font-size: 3rem;
 }
 
 /* =========================================
