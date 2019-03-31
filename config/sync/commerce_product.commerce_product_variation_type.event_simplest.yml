@@ -1,0 +1,10 @@
+uuid: e7f7a8b2-ad31-4fce-a1fd-607408d2633a
+langcode: en
+status: true
+dependencies: {  }
+id: event_simplest
+label: 'Event - simplest'
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

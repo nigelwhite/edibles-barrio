@@ -12,7 +12,7 @@ dependencies:
 id: sideblockgroup
 theme: barrio_sub
 region: featured_top
-weight: 0
+weight: -8
 provider: null
 plugin: 'block_group:65a67127-f92d-4e5f-8b1d-4cb0e292a299'
 settings:

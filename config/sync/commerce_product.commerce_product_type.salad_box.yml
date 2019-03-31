@@ -1,0 +1,12 @@
+uuid: 5cd3bb0a-12ad-4914-aef1-4770d3a8f31a
+langcode: en
+status: true
+dependencies: {  }
+id: salad_box
+label: 'Salad Box Product Type'
+description: ''
+variationType: 6x_wednesday_salad_box
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

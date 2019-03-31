@@ -1,0 +1,18 @@
+uuid: 50ced5f0-c9c0-45a7-86a2-70ba26fc0812
+langcode: en
+status: true
+dependencies: {  }
+id: shop_manager
+label: 'Shop manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'create default commerce_product'
+  - 'create event_child_adult_tickets commerce_product'
+  - 'create event_simplest commerce_product'
+  - 'delete any event_child_adult_tickets commerce_product'
+  - 'delete any event_simplest commerce_product'
+  - 'update any event_child_adult_tickets commerce_product'
+  - 'update any event_simplest commerce_product'
+  - 'view event_child_adult_tickets commerce_product'
+  - 'view event_simplest commerce_product'

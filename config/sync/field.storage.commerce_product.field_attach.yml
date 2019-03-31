@@ -1,0 +1,23 @@
+uuid: e5a8b2c6-57ee-41aa-93aa-cd951bd6a573
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - file
+id: commerce_product.field_attach
+field_name: field_attach
+entity_type: commerce_product
+type: file
+settings:
+  display_field: true
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

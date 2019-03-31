@@ -1,0 +1,36 @@
+uuid: dad7f376-da6b-4204-9c8c-00df6205b62b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.event_simplest
+    - field.field.commerce_product_variation.event_simplest.field_remaining_places2
+  module:
+    - commerce_price
+    - commerce_stock_field
+id: commerce_product_variation.event_simplest.default
+targetEntityType: commerce_product_variation
+bundle: event_simplest
+mode: default
+content:
+  field_remaining_places2:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: commerce_stock_level_simple
+    region: content
+  price:
+    label: hidden
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+hidden:
+  list_price: true
+  product_id: true
+  sku: true
+  title: true

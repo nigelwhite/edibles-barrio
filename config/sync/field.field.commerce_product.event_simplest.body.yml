@@ -1,0 +1,22 @@
+uuid: 9e3848e0-4191-4376-b1c2-1d6ce0ea705a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.event_simplest
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.event_simplest.body
+field_name: body
+entity_type: commerce_product
+bundle: event_simplest
+label: 'Long description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+field_type: text_with_summary

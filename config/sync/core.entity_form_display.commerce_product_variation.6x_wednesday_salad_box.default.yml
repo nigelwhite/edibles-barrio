@@ -1,0 +1,71 @@
+uuid: 45d7bb89-d5e9-48f2-a272-04a6d769a2d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.6x_wednesday_salad_box
+    - field.field.commerce_product_variation.6x_wednesday_salad_box.attribute_drop_off
+  module:
+    - commerce_price
+    - entity_browser_entity_form
+    - inline_entity_form
+id: commerce_product_variation.6x_wednesday_salad_box.default
+targetEntityType: commerce_product_variation
+bundle: 6x_wednesday_salad_box
+mode: default
+content:
+  attribute_drop_off:
+    type: inline_entity_form_complex
+    weight: 1
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+      allow_new: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    region: content
+  commerce_stock_always_in_stock:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  list_price:
+    type: commerce_list_price
+    weight: -1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 90
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

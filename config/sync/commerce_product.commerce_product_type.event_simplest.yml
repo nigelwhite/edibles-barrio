@@ -1,0 +1,12 @@
+uuid: 0d071be7-0ae9-4100-a622-62e0e33df2b3
+langcode: en
+status: true
+dependencies: {  }
+id: event_simplest
+label: 'Event - simple'
+description: "Event with no options (only one ticket price).\r\nYou need to include the price in your text field or it won't show anywhere."
+variationType: event_simplest
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

@@ -12,7 +12,7 @@ dependencies:
 id: eventsgroup
 theme: barrio_sub
 region: content
-weight: 0
+weight: -6
 provider: null
 plugin: 'block_group:f8b8cb82-c952-40ce-843e-9b4f73eb26b5'
 settings:

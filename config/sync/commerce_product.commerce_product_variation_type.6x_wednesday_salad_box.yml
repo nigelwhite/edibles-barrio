@@ -1,0 +1,10 @@
+uuid: c18aa048-9e6d-48ad-8ab0-f0c00a24d152
+langcode: en
+status: true
+dependencies: {  }
+id: 6x_wednesday_salad_box
+label: 'Salad Box Variation Type'
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

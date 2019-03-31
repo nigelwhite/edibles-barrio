@@ -1,0 +1,20 @@
+uuid: 94a4806e-4197-4224-9ffb-d4fea7c15b3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.customer_age
+id: commerce_product_attribute_value.customer_age.default
+targetEntityType: commerce_product_attribute_value
+bundle: customer_age
+mode: default
+content:
+  name:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

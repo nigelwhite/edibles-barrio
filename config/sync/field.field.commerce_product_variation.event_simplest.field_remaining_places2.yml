@@ -1,0 +1,23 @@
+uuid: 8d7cd6dd-c7e4-4a1c-aeb0-da70e58f9279
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.event_simplest
+    - field.storage.commerce_product_variation.field_remaining_places2
+  module:
+    - commerce_stock_field
+id: commerce_product_variation.event_simplest.field_remaining_places2
+field_name: field_remaining_places2
+entity_type: commerce_product_variation
+bundle: event_simplest
+label: 'Remaining places'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: commerce_stock_level
