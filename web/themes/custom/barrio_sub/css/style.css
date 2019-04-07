@@ -276,8 +276,17 @@ figcaption {
     font-size: 3rem;
 }
 
+#block-cart {
+    background-color: rgb(209, 117, 92);
+    border-radius: 20px;
+}
+
 .cart-block--summary__icon img {
-    width: 40px;
+    width: 20px;
+}
+
+.sidebar h2 {
+    text-shadow: none;
 }
 
 /* =========================================
