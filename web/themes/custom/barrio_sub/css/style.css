@@ -287,6 +287,13 @@ figcaption {
 
 .sidebar h2 {
     text-shadow: none;
+    border-bottom: none;
+}
+
+.cart-block--contents__links {
+    text-align: center;
+    background-color: rgb(209, 117, 92);
+    border-radius: 5px;
 }
 
 /* =========================================
