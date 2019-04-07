@@ -276,6 +276,10 @@ figcaption {
     font-size: 3rem;
 }
 
+.cart-block--summary__icon img {
+    width: 40px;
+}
+
 /* =========================================
 Medium devices (tablets, 768px and up)
 ============================================ */
