@@ -1,3 +1,7 @@
+9.4.19 got a simple physical product set up from https://docs.drupalcommerce.org/commerce2/developer-guide/products/product-architecture/simple-product.
+Now do the same for a simple event.
+Next get the Produce page to show cards of physical products. Display broken due to previous twig overrides.
+
 31.3.19 Trying to configure cart. Can't find it in views.... Not enough tutorials available. Exported progress to Digial Ocean and told Rosie. Made content changes there and imported the db to local at end of day.
 
 8.3.19 update to D8.6.10, snapshot
