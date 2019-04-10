@@ -1,3 +1,6 @@
+Next. Add Drop off point as an extra field or custom attribute to order item types https://docs.drupalcommerce.org/commerce2/developer-guide/orders
+see Attributes that are outside the variations
+
 9.4.19 got a simple physical product set up from https://docs.drupalcommerce.org/commerce2/developer-guide/products/product-architecture/simple-product.
 Now do the same for a simple event.
 Next get the Produce page to show cards of physical products. Display broken due to previous twig overrides.

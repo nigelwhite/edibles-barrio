@@ -137,10 +137,6 @@ a.nav-link:hover {
     /* margin-bottom: 2rem; */
 }
 
-.card-img picture img {
-    margin-bottom: 0;
-}
-
 .card-header {
     padding-top: 0.52rem;
     padding-bottom: 0.1rem;
@@ -148,6 +144,7 @@ a.nav-link:hover {
 
 .card-body {
     padding: 0 0.3rem;
+    font-size: 1rem;
 }
 
 .card-body p {
