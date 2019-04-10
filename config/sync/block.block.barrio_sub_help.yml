@@ -11,7 +11,7 @@ _core:
 id: barrio_sub_help
 theme: barrio_sub
 region: content
-weight: -11
+weight: -12
 provider: null
 plugin: help_block
 settings:

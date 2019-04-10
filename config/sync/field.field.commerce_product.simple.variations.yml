@@ -1,15 +1,15 @@
-uuid: 51293951-49df-45c6-9b38-e5b0386b6b4c
+uuid: 8243b490-1e65-4959-882b-4b29fec985de
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_type.salad_box
-    - commerce_product.commerce_product_variation_type.6x_wednesday_salad_box
+    - commerce_product.commerce_product_type.simple
+    - commerce_product.commerce_product_variation_type.simple
     - field.storage.commerce_product.variations
-id: commerce_product.salad_box.variations
+id: commerce_product.simple.variations
 field_name: variations
 entity_type: commerce_product
-bundle: salad_box
+bundle: simple
 label: Variations
 description: ''
 required: true
@@ -20,5 +20,5 @@ settings:
   handler: 'default:commerce_product_variation'
   handler_settings:
     target_bundles:
-      - 6x_wednesday_salad_box
+      - simple
 field_type: entity_reference

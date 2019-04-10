@@ -1,19 +1,20 @@
-uuid: ebe7fa7d-b9f5-45e4-b22b-b6174bbb0091
+uuid: 0fcb29b9-c9b1-42b5-b98e-96a5df66030d
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_type.salad_box
-    - field.field.commerce_product.salad_box.body
-    - field.field.commerce_product.salad_box.stores
-    - field.field.commerce_product.salad_box.variations
+    - commerce_product.commerce_product_type.simple
+    - field.field.commerce_product.simple.body
+    - field.field.commerce_product.simple.field_edibles_produce_category
+    - field.field.commerce_product.simple.field_short_description
+    - field.field.commerce_product.simple.stores
+    - field.field.commerce_product.simple.variations
   module:
     - commerce_product
-    - field_formatter_class
     - text
-id: commerce_product.salad_box.default
+id: commerce_product.simple.default
 targetEntityType: commerce_product
-bundle: salad_box
+bundle: simple
 mode: default
 content:
   body:
@@ -30,9 +31,7 @@ content:
     region: content
     settings:
       link_to_entity: false
-    third_party_settings:
-      field_formatter_class:
-        class: salad-title
+    third_party_settings: {  }
   variations:
     type: commerce_add_to_cart
     weight: 2
@@ -43,5 +42,7 @@ content:
     region: content
 hidden:
   created: true
+  field_edibles_produce_category: true
+  field_short_description: true
   stores: true
   uid: true

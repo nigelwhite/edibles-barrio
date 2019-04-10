@@ -1,7 +1,0 @@
-uuid: c28bdeec-e3b4-4849-95ee-94b6d2c34070
-langcode: en
-status: true
-dependencies: {  }
-id: drop_off
-label: 'Drop off point'
-elementType: radios

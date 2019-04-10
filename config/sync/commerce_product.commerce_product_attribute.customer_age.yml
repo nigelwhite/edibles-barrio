@@ -3,5 +3,5 @@ langcode: en
 status: true
 dependencies: {  }
 id: customer_age
-label: 'Customer age'
+label: Child/adult
 elementType: radios

@@ -9,7 +9,7 @@ dependencies:
 id: twitterfeedblock
 theme: barrio_sub
 region: side_block_group
-weight: 0
+weight: -12
 provider: null
 plugin: twitter_feed_block
 settings:

@@ -1,0 +1,46 @@
+uuid: a643ee2b-f93e-4a46-8451-0ab68712609d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.simple
+    - core.entity_view_mode.commerce_product_variation.summary
+    - field.field.commerce_product_variation.simple.field_images
+    - field.field.commerce_product_variation.simple.field_remaining_places
+    - image.style.max_325x325
+  module:
+    - ds
+    - field_formatter_class
+    - image
+id: commerce_product_variation.simple.summary
+targetEntityType: commerce_product_variation
+bundle: simple
+mode: summary
+content:
+  field_images:
+    weight: 1
+    label: above
+    settings:
+      image_style: max_325x325
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: '1'
+    type: image
+    region: content
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_remaining_places: true
+  list_price: true
+  price: true
+  product_id: true
+  sku: true

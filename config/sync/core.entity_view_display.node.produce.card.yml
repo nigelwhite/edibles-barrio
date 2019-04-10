@@ -8,13 +8,14 @@ dependencies:
     - field.field.node.produce.field_enabled
     - field.field.node.produce.field_image
     - field.field.node.produce.field_order
+    - field.field.node.produce.field_short_description
+    - field.field.node.produce.field_tags
     - node.type.produce
     - responsive_image.styles.square
   module:
     - ds
     - field_formatter_class
     - responsive_image
-    - text
     - user
 third_party_settings:
   ds:
@@ -41,19 +42,10 @@ third_party_settings:
       image:
         - field_image
       body:
-        - body
+        - field_short_description
       footer:
         - node_link
     fields:
-      node_title:
-        plugin_id: node_title
-        weight: 0
-        label: hidden
-        formatter: default
-        settings:
-          link: true
-          wrapper: h2
-          class: h4
       node_link:
         plugin_id: node_link
         weight: 3
@@ -64,21 +56,20 @@ third_party_settings:
           'link class': ''
           wrapper: ''
           class: 'btn btn-sm btn-outline-danger'
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: h4
 id: node.produce.card
 targetEntityType: node
 bundle: produce
 mode: card
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 2
-    settings:
-      trim_length: 75
-    third_party_settings:
-      field_formatter_class:
-        class: ''
-    region: body
   field_image:
     weight: 1
     label: hidden
@@ -90,7 +81,19 @@ content:
         class: card-img
     type: responsive_image
     region: image
+  field_short_description:
+    type: string
+    weight: 2
+    region: body
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: card-body
 hidden:
+  body: true
   field_enabled: true
   field_order: true
+  field_tags: true
   links: true

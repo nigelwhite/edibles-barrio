@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.produce.field_enabled
     - field.field.node.produce.field_image
     - field.field.node.produce.field_order
+    - field.field.node.produce.field_short_description
     - field.field.node.produce.field_tags
     - image.style.max_325x325
     - node.type.produce
@@ -88,4 +89,5 @@ content:
 hidden:
   field_enabled: true
   field_order: true
+  field_short_description: true
   links: true

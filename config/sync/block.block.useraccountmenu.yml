@@ -12,7 +12,7 @@ dependencies:
 id: useraccountmenu
 theme: barrio_sub
 region: sidebar_second
-weight: -10
+weight: -11
 provider: null
 plugin: 'system_menu_block:account'
 settings:
@@ -31,3 +31,8 @@ visibility:
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: "/cart\r\n/checkout/*/order_information\r\n/checkout/*/review\r\n/checkout/*/complete\r\n/product/*"
+    negate: true
+    context_mapping: {  }

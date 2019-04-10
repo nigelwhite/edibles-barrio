@@ -5,6 +5,6 @@ dependencies: {  }
 id: event_child_adult_tickets
 label: 'Event - child/adult tickets'
 orderItemType: default
-generateTitle: false
+generateTitle: true
 traits: {  }
 locked: false

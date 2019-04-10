@@ -1,0 +1,26 @@
+uuid: b99f3e2e-c07c-4af6-8e73-469454f24fb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+    - system
+  theme:
+    - barrio_sub
+id: checkoutprogress
+theme: barrio_sub
+region: content
+weight: -10
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: 'Checkout progress'
+  provider: commerce_checkout
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '/checkout/*'
+    negate: false
+    context_mapping: {  }

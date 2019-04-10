@@ -1,9 +1,9 @@
-uuid: c18aa048-9e6d-48ad-8ab0-f0c00a24d152
+uuid: 01248609-c13a-44c9-8533-3b5872edda0d
 langcode: en
 status: true
 dependencies: {  }
-id: 6x_wednesday_salad_box
-label: 'Salad Box Variation Type'
+id: simple
+label: 'Single variation'
 orderItemType: default
 generateTitle: true
 traits: {  }
