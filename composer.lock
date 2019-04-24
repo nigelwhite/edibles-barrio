@@ -3034,17 +3034,17 @@
         },
         {
             "name": "drupal/commerce_stock",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce_stock.git",
-                "reference": "8.x-1.0-alpha2"
+                "reference": "8.x-1.0-alpha3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_stock-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "474937242fc0decdf97a2ace13686ed518921629"
+                "url": "https://ftp.drupal.org/files/projects/commerce_stock-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "cf45623b3ab65ecacb4d32179a347ea2cd5c399e"
             },
             "require": {
                 "drupal/commerce": "~2.0",
@@ -3053,7 +3053,8 @@
                 "drupal/core": "~8.0"
             },
             "require-dev": {
-                "drupal/commerce_product": "*"
+                "drupal/commerce_product": "*",
+                "drupal/commerce_stock_local": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -3061,8 +3062,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1541065980",
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1555061884",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
