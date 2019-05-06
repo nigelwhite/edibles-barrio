@@ -27,6 +27,7 @@
         "drupal/bootstrap_layouts": "^5.1",
         "drupal/coffee": "^1.0@beta",
         "drupal/commerce": "^2.11",
+        "drupal/commerce_reports": "^1.0@beta",
         "drupal/commerce_stock": "^1.0@alpha",
         "drupal/commerce_stripe": "^1.0@RC",
         "drupal/console": "^1.0.2",
