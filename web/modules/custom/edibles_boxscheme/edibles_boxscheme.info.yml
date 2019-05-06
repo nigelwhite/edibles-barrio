@@ -1,0 +1,7 @@
+name: 'edibles_boxscheme'
+type: module
+description: 'Insert extra data into a purchased commerce order item, to allow administartion of the delivery of boxes'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - commerce

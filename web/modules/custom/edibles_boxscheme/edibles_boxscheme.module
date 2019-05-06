@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains edibles_boxscheme.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function edibles_boxscheme_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the edibles_boxscheme module.
+    case 'help.page.edibles_boxscheme':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Insert extra data into a purchased commerce order item, to allow administartion of the delivery of boxes') . '</p>';
+      return $output;
+
+    default:
+  }
+}

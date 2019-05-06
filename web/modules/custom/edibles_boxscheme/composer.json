@@ -1,0 +1,14 @@
+{
+  "name": "drupal/edibles_boxscheme",
+  "type": "drupal-module",
+  "description": "Insert extra data into a purchased commerce order item, to allow administartion of the delivery of boxes",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/edibles_boxscheme",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/edibles_boxscheme",
+    "source": "http://cgit.drupalcode.org/edibles_boxscheme"
+  },
+  "require": { }
+}
