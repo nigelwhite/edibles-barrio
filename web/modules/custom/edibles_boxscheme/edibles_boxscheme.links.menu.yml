@@ -1,0 +1,7 @@
+edibles_boxscheme.default_form:
+  title: 'Box scheme settings'
+  route_name: edibles_boxscheme.default_form
+  description: 'Administration settings for the box scheme'
+  parent: system.admin_config_system
+  weight: 99
+
