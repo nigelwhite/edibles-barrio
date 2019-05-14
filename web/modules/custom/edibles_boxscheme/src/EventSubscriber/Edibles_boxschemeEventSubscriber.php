@@ -17,6 +17,6 @@ class Edibles_boxschemeEventSubscriber implements EventSubscriberInterface {
 
     public function onOrderPlace(WorkflowTransitionEvent $event) {
     // @todo Write code that will run when the subscribed event fires.
-    kint($event);die;
+    // kint($event);die;
     }
 }
