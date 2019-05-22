@@ -16,12 +16,11 @@ css tweaks for events overview listing
 
 Edibles Barrio Processes
 
-echo 12.4.19 after early morning config changes. OK but still no Stock level in salad product
 Top db backup on Digital Ocean
-echo3 10.4.19 after cim re Commerce
-echo2 10.4.19 after updating core, before cim
-echo4 31.3.19pm before changing anything
-echo4 9.3.19 before changing anything
+echo 22.5.19 after getting a test product to display both remaining places and drop off point. Needs tidying up but it is there.
+echo3 20.5.19 this db running slow with guzzle curl errors in log. dump taken before uninstalling all commerce modules - to start again. Restored this to prod!!!! 22.5.19
+echo2 15.5.19 before enabling stock enforcement
+echo4 15.5.19 before doing config on remote - for commerce products
 
 To connect to local hero images:
 on local
