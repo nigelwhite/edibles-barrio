@@ -1,3 +1,5 @@
+@import "product.css";
+
 /* Resets */
 
 img {
@@ -274,10 +276,6 @@ figcaption {
 
 .salad-title {
     display: block;
-}
-
-.product-title-buythis {
-    font-size: 3rem;
 }
 
 #block-cart {

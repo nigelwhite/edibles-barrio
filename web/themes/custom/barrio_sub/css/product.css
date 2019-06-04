@@ -1,0 +1,44 @@
+.product-title-nw {
+    display: block;
+    font-size: 2rem;
+}
+
+.product-desc-short-nw {
+    display: block;
+    margin-bottom: 2rem 0;
+    font-size: 1.25rem;
+}
+
+.product-col-nw {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.product-img-nw {
+    margin-top: 1rem;
+}
+
+.product-variation-title-nw {
+    margin-top: 1rem;
+}
+
+#edit-field-drop-off-preference--wrapper .fieldset-legend {
+    font-size: 1rem;
+}
+
+.field--name-quantity,
+.js-form-item-quantity-0-value {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.field--name-field-drop-off-preference .form-group,
+.field--name-field-drop-off-preference {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.commerce-order-item-add-to-cart-form .form-group,
+.button--add-to-cart {
+    padding-left: 0;
+}

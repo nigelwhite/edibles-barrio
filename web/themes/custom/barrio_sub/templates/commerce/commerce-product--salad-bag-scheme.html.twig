@@ -26,16 +26,29 @@
   {{- product|without('variation_attributes') -}}
 </article> #}
 
-<article{{ attributes }}>
+<article>
     <div class="container">
+        
         <div class="row">
-            <div class="col-sm-6">
-                <div>{{ product.field_image }}</div>
+            <div class="product-title-nw">{{ product.title }}</div>
+            <div class="product-desc-short-nw">{{ product.field_short_description }}</div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-6 product-col-nw">
+                <div class="product-img-nw">{{ product.field_image }}</div>
             </div>
             <div class="col-sm-6">
-                <div{{ attributes.addClass('product-title-buythis') }}>{{ product.title }}</div>
-                {{- product|without('variation_attributes') -}}
+                <div class="product-variation-title-nw">{{ product.variation_title }}</div>
+                <div>{{ product.variation_field_available_tickets }}</div>
+                <div>{{ product.variation_price }}</div>
+                <div>{{ product.variations }}</div>
             </div>
         </div>
+
+        <div class="row">
+            <div>{{ product.body }}</div>
+        </div>
+
     </div>
 </article>
