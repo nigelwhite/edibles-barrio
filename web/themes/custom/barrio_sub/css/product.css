@@ -122,11 +122,15 @@ max-width: 60px;
     display: none;
 } */
 
-fieldset[id^='edit-purchased-entity-0-attributes-attribute-customer-age'] {
-    padding-left: none;
-}
-
 fieldset[id^='edit-purchased-entity-0-attributes-attribute-customer-age'] .fieldset-legend {
     display: none;
 }
+
+fieldset[id^='edit-purchased-entity-0-attributes-attribute-customer-age'],
+div[id^='edit-purchased-entity-0-attributes'],
+div[id^='edit-purchased-entity-wrapper--'],
+#edit-purchased-entity-0-attributes-attribute-customer-age--wrapper {
+    padding-left: 0;
+}
+
 
