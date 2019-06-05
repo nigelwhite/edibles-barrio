@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: views_block__products_u_hope_block_1
-theme: block__bootstrap__card
+theme: ''
 text: ''
 classes: ''

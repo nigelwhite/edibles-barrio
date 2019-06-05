@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Physical product category'
 vid: event_type
 description: ''
-hierarchy: 0
 weight: 0

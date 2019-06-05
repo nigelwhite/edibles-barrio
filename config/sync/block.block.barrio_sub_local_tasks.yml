@@ -11,7 +11,7 @@ _core:
 id: barrio_sub_local_tasks
 theme: barrio_sub
 region: content
-weight: -13
+weight: -15
 provider: null
 plugin: local_tasks_block
 settings:

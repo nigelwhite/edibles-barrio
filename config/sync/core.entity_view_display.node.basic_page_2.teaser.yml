@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.basic_page_2.body
+    - field.field.node.basic_page_2.field_attach
     - node.type.basic_page_2
   module:
     - ds
@@ -48,4 +49,5 @@ content:
     region: left
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_attach: true

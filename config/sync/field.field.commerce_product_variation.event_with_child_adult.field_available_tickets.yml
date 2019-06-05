@@ -1,0 +1,23 @@
+uuid: 9c408f80-7fb9-4891-8fbe-f7bd096d48ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.event_with_child_adult
+    - field.storage.commerce_product_variation.field_available_tickets
+  module:
+    - commerce_stock_field
+id: commerce_product_variation.event_with_child_adult.field_available_tickets
+field_name: field_available_tickets
+entity_type: commerce_product_variation
+bundle: event_with_child_adult
+label: 'Available tickets'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: commerce_stock_level

@@ -1,0 +1,72 @@
+uuid: 5d0d8179-3cb0-405d-a0bc-45e0f18c9a87
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.event_with_child_adult_and_diets
+    - field.field.commerce_product.event_with_child_adult_and_diets.body
+    - field.field.commerce_product.event_with_child_adult_and_diets.stores
+    - field.field.commerce_product.event_with_child_adult_and_diets.variations
+  module:
+    - commerce
+    - inline_entity_form
+    - text
+id: commerce_product.event_with_child_adult_and_diets.default
+targetEntityType: commerce_product
+bundle: event_with_child_adult_and_diets
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  stores:
+    type: commerce_entity_select
+    weight: 0
+    settings:
+      hide_single_entity: true
+      autocomplete_threshold: 7
+      autocomplete_size: 60
+      autocomplete_placeholder: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  variations:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  uid: true

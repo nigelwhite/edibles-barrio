@@ -1,0 +1,12 @@
+uuid: d649d50d-1eaa-43c6-8919-a3973fad2465
+langcode: en
+status: true
+dependencies: {  }
+id: event_with_child_adult
+label: 'Event with child/adult'
+description: ''
+variationType: event_with_child_adult
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

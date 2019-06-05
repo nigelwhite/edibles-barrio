@@ -9,7 +9,7 @@ _core:
 id: barrio_sub_page_title
 theme: barrio_sub
 region: content
-weight: -4
+weight: -5
 provider: null
 plugin: page_title_block
 settings:

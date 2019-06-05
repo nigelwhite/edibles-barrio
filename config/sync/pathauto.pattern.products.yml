@@ -1,0 +1,26 @@
+uuid: 805be343-f628-42bf-adee-eab2629c56d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - ctools
+id: products
+label: Products
+type: 'canonical_entities:commerce_product'
+pattern: '[commerce_product:title]'
+selection_criteria:
+  afac95f3-ea71-4c7f-98d8-bee9e568dfc2:
+    id: 'entity_bundle:commerce_product'
+    bundles:
+      simple: simple
+      default: default
+      event_child_adult_tickets: event_child_adult_tickets
+      event_simplest: event_simplest
+    negate: false
+    context_mapping:
+      commerce_product: commerce_product
+    uuid: afac95f3-ea71-4c7f-98d8-bee9e568dfc2
+selection_logic: and
+weight: -5
+relationships: {  }

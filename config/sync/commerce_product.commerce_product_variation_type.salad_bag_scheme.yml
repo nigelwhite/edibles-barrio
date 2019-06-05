@@ -1,0 +1,10 @@
+uuid: 399a046f-ef85-40de-af93-a1bef36335db
+langcode: en
+status: true
+dependencies: {  }
+id: salad_bag_scheme
+label: 'Salad bag Scheme'
+orderItemType: dropoff_picker
+generateTitle: false
+traits: {  }
+locked: false

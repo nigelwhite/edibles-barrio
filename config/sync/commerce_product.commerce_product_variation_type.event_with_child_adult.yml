@@ -1,0 +1,10 @@
+uuid: 26c4ac93-c8c5-4650-ba79-34debabf5082
+langcode: en
+status: true
+dependencies: {  }
+id: event_with_child_adult
+label: 'Event with child/adult'
+orderItemType: default
+generateTitle: true
+traits: {  }
+locked: false

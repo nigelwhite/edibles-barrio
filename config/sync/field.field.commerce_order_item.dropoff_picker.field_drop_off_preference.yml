@@ -1,0 +1,21 @@
+uuid: de884036-e41c-48a8-96a2-db8265ce1978
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.dropoff_picker
+    - field.storage.commerce_order_item.field_drop_off_preference
+  module:
+    - options
+id: commerce_order_item.dropoff_picker.field_drop_off_preference
+field_name: field_drop_off_preference
+entity_type: commerce_order_item
+bundle: dropoff_picker
+label: 'Your pick-up preference'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/user/*\r\n/media/*\r\n/taxonomy/term/*\r\n/term/*\r\n/tags/*\r\n/contact/edibles\r\n/events-courses\r\n/product/*\r\n/cart\r\n/checkout/*/order_information\r\n/checkout/*/complete"
+    pages: "/user/*\r\n/media/*\r\n/taxonomy/term/*\r\n/term/*\r\n/tags/*\r\n/contact/edibles\r\n/events-courses\r\n/product/*\r\n/cart\r\n/checkout/*"
     negate: false
     context_mapping: {  }

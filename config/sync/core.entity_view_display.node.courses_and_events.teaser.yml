@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.courses_and_events.body
+    - field.field.node.courses_and_events.field_attach
     - field.field.node.courses_and_events.field_date2
     - field.field.node.courses_and_events.field_media_asset
     - field.field.node.courses_and_events.field_tags2
@@ -74,6 +75,7 @@ third_party_settings:
         effect: none
         speed: fast
       label: event-wrapper
+      region: content
 id: node.courses_and_events.teaser
 targetEntityType: node
 bundle: courses_and_events
@@ -104,6 +106,7 @@ content:
         class: event-teaser-img
 hidden:
   body: true
+  field_attach: true
   field_tags2: true
   field_type: true
   links: true

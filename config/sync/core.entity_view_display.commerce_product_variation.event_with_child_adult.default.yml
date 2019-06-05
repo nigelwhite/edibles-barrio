@@ -1,0 +1,45 @@
+uuid: ff6b1783-5c12-4a03-bb3b-d46bd190fad2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.event_with_child_adult
+    - field.field.commerce_product_variation.event_with_child_adult.attribute_customer_age
+    - field.field.commerce_product_variation.event_with_child_adult.field_available_tickets
+  module:
+    - commerce_price
+    - commerce_stock_field
+id: commerce_product_variation.event_with_child_adult.default
+targetEntityType: commerce_product_variation
+bundle: event_with_child_adult
+mode: default
+content:
+  field_available_tickets:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: commerce_stock_level_simple
+    region: content
+  price:
+    label: hidden
+    type: commerce_price_default
+    weight: 1
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  attribute_customer_age: true
+  list_price: true
+  product_id: true
+  sku: true

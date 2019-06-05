@@ -5,8 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
+    - field.field.node.article.field_attach
     - field.field.node.article.field_enabled
     - field.field.node.article.field_image
+    - field.field.node.article.field_tags
     - image.style.rectangle_style_w200
     - node.type.article
   module:
@@ -87,5 +89,7 @@ content:
         class: blog-teaser-image
     label: hidden
 hidden:
+  field_attach: true
   field_enabled: true
+  field_tags: true
   links: true

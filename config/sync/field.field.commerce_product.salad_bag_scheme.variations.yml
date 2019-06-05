@@ -1,0 +1,24 @@
+uuid: 2853d7ba-eee0-4805-966c-9d19c9783c70
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.salad_bag_scheme
+    - commerce_product.commerce_product_variation_type.salad_bag_scheme
+    - field.storage.commerce_product.variations
+id: commerce_product.salad_bag_scheme.variations
+field_name: variations
+entity_type: commerce_product
+bundle: salad_bag_scheme
+label: Variations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      - salad_bag_scheme
+field_type: entity_reference

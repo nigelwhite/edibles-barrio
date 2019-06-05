@@ -9,8 +9,6 @@ dependencies:
     - node.type.courses_and_events
     - taxonomy.vocabulary.event_type
   content:
-    - 'taxonomy_term:event_type:1b8bfc47-d764-4c72-87f3-b769cc279609'
-    - 'taxonomy_term:event_type:337a2a65-6cbf-44d5-8b0f-1fe63b2faa00'
     - 'taxonomy_term:event_type:dbe847bd-b988-4053-a794-17133984c6ed'
   module:
     - datetime

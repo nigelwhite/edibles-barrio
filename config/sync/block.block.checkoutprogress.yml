@@ -10,7 +10,7 @@ dependencies:
 id: checkoutprogress
 theme: barrio_sub
 region: content
-weight: -10
+weight: -12
 provider: null
 plugin: commerce_checkout_progress
 settings:

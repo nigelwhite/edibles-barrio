@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Page on site'
 vid: page_on_site
 description: ''
-hierarchy: 0
 weight: 0

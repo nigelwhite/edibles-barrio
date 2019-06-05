@@ -5,8 +5,6 @@ dependencies:
   config:
     - node.type.subslider_image
     - taxonomy.vocabulary.page_on_site
-  content:
-    - 'taxonomy_term:page_on_site:6c84b80a-bae3-4d68-a4ba-bfe186789319'
   module:
     - node
     - taxonomy

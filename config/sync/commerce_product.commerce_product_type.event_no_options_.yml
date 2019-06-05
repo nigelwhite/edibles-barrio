@@ -1,0 +1,12 @@
+uuid: 10d62ca0-960e-49b5-8a94-8ebec6ab4eae
+langcode: en
+status: true
+dependencies: {  }
+id: event_no_options_
+label: 'Event (no options)'
+description: ''
+variationType: event_no_options_
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

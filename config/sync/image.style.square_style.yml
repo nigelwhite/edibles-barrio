@@ -7,7 +7,7 @@ dependencies:
   module:
     - crop
 name: square_style
-label: 'Square style'
+label: 'Square 650'
 effects:
   57ccc77d-154f-4d2d-ac1b-62adf9ab237f:
     uuid: 57ccc77d-154f-4d2d-ac1b-62adf9ab237f

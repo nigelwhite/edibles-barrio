@@ -7,7 +7,8 @@ dependencies:
     - field.field.commerce_order.default.order_items
   module:
     - commerce_order
-    - state_machine
+    - commerce_price
+    - entity_reference_revisions
     - user
 _core:
   default_config_hash: DGdHybHLw9uLIR4f16miPoJYlsJxbxZk_li7kD13aE4
@@ -16,6 +17,15 @@ targetEntityType: commerce_order
 bundle: default
 mode: default
 content:
+  billing_profile:
+    type: entity_reference_revisions_entity_view
+    weight: 10
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   changed:
     type: timestamp
     weight: 4
@@ -52,12 +62,22 @@ content:
     third_party_settings: {  }
     region: content
   order_items:
-    type: commerce_order_item_table
+    type: entity_reference_entity_view
     weight: 0
-    settings: {  }
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    label: hidden
+    label: above
     region: content
+  order_number:
+    type: string
+    weight: 8
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   placed:
     label: inline
     type: timestamp
@@ -68,19 +88,21 @@ content:
       timezone: ''
     third_party_settings: {  }
     region: content
-  state:
-    label: hidden
-    type: state_transition_form
-    weight: 8
-    settings: {  }
-    third_party_settings: {  }
+  total_paid:
+    type: commerce_price_default
+    weight: 9
     region: content
+    label: inline
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
   total_price:
     type: commerce_order_total_summary
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    label: hidden
+    label: inline
     region: content
   uid:
     label: inline
@@ -90,7 +112,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  billing_profile: true
-  order_number: true
+  state: true
   store_id: true
-  total_paid: true

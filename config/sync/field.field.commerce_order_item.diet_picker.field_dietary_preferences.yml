@@ -1,0 +1,21 @@
+uuid: c742e96c-66c0-49db-a9e6-3c88c5f70127
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.diet_picker
+    - field.storage.commerce_order_item.field_dietary_preferences
+  module:
+    - options
+id: commerce_order_item.diet_picker.field_dietary_preferences
+field_name: field_dietary_preferences
+entity_type: commerce_order_item
+bundle: diet_picker
+label: 'Dietary preference'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

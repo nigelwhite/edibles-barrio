@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.subslider_image.field_enabled
     - field.field.node.subslider_image.field_for_page
     - field.field.node.subslider_image.field_image
     - node.type.subslider_image
@@ -20,5 +21,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_enabled: true
   field_for_page: true
   field_image: true

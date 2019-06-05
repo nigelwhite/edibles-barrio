@@ -1,17 +1,27 @@
-uuid: cb93a269-3d82-47fc-8aec-2cdb2d5165f4
+uuid: 4ffe5fba-a2fe-48d6-ae07-aff2be8a2dc4
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
-    - media
+    - file
+    - image
 id: commerce_product.field_image
 field_name: field_image
 entity_type: commerce_product
-type: entity_reference
+type: image
 settings:
-  target_type: media
-module: core
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: 'Locally Grown Salad Selection'
+    title: 'Locally Grown Salad Selection'
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
 locked: false
 cardinality: 1
 translatable: true

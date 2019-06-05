@@ -1,0 +1,12 @@
+uuid: 26b4df19-9555-4b55-9490-f6faa317f3d9
+langcode: en
+status: true
+dependencies: {  }
+id: event_with_child_adult_and_diets
+label: 'Event with child/adult and diets'
+description: ''
+variationType: event_with_child_adult_and_diets
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

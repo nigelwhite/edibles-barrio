@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.media.event_image
     - field.field.media.image.field_description
     - field.field.media.image.field_media_image
+    - field.field.media.image.field_tags
     - field.field.media.image.field_visible_in_gallery
     - image.style.rectangle_style_w900
     - media.type.image
@@ -33,6 +34,7 @@ content:
 hidden:
   created: true
   field_description: true
+  field_tags: true
   field_visible_in_gallery: true
   name: true
   thumbnail: true

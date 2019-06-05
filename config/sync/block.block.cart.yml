@@ -10,7 +10,7 @@ dependencies:
 id: cart
 theme: barrio_sub
 region: sidebar_second
-weight: -12
+weight: -14
 provider: null
 plugin: commerce_cart
 settings:
