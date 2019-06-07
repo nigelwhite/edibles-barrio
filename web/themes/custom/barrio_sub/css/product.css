@@ -76,7 +76,8 @@ max-width: 60px;
 
 .product-desc-short-nw {
     display: block;
-    margin-bottom: 2rem 0;
+    width: 100%;
+    margin-bottom: 0.75rem;
     font-size: 1.25rem;
 }
 
