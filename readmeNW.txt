@@ -17,10 +17,10 @@ css tweaks for events overview listing
 Edibles Barrio Processes
 
 Top db backup on Digital Ocean
+echo2 7.6.19 before pull and db of 4 good products
 echo4 28.5.19 during attempts to get things ready for Rosie
 echo 22.5.19 after getting a test product to display both remaining places and drop off point. Needs tidying up but it is there.
 echo3 20.5.19 this db running slow with guzzle curl errors in log. dump taken before uninstalling all commerce modules - to start again. Restored this to prod!!!! 22.5.19
-echo2 15.5.19 before enabling stock enforcement
 
 To connect to local hero images:
 on local
