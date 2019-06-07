@@ -63,6 +63,7 @@ max-width: 60px;
     border-radius: 5px;
     padding: 5px;
     text-align: center;
+    color: #fff;
 }
 
 /* new */
@@ -99,6 +100,8 @@ max-width: 60px;
     margin-left: 0;
 }
 
+.field--name-field-dietary-preferences .form-group,
+.field--name-field-dietary-preferences,
 .field--name-field-drop-off-preference .form-group,
 .field--name-field-drop-off-preference {
     padding-left: 0;
@@ -118,9 +121,7 @@ max-width: 60px;
     padding-left: 0;
 }
 
-/* #edit-purchased-entity-0-attributes-attribute-customer-age--wrapper .fieldset-legend {
-    display: none;
-} */
+/* Adult/child option on the product */
 
 fieldset[id^='edit-purchased-entity-0-attributes-attribute-customer-age'] .fieldset-legend {
     display: none;
@@ -133,4 +134,9 @@ div[id^='edit-purchased-entity-wrapper--'],
     padding-left: 0;
 }
 
+/* Diet option on the product */
 
+/* fieldset[id^='edit-purchased-entity-0-attributes-attribute-customer-age'] .fieldset-legend */
+#edit-field-dietary-preferences--wrapper .fieldset-legend {
+    display: none;
+}

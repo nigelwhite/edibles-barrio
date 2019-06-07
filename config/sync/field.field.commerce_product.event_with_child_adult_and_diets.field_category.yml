@@ -1,0 +1,29 @@
+uuid: 25f8ebd7-7f11-47e7-aa06-d615add45316
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.event_with_child_adult_and_diets
+    - field.storage.commerce_product.field_category
+    - taxonomy.vocabulary.event_category
+id: commerce_product.event_with_child_adult_and_diets.field_category
+field_name: field_category
+entity_type: commerce_product
+bundle: event_with_child_adult_and_diets
+label: Category
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_category: event_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

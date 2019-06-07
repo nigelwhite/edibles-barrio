@@ -5,10 +5,15 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.event_with_child_adult_and_diets
     - field.field.commerce_product.event_with_child_adult_and_diets.body
+    - field.field.commerce_product.event_with_child_adult_and_diets.field_category
+    - field.field.commerce_product.event_with_child_adult_and_diets.field_image
+    - field.field.commerce_product.event_with_child_adult_and_diets.field_short_description
     - field.field.commerce_product.event_with_child_adult_and_diets.stores
     - field.field.commerce_product.event_with_child_adult_and_diets.variations
+    - image.style.thumbnail
   module:
     - commerce
+    - image_widget_crop
     - inline_entity_form
     - text
 id: commerce_product.event_with_child_adult_and_diets.default
@@ -18,18 +23,47 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 4
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_category:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_image:
+    weight: 2
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      progress_indicator: throbber
+      crop_list:
+        - rectangle_crop
+      crop_types_required: {  }
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  field_short_description:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 7
     region: content
     third_party_settings: {  }
   stores:
@@ -52,7 +86,7 @@ content:
     third_party_settings: {  }
   variations:
     type: inline_entity_form_complex
-    weight: 3
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS

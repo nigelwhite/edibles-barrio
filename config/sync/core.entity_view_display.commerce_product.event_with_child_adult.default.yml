@@ -10,8 +10,10 @@ dependencies:
     - field.field.commerce_product.event_with_child_adult.field_short_description
     - field.field.commerce_product.event_with_child_adult.stores
     - field.field.commerce_product.event_with_child_adult.variations
+    - image.style.rectangle_style_w_300
   module:
     - commerce_product
+    - field_formatter_class
     - image
     - text
 id: commerce_product.event_with_child_adult.default
@@ -30,9 +32,11 @@ content:
     weight: 3
     label: hidden
     settings:
-      image_style: ''
+      image_style: rectangle_style_w_300
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     type: image
     region: content
   field_short_description:

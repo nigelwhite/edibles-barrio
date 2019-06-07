@@ -11,7 +11,7 @@ id: commerce_product.event_with_child_adult_and_diets.body
 field_name: body
 entity_type: commerce_product
 bundle: event_with_child_adult_and_diets
-label: Body
+label: 'Long description'
 description: ''
 required: false
 translatable: true

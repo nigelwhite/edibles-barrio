@@ -11,7 +11,7 @@ id: commerce_product.event_no_options_.body
 field_name: body
 entity_type: commerce_product
 bundle: event_no_options_
-label: Body
+label: 'Long description'
 description: ''
 required: false
 translatable: true
