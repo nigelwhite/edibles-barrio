@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b520d1fee9103657a17b2532c682edff",
+    "content-hash": "8e35d953b0b2920b1dd8ae281487ac22",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4013,6 +4013,48 @@
                 "source": "http://cgit.drupalcode.org/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
             }
+        },
+        {
+            "name": "drupal/daterange_compact",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/daterange_compact.git",
+                "reference": "545aca6c20d17fd11ba60f2c6abe03ee096deac8"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1497304142",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "erik.erskine",
+                    "homepage": "https://www.drupal.org/user/375884"
+                }
+            ],
+            "description": "Provides a compact formatter for date range fields.",
+            "homepage": "https://www.drupal.org/project/daterange_compact",
+            "support": {
+                "source": "https://git.drupalcode.org/project/daterange_compact"
+            },
+            "time": "2017-06-12T21:30:07+00:00"
         },
         {
             "name": "drupal/devel",
@@ -11390,6 +11432,7 @@
         "drupal/commerce_reports": 10,
         "drupal/commerce_stock": 20,
         "drupal/commerce_stripe": 5,
+        "drupal/daterange_compact": 20,
         "drupal/entity_embed": 10,
         "drupal/examples": 20,
         "drupal/inline_entity_form": 5,
