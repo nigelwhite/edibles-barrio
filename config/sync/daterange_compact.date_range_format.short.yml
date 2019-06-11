@@ -1,0 +1,18 @@
+uuid: b590865a-c01e-471c-abc6-3333f2edd3f3
+langcode: en
+status: true
+dependencies: {  }
+id: short
+label: Short
+date_settings:
+  default_pattern: j.n.y
+  separator: '-'
+  same_month_start_pattern: j
+  same_month_end_pattern: j.n.y
+  same_year_start_pattern: j.n
+  same_year_end_pattern: j.n.y
+datetime_settings:
+  default_pattern: 'j.n.y H:i'
+  separator: '-'
+  same_day_start_pattern: 'j.n.y H:i'
+  same_day_end_pattern: 'H:i'

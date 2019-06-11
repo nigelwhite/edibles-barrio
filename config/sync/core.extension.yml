@@ -24,6 +24,7 @@ module:
   commerce_payment: 0
   commerce_price: 0
   commerce_product: 0
+  commerce_reports: 0
   commerce_stock: 0
   commerce_stock_enforcement: 0
   commerce_stock_field: 0
@@ -31,12 +32,15 @@ module:
   commerce_stock_ui: 0
   commerce_store: 0
   commerce_stripe: 0
+  computed_field: 0
+  computed_field_php_formatter: 0
   config: 0
   contact: 0
   contextual: 0
   crop: 0
   ctools: 0
   ctools_block: 0
+  daterange_compact: 0
   datetime: 0
   datetime_range: 0
   dblog: 0

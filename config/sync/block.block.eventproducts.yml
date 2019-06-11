@@ -1,28 +1,28 @@
-uuid: 393980b3-874d-4c6e-bf2a-e8454898aead
+uuid: 6f6a3e30-162e-4005-90ef-15eb54682705
 langcode: en
 status: true
 dependencies:
   config:
-    - blockgroup.block_group_content.events_group
+    - blockgroup.block_group_content.event_products
   module:
     - blockgroup
     - system
   theme:
     - barrio_sub
-id: eventsgroup
+id: eventproducts
 theme: barrio_sub
 region: content
-weight: -9
+weight: 0
 provider: null
-plugin: 'block_group:f8b8cb82-c952-40ce-843e-9b4f73eb26b5'
+plugin: 'block_group:24520de6-2d94-4938-a992-f9f91798d17d'
 settings:
-  id: 'block_group:f8b8cb82-c952-40ce-843e-9b4f73eb26b5'
-  label: 'Events group'
+  id: 'block_group:24520de6-2d94-4938-a992-f9f91798d17d'
+  label: 'Event products'
   provider: blockgroup
   label_display: '0'
 visibility:
   request_path:
     id: request_path
-    pages: "/events\r\n/events-courses"
+    pages: /events
     negate: false
     context_mapping: {  }

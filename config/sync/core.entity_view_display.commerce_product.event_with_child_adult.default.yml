@@ -6,6 +6,7 @@ dependencies:
     - commerce_product.commerce_product_type.event_with_child_adult
     - field.field.commerce_product.event_with_child_adult.body
     - field.field.commerce_product.event_with_child_adult.field_category
+    - field.field.commerce_product.event_with_child_adult.field_date
     - field.field.commerce_product.event_with_child_adult.field_image
     - field.field.commerce_product.event_with_child_adult.field_short_description
     - field.field.commerce_product.event_with_child_adult.stores
@@ -13,6 +14,8 @@ dependencies:
     - image.style.rectangle_style_w_300
   module:
     - commerce_product
+    - daterange_compact
+    - ds
     - field_formatter_class
     - image
     - text
@@ -27,6 +30,18 @@ content:
     weight: 1
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_date:
+    weight: 5
+    label: hidden
+    settings:
+      format_type: medium
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+    type: daterange_compact
     region: content
   field_image:
     weight: 3

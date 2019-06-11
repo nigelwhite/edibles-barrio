@@ -3,10 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.commerce_product.teaser
-    - taxonomy.vocabulary.event_type
+    - field.storage.commerce_product.field_date
+    - field.storage.commerce_product.field_image
+    - image.style.rectangle_style_w200
+    - taxonomy.vocabulary.event_category
+  content:
+    - 'taxonomy_term:event_category:34249bd8-0567-4fc5-8206-7721de84e2d8'
+    - 'taxonomy_term:event_category:91a6e473-2875-40de-81ef-87b9d74d6df6'
+    - 'taxonomy_term:event_category:b2c4dcf3-b610-4221-b061-f78ccaaf917d'
   module:
     - commerce_product
+    - daterange_compact
+    - datetime
+    - image
     - taxonomy
 id: products_u_hope
 label: products-u-hope
@@ -68,22 +77,150 @@ display:
       style:
         type: default
         options:
-          row_class: col
+          grouping: {  }
+          row_class: ''
           default_row_class: false
-          uses_fields: false
       row:
-        type: 'entity:commerce_product'
+        type: fields
         options:
-          relationship: none
-          view_mode: teaser
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
+        field_image:
+          id: field_image
+          table: commerce_product__field_image
+          field: field_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: div
+          element_class: product-img-nw
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: rectangle_style_w200
+            image_link: content
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         title:
+          id: title
           table: commerce_product_field_data
           field: title
-          id: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: div
+          element_class: product-title-nw
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
           entity_type: null
           entity_field: title
           plugin_id: field
+        field_date:
+          id: field_date
+          table: commerce_product__field_date
+          field: field_date
           relationship: none
           group_type: group
           admin_label: ''
@@ -120,7 +257,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -129,11 +266,12 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
-          settings: {  }
+          type: daterange_compact
+          settings:
+            format_type: short
           group_column: value
           group_columns: {  }
-          group_rows: true
+          group_rows: false
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -141,6 +279,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
       filters:
         status:
           value: '1'
@@ -160,8 +299,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: 'not empty'
-          value: {  }
+          operator: or
+          value:
+            - 30
           group: 1
           exposed: false
           expose:
@@ -192,11 +332,24 @@ display:
           reduce_duplicates: false
           type: textfield
           limit: true
-          vid: event_type
+          vid: event_category
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
-      sorts: {  }
+      sorts:
+        field_date_value:
+          id: field_date_value
+          table: commerce_product__field_date
+          field: field_date_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          granularity: minute
+          plugin_id: datetime
       header: {  }
       footer: {  }
       empty: {  }
@@ -204,6 +357,7 @@ display:
       arguments: {  }
       display_extenders: {  }
       css_class: row
+      title: Courses
     cache_metadata:
       max-age: -1
       contexts:
@@ -211,14 +365,18 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user
-      tags: {  }
+      tags:
+        - 'config:field.storage.commerce_product.field_date'
+        - 'config:field.storage.commerce_product.field_image'
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Block
+    display_title: Courses
     position: 1
     display_options:
       display_extenders: {  }
+      display_description: ''
+      block_category: Product
     cache_metadata:
       max-age: -1
       contexts:
@@ -226,4 +384,174 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - user
-      tags: {  }
+      tags:
+        - 'config:field.storage.commerce_product.field_date'
+        - 'config:field.storage.commerce_product.field_image'
+  block_2:
+    display_plugin: block
+    id: block_2
+    display_title: 'Live music'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      title: 'Live music'
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: commerce_product_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: commerce_product
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        field_category_target_id:
+          id: field_category_target_id
+          table: commerce_product__field_category
+          field: field_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            - 31
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: event_category
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      block_category: Product
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - user
+      tags:
+        - 'config:field.storage.commerce_product.field_date'
+        - 'config:field.storage.commerce_product.field_image'
+  block_3:
+    display_plugin: block
+    id: block_3
+    display_title: Other
+    position: 3
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+      title: Other
+      defaults:
+        title: false
+        filters: false
+        filter_groups: false
+      filters:
+        status:
+          value: '1'
+          table: commerce_product_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: commerce_product
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+          group: 1
+        field_category_target_id:
+          id: field_category_target_id
+          table: commerce_product__field_category
+          field: field_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            - 32
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: event_category
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      block_category: Product
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - user
+      tags:
+        - 'config:field.storage.commerce_product.field_date'
+        - 'config:field.storage.commerce_product.field_image'

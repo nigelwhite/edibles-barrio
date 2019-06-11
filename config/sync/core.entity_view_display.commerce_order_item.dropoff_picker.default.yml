@@ -5,8 +5,10 @@ dependencies:
   config:
     - commerce_order.commerce_order_item_type.dropoff_picker
     - field.field.commerce_order_item.dropoff_picker.field_drop_off_preference
+    - field.field.commerce_order_item.dropoff_picker.field_last_date
   module:
     - commerce_price
+    - computed_field_php_formatter
     - field_formatter_class
     - options
 id: commerce_order_item.dropoff_picker.default
@@ -32,6 +34,19 @@ content:
       field_formatter_class:
         class: ''
     type: list_default
+    region: content
+  field_last_date:
+    weight: 5
+    label: inline
+    settings:
+      php_code: '$display_value = $value;'
+      sanitized: '1'
+      cache_unit: '-1'
+      cache_duration: '1'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: computed_php_free
     region: content
   purchased_entity:
     type: entity_reference_label

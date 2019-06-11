@@ -1,21 +1,21 @@
-uuid: 0ee54007-9c44-4078-9e4d-e54ef39ca944
+uuid: 64be03cb-0bb3-4040-a6ce-fec5e6678574
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.events
+    - views.view.products_u_hope
   module:
     - views
   theme:
     - barrio_sub
-id: views_block__events_block_3
+id: views_block__products_u_hope_block_2
 theme: barrio_sub
-region: events_group
+region: event_products
 weight: 0
 provider: null
-plugin: 'views_block:events-block_3'
+plugin: 'views_block:products_u_hope-block_2'
 settings:
-  id: 'views_block:events-block_3'
+  id: 'views_block:products_u_hope-block_2'
   label: ''
   provider: views
   label_display: visible

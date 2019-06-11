@@ -1,0 +1,39 @@
+uuid: 193cf7e1-bda3-49f1-9415-f816eaff51fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.orders
+  module:
+    - system
+    - user
+  theme:
+    - barrio_sub
+id: orders
+theme: barrio_sub
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:orders'
+settings:
+  id: 'system_menu_block:orders'
+  label: Orders
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/cart\r\n/checkout/*/order_information\r\n/checkout/*/review\r\n/checkout/*/complete\r\n/product/*"
+    negate: true
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      shop_manager: shop_manager
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

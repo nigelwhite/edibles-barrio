@@ -1,18 +1,17 @@
-uuid: 819ce386-e0b4-4754-afd8-5c9cbc63be12
+uuid: 73926c5f-2767-4e75-92b1-bc7dc78b8f5e
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.events
   module:
-    - system
     - views
   theme:
     - barrio_sub
 id: views_block__events_block_1
 theme: barrio_sub
 region: events_group
-weight: -11
+weight: 0
 provider: null
 plugin: 'views_block:events-block_1'
 settings:
@@ -22,9 +21,4 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-visibility:
-  request_path:
-    id: request_path
-    pages: "/events\r\n/events-courses"
-    negate: false
-    context_mapping: {  }
+visibility: {  }

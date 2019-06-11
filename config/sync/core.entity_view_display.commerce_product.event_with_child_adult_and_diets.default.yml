@@ -6,12 +6,17 @@ dependencies:
     - commerce_product.commerce_product_type.event_with_child_adult_and_diets
     - field.field.commerce_product.event_with_child_adult_and_diets.body
     - field.field.commerce_product.event_with_child_adult_and_diets.field_category
+    - field.field.commerce_product.event_with_child_adult_and_diets.field_date
     - field.field.commerce_product.event_with_child_adult_and_diets.field_image
     - field.field.commerce_product.event_with_child_adult_and_diets.field_short_description
     - field.field.commerce_product.event_with_child_adult_and_diets.stores
     - field.field.commerce_product.event_with_child_adult_and_diets.variations
+    - image.style.rectangle_style_w_300
   module:
     - commerce_product
+    - daterange_compact
+    - ds
+    - field_formatter_class
     - image
     - text
 id: commerce_product.event_with_child_adult_and_diets.default
@@ -26,13 +31,27 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_date:
+    weight: 5
+    label: hidden
+    settings:
+      format_type: medium
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+    type: daterange_compact
+    region: content
   field_image:
     weight: 3
     label: hidden
     settings:
-      image_style: ''
+      image_style: rectangle_style_w_300
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
     type: image
     region: content
   field_short_description:

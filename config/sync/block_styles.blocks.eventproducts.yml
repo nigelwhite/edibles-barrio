@@ -1,8 +1,8 @@
-uuid: 8e477fdf-290d-4d4b-9241-222ff9e66c6c
+uuid: 2e0864d0-d9cc-4a46-b236-3b95fc5f0793
 langcode: en
 status: true
 dependencies: {  }
-id: views_block__events_block_1
+id: eventproducts
 theme: ''
 text: ''
 classes: ''

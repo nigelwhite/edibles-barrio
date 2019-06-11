@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_order.commerce_order_item_type.dropoff_picker
     - field.field.commerce_order_item.dropoff_picker.field_drop_off_preference
+    - field.field.commerce_order_item.dropoff_picker.field_last_date
   module:
     - commerce_order
     - commerce_product
@@ -21,7 +22,7 @@ content:
     region: content
   purchased_entity:
     type: commerce_product_variation_attributes
-    weight: -1
+    weight: 0
     settings: {  }
     region: content
     third_party_settings: {  }
@@ -42,3 +43,4 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_last_date: true
