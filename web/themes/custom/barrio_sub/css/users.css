@@ -1,3 +1,22 @@
-.user-name p {
-    display: inline;
+.user-picture,
+.user-member-for,
+.user-name {
+    padding: 20px 0;
+}
+
+.user-name {
+    display: inline-block;
+    font-size: 1.75rem;
+}
+
+.user-member-for h4 {
+    font-size: 0.5rem;
+}
+
+.user-name-label {
+    font-size: 1rem;
+}
+
+.system-name {
+    font-size: 1.75rem;
 }

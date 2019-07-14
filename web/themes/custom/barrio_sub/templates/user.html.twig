@@ -18,10 +18,15 @@
 #}
 <article{{ attributes.addClass('profile') }}>
   {% if content %}
-    {{- content -}}
-    <div {{ attributes.addClass('user-name') }} >
-        <p> {{ content.field_first_name }} </p>
-        <p> {{ content.field_last_name }} </p>
+    <div>
+        <span class='user-name-label' > Real name:</span>
+        <span> {{ content.field_first_name }}</span>
+        <span> {{ content.field_last_name }} </span>
+        <br/>
+        <span class='user-name-label' > Edibles User name: </span>
+        <span class='system-name' > {{ user.displayname }} </span>
+        <div class='user-picture' > {{ content.user_picture }} </div>
+        
     </div>
   {% endif %}
 </article>
