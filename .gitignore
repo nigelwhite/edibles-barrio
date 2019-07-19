@@ -22,3 +22,6 @@
 /app/
 
 /.vscode
+
+# ignore my attempts at custom modules
+/web/modules/custom/
