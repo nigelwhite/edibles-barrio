@@ -20,3 +20,5 @@
 
 # Ignore local storage
 /app/
+
+/.vscode
