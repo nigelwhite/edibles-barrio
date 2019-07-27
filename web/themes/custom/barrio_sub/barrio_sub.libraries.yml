@@ -29,3 +29,9 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+barrio_sub:
+  js:
+    js/saladBox.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once

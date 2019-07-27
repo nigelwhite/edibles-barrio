@@ -55,13 +55,16 @@ a.nav-link:hover {
   color: white;
 }
 
+#block-useraccountmenu,
 #block-socialnavigation {
     display: block;
   width: 100%;
 }
 
+#block-useraccountmenu ul,
 #block-socialnavigation ul {
-  list-style: none;
+  display: block;
+    list-style: none;
   font-size: 1.25rem;
   line-height: 1.5em;
   font-weight: 500;
@@ -70,9 +73,14 @@ a.nav-link:hover {
   text-transform: lowercase;
 }
 
+#block-useraccountmenu .nav-link {
+  width: 100%;
+  border-bottom: 2px solid rgb(201, 215, 190);
+}
+
 #block-socialnavigation li {
   width: 100%;
-  border-bottom: 2px solid rgb(201, 215, 190);;
+  border-bottom: 2px solid rgb(201, 215, 190);
 }
 
 #block-socialnavigation li:last-child {
@@ -402,6 +410,7 @@ Medium devices (tablets, 768px and up)
         font-size: 1vw;
     }
 
+    #block-useraccountmenu ul,
     #block-socialnavigation ul {
       list-style: none;
       padding-left: 0;
@@ -411,6 +420,7 @@ Medium devices (tablets, 768px and up)
       width: 100%;
     }
 
+    #block-useraccountmenu li,
     #block-socialnavigation li {
       text-align: center;
       width: 100%;
@@ -438,6 +448,10 @@ Medium devices (tablets, 768px and up)
 
     #block-socialnavigation li {
       border-bottom: none;
+    }
+
+    #block-useraccountmenu .nav-link {
+    border-bottom: none;
     }
 
     #block-barrio-sub-main-menu li {
@@ -493,6 +507,10 @@ Large devices (desktops, 992px and up)
         font-size: 1.25rem;
     }
 
+    #block-useraccountmenu .nav-link {
+    border-bottom: none;
+    }
+
 }
 
 /* =========================================
@@ -527,5 +545,9 @@ Extra large devices (large desktops, 1200px and up)
 
     .event-wrapper {
         min-height: 15rem;
+    }
+
+    #block-useraccountmenu .nav-link {
+    border-bottom: none;
     }
 }
