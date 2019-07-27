@@ -21,6 +21,9 @@
 # Ignore local storage
 /app/
 
+# Ignore imports on remote
+/import/
+
 /.vscode
 
 # ignore my attempts at custom modules
