@@ -1,5 +1,9 @@
 /* Commerce stuff */
 
+.highlight {
+    background-color: purple;
+}
+
 #block-cart {
     background-color: rgb(209, 117, 92);
     border-radius: 20px;
