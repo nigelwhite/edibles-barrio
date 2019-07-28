@@ -22,8 +22,6 @@
 max-width: 60px;
 }
 
-
-
 .cart-block--summary__icon img {
     width: 20px;
 }
@@ -157,6 +155,11 @@ div[id^='edit-purchased-entity-wrapper--'],
     color: white;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.events-uberclass .view-content {
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 500px) {
