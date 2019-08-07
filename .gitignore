@@ -31,3 +31,6 @@
 
 # ignore /tmp needed on remote
 /tmp/
+
+# ignore /private needed on remote
+/private/
