@@ -54,7 +54,7 @@
         "drupal/profile": "^1.0",
         "drupal/responsive_slideshow": "^1.2",
         "drupal/rules": "^3.0@alpha",
-        "drupal/social_media": "^1.5",
+        "drupal/social_media": "1.4",
         "drupal/stage_file_proxy": "^1.0@alpha",
         "drupal/styles_api": "^1.0",
         "drupal/swiftmailer": "^1.0@beta",

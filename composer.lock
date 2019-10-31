@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "10519e0ee49658055b980e3ae4b11a0e",
+    "content-hash": "c84f75b7341cce9929ff2ea10c4b381e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5536,17 +5536,17 @@
         },
         {
             "name": "drupal/social_media",
-            "version": "1.5.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/social_media.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social_media-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "ef2f3ba5503bb059a7c7c8ee1add1bc7d94079ba"
+                "url": "https://ftp.drupal.org/files/projects/social_media-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "6d8d6549233c0af56f84ef44392161e0f6544832"
             },
             "require": {
                 "drupal/core": "*",
@@ -5558,7 +5558,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5",
+                    "version": "8.x-1.4",
                     "datestamp": "1571930288",
                     "security-coverage": {
                         "status": "covered",
@@ -5577,9 +5577,8 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Jack Over",
-                    "homepage": "https://www.drupal.org/user/252386",
-                    "role": "Maintainer"
+                    "name": "takim",
+                    "homepage": "https://www.drupal.org/user/252386"
                 }
             ],
             "description": "Share current page to social media",
