@@ -280,6 +280,21 @@ figcaption {
     font-size: 0.9rem;
 }
 
+.social-media-sharing ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media-sharing ul li {
+    margin: 0 5px;
+}
+
+.share img {
+    width: 40px;
+}
+
 /* =========================================
 Medium devices (tablets, 768px and up)
 ============================================ */
