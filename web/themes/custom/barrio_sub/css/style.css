@@ -99,14 +99,14 @@ a.nav-link:hover {
 .sidebar nav ul.nav {
     display: block;
 }
-.tweet p {
+/* .tweet p {
     margin-bottom: 0;
-}
+} */
 
-.twitter-feed .list-group-item {
+/* .twitter-feed .list-group-item {
     margin-bottom: 1rem;
     font-size: 1rem;
-}
+} */
 
 .alert-wrapper {
     position: relative;
