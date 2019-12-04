@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2af22b48e5b0188716a782209d22739c",
+    "content-hash": "349444acca518caf9a5a948c4e6bcd5a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5940,57 +5940,6 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "http://cgit.drupalcode.org/token"
-            }
-        },
-        {
-            "name": "drupal/twitter_feed",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/twitter_feed.git",
-                "reference": "8.x-1.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/twitter_feed-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "3a7fc9bbd8b069bf6ff29d4554ced1491dd407df"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1522494183",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Fidelix",
-                    "homepage": "https://www.drupal.org/user/786032"
-                },
-                {
-                    "name": "adrianopulz",
-                    "homepage": "https://www.drupal.org/user/1327214"
-                }
-            ],
-            "description": "Displays a list of tweets on a block",
-            "homepage": "https://www.drupal.org/project/twitter_feed",
-            "support": {
-                "source": "http://cgit.drupalcode.org/twitter_feed"
             }
         },
         {
