@@ -68,7 +68,7 @@
  */
 #}
 <div id="page-wrapper">
-	<div id="page">
+	<div id="page" class="page-nonhome">
 		<header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
 			{% block head %}
 				{% if page.secondary_menu or page.top_header or page.top_header_form %}
@@ -131,7 +131,7 @@
 				</div>
 			{% endblock %}
 		{% endif %}
-		<div id="main-wrapper" class="layout-main-wrapper clearfix">
+		<div id="main-wrapper" class="layout-main-wrapper main-wrapper-nonhome clearfix">
 			{% block content %}
 				<div id="main" class="{{ container }}">
 					{{ page.breadcrumb }}
