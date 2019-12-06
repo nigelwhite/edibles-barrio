@@ -457,6 +457,10 @@ Medium devices (tablets, 768px and up)
         margin-bottom: 2vw;
     }
 
+    #main-wrapper.main-wrapper-nonhome {
+        padding-top: 20px;
+    }
+
     .event-wrapper {
         min-height: 13rem;
     }
