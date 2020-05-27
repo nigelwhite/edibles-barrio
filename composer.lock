@@ -2571,17 +2571,17 @@
         },
         {
             "name": "drupal/bootstrap_barrio",
-            "version": "4.25.0",
+            "version": "4.28.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
-                "reference": "8.x-4.25"
+                "reference": "8.x-4.28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-8.x-4.25.zip",
-                "reference": "8.x-4.25",
-                "shasum": "7f0b2c23ed66dc202a6b94c6219c826c04fac882"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-8.x-4.28.zip",
+                "reference": "8.x-4.28",
+                "shasum": "2608e4545a0efe4c2d4b76e109e77264a3a51785"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -2590,8 +2590,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.25",
-                    "datestamp": "1587345806",
+                    "version": "8.x-4.28",
+                    "datestamp": "1589051361",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2600,7 +2600,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -9557,16 +9557,16 @@
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v4.4.1",
+            "version": "v4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "dca1ab7d877bc4b664b43604657a2b5fbe2b4ecb"
+                "reference": "7a6da5e3e7ad7c749dde806546a35d4d4259d965"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/dca1ab7d877bc4b664b43604657a2b5fbe2b4ecb",
-                "reference": "dca1ab7d877bc4b664b43604657a2b5fbe2b4ecb",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/7a6da5e3e7ad7c749dde806546a35d4d4259d965",
+                "reference": "7a6da5e3e7ad7c749dde806546a35d4d4259d965",
                 "shasum": ""
             },
             "replace": {
@@ -9604,7 +9604,7 @@
                 "sass",
                 "web"
             ],
-            "time": "2019-11-28T12:59:49+00:00"
+            "time": "2020-05-12T17:44:42+00:00"
         },
         {
             "name": "twig/twig",
