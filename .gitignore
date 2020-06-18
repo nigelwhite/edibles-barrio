@@ -34,3 +34,6 @@
 
 # ignore /private needed on remote
 /private/
+
+# ignore ddev folder
+/.ddev
