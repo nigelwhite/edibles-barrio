@@ -37,3 +37,6 @@
 
 # ignore ddev folder
 /.ddev
+
+# ignore local dev resources
+/localdev
