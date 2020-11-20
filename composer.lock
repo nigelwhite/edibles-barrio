@@ -228,16 +228,16 @@
         },
         {
             "name": "commerceguys/intl",
-            "version": "v1.0.6",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/intl.git",
-                "reference": "47d5d6d60d0cc25f867e337ce229a228bf6be6f8"
+                "reference": "0bf0beb12e37ef1a61e0d09dc66cdaa1a23e62e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/intl/zipball/47d5d6d60d0cc25f867e337ce229a228bf6be6f8",
-                "reference": "47d5d6d60d0cc25f867e337ce229a228bf6be6f8",
+                "url": "https://api.github.com/repos/commerceguys/intl/zipball/0bf0beb12e37ef1a61e0d09dc66cdaa1a23e62e1",
+                "reference": "0bf0beb12e37ef1a61e0d09dc66cdaa1a23e62e1",
                 "shasum": ""
             },
             "require": {
@@ -268,7 +268,7 @@
                 }
             ],
             "description": "Internationalization library powered by CLDR data.",
-            "time": "2020-05-26T12:19:43+00:00"
+            "time": "2020-10-04T20:58:22+00:00"
         },
         {
             "name": "composer/installers",
@@ -2734,25 +2734,25 @@
         },
         {
             "name": "drupal/commerce",
-            "version": "2.18.0",
+            "version": "2.21.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce.git",
-                "reference": "8.x-2.18"
+                "reference": "8.x-2.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.18.zip",
-                "reference": "8.x-2.18",
-                "shasum": "26ae3afbcebb3f48cab3e584dfd57ad07d420189"
+                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.21.zip",
+                "reference": "8.x-2.21",
+                "shasum": "3b38b58458e26f14cc4c203cda3f01ac84296909"
             },
             "require": {
                 "commerceguys/intl": "^1.0.0",
                 "drupal/address": "^1.7",
-                "drupal/core": "^8.7.7 || ^9",
+                "drupal/core": "^8.8 || ^9",
                 "drupal/entity": "^1.0-rc2",
                 "drupal/entity_reference_revisions": "~1.0",
-                "drupal/inline_entity_form": "^1.0-rc1",
+                "drupal/inline_entity_form": "^1.0-rc6",
                 "drupal/profile": "^1.0",
                 "drupal/state_machine": "^1.0-rc1",
                 "drupal/token": "^1.0",
@@ -2767,16 +2767,17 @@
                 "drupal/commerce_price": "*",
                 "drupal/commerce_product": "*",
                 "drupal/commerce_store": "*",
+                "drupal/entity_print": "^2.2",
                 "drupal/entity_reference_revisions": "*",
-                "drupal/mailsystem": "^4.1",
+                "drupal/mailsystem": "^4.3",
                 "drupal/profile": "*",
                 "drupal/state_machine": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.18",
-                    "datestamp": "1590598198",
+                    "version": "8.x-2.21",
+                    "datestamp": "1600787975",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2813,17 +2814,17 @@
         },
         {
             "name": "drupal/commerce_number_pattern",
-            "version": "2.18.0",
+            "version": "2.21.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_store": "*",
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.18",
-                    "datestamp": "1590598198",
+                    "version": "8.x-2.21",
+                    "datestamp": "1600787975",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2860,13 +2861,13 @@
         },
         {
             "name": "drupal/commerce_order",
-            "version": "2.18.0",
+            "version": "2.21.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_number_pattern": "*",
                 "drupal/commerce_price": "*",
                 "drupal/commerce_store": "*",
-                "drupal/core": "^8.7.7 || ^9",
+                "drupal/core": "^8.8 || ^9",
                 "drupal/entity_reference_revisions": "*",
                 "drupal/profile": "*",
                 "drupal/state_machine": "*"
@@ -2874,8 +2875,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.18",
-                    "datestamp": "1590598198",
+                    "version": "8.x-2.21",
+                    "datestamp": "1600787975",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2912,18 +2913,18 @@
         },
         {
             "name": "drupal/commerce_payment",
-            "version": "2.18.0",
+            "version": "2.21.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_order": "*",
-                "drupal/core": "^8.7.7 || ^9",
+                "drupal/core": "^8.8 || ^9",
                 "drupal/entity_reference_revisions": "*"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.18",
-                    "datestamp": "1590598198",
+                    "version": "8.x-2.21",
+                    "datestamp": "1600787975",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2960,16 +2961,16 @@
         },
         {
             "name": "drupal/commerce_price",
-            "version": "2.18.0",
+            "version": "2.21.0",
             "require": {
-                "drupal/commerce": "self.version",
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/commerce": "*",
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.18",
-                    "datestamp": "1590598198",
+                    "version": "8.x-2.21",
+                    "datestamp": "1600787975",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3006,18 +3007,18 @@
         },
         {
             "name": "drupal/commerce_product",
-            "version": "2.18.0",
+            "version": "2.21.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
                 "drupal/commerce_store": "*",
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.18",
-                    "datestamp": "1590598198",
+                    "version": "8.x-2.21",
+                    "datestamp": "1600787975",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3132,13 +3133,13 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce_stock.git",
-                "reference": "c61d3c6002b1e781e2e0c7b94824bf9cc0ef7363"
+                "reference": "598418ff75abcd27ab88b4e6ec128cdc074fa6fb"
             },
             "require": {
                 "drupal/commerce": "~2.0",
                 "drupal/commerce_order": "*",
                 "drupal/commerce_product": "*",
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "require-dev": {
                 "drupal/commerce_product": "*",
@@ -3150,8 +3151,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4+5-dev",
-                    "datestamp": "1591973168",
+                    "version": "8.x-1.0-alpha4+12-dev",
+                    "datestamp": "1605178987",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3193,21 +3194,21 @@
                 "source": "http://cgit.drupalcode.org/commerce_stock",
                 "issues": "http://drupal.org/project/issues/commerce_stock"
             },
-            "time": "2020-06-12T14:45:37+00:00"
+            "time": "2020-11-12T11:02:20+00:00"
         },
         {
             "name": "drupal/commerce_store",
-            "version": "2.18.0",
+            "version": "2.21.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
-                "drupal/core": "^8.7.7 || ^9"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.18",
-                    "datestamp": "1590598198",
+                    "version": "8.x-2.21",
+                    "datestamp": "1600787975",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7838,16 +7839,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.37.2",
+            "version": "v7.65.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "da9ae0906966f344dba9530e25ea4e432bcafd64"
+                "reference": "d4a22eeec7654efb8476fe8bea95b1e9928025a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/da9ae0906966f344dba9530e25ea4e432bcafd64",
-                "reference": "da9ae0906966f344dba9530e25ea4e432bcafd64",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/d4a22eeec7654efb8476fe8bea95b1e9928025a6",
+                "reference": "d4a22eeec7654efb8476fe8bea95b1e9928025a6",
                 "shasum": ""
             },
             "require": {
@@ -7857,7 +7858,7 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "2.16.1",
+                "friendsofphp/php-cs-fixer": "2.16.5",
                 "php-coveralls/php-coveralls": "^2.1",
                 "phpunit/phpunit": "^5.7",
                 "squizlabs/php_codesniffer": "^3.3",
@@ -7891,7 +7892,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-06-23T23:07:25+00:00"
+            "time": "2020-11-19T19:37:25+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
