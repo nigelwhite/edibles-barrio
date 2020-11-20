@@ -22,7 +22,7 @@
         "drupal/admin_toolbar": "^2.2",
         "drupal/asset_injector": "^2.6",
         "drupal/backup_migrate": "^4.0",
-        "drupal/block_styles": "^1.2",
+        "drupal/block_styles": "^2.0",
         "drupal/blockgroup": "^1.1",
         "drupal/bootstrap_barrio": "^4.17",
         "drupal/bootstrap_layouts": "^5.1",
@@ -68,8 +68,7 @@
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
-    "require-dev": {
-    },
+    "require-dev": {},
     "conflict": {
         "drupal/drupal": "*"
     },
@@ -83,7 +82,9 @@
         "classmap": [
             "scripts/composer/ScriptHandler.php"
         ],
-        "files": ["load.environment.php"]
+        "files": [
+            "load.environment.php"
+        ]
     },
     "scripts": {
         "pre-install-cmd": [
@@ -104,18 +105,26 @@
             "drupal/core": "-p2"
         },
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/{$name}": ["type:drupal-drush"]
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/{$name}": [
+                "type:drupal-drush"
+            ]
         },
-        "patches": {
-            "drupal/block_styles": {
-                "Drupal sort error on config of block": "https://www.drupal.org/files/issues/2642010-7-fix-block-notice.patch"
-            }
-        },
+        "patches": {},
         "drupal-scaffold": {
             "initial": {
                 ".editorconfig": "../.editorconfig",
