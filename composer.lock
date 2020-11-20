@@ -2612,29 +2612,26 @@
         },
         {
             "name": "drupal/bootstrap_layouts",
-            "version": "5.1.0",
+            "version": "5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap_layouts.git",
-                "reference": "8.x-5.1"
+                "reference": "8.x-5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap_layouts-8.x-5.1.zip",
-                "reference": "8.x-5.1",
-                "shasum": "b304b1c9d0ea30646e6dff7aa32405a21a11d49f"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_layouts-8.x-5.2.zip",
+                "reference": "8.x-5.2",
+                "shasum": "7abc903415adc5f459b362f9cfd619786a144afe"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-5.x": "5.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-5.1",
-                    "datestamp": "1516598286",
+                    "version": "8.x-5.2",
+                    "datestamp": "1591360017",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
