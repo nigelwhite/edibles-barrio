@@ -2460,38 +2460,33 @@
         },
         {
             "name": "drupal/block_styles",
-            "version": "1.2.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/block_styles.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_styles-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "d74b98894dec3b46e528855c47fc3c78a91e9ce2"
+                "url": "https://ftp.drupal.org/files/projects/block_styles-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "e76e3e785bc07be34d9eeb0b55aa99079990e39d"
             },
             "require": {
-                "drupal/core": "*",
+                "drupal/core": "^8 || ^9",
                 "drupal/styles_api": "*"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1488901683",
+                    "version": "8.x-1.4",
+                    "datestamp": "1599667548",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches_applied": {
-                    "Drupal sort error on config of block": "https://www.drupal.org/files/issues/2642010-7-fix-block-notice.patch"
-                }
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
