@@ -1,3 +1,6 @@
+This is a drupal/core project so updating core is
+composer update drupal/core --with-dependencies
+
 Remote is on php 7.3 on Graham's server
 
 18.6.20 imported local dev into edibles-barrio2 in ddev
