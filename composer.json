@@ -16,9 +16,8 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.7",
+        "composer/installers": "v1.9",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_toolbar": "^2.2",
         "drupal/asset_injector": "^2.6",
         "drupal/backup_migrate": "^4.0",
@@ -33,7 +32,7 @@
         "drupal/commerce_stripe": "^1.0@RC",
         "drupal/computed_field": "^2.0",
         "drupal/console": "^1.0.2",
-        "drupal/core": "~8.9.9",
+        "drupal/core-composer-scaffold": "^8.8",
         "drupal/crop": "^1.5",
         "drupal/ctools": "^3.0",
         "drupal/daterange_compact": "1.x-dev",
@@ -63,7 +62,10 @@
         "drupal/views_slideshow": "^4.6",
         "drupal/views_taxonomy_term_name_depth": "6.x-dev",
         "drush/drush": "^9.0.0",
-        "twig/twig": "1.42.3",
+        "symfony/validator": "3.4.41",
+        "symfony/yaml": "3.4.41",
+        "twig/twig": "1.42.5",
+        "typo3/phar-stream-wrapper": "3.1.4",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
@@ -130,6 +132,9 @@
             }
         },
         "drupal-scaffold": {
+            "locations": {
+                "web-root": "./docroot"
+            },
             "initial": {
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
