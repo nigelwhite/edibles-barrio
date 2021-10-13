@@ -18,6 +18,7 @@
     "require": {
         "composer/installers": "^1.7",
         "cweagans/composer-patches": "^1.6.5",
+        "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_toolbar": "^2.2",
         "drupal/asset_injector": "^2.6",
         "drupal/backup_migrate": "^4.0",
@@ -26,14 +27,13 @@
         "drupal/bootstrap_barrio": "^4.17",
         "drupal/bootstrap_layouts": "^5.1",
         "drupal/coffee": "^1.0@beta",
-        "drupal/core-composer-scaffold": "^8.9",
-        "drupal/core-recommended": "^8.9",
         "drupal/commerce": "^2.11",
         "drupal/commerce_reports": "^1.0@beta",
         "drupal/commerce_stock": "1.x-dev",
         "drupal/commerce_stripe": "^1.0@RC",
         "drupal/computed_field": "^2.0",
         "drupal/console": "^1.0.2",
+        "drupal/core": "~8.9.9",
         "drupal/crop": "^1.5",
         "drupal/ctools": "^3.0",
         "drupal/daterange_compact": "1.x-dev",
@@ -130,8 +130,9 @@
             }
         },
         "drupal-scaffold": {
-            "locations": {
-                "web-root": "web/"
+            "initial": {
+                ".editorconfig": "../.editorconfig",
+                ".gitattributes": "../.gitattributes"
             }
         }
     }
