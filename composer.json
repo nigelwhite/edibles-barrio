@@ -124,7 +124,11 @@
                 "type:drupal-drush"
             ]
         },
-        "patches": {},
+        "patches": {
+            "drupal/commerce_stock": {
+                "commerce_stock-fix-uid-missing-3211778-22-updates-only.patch": "https://www.drupal.org/files/issues/2021-08-10/commerce_stock-fix-uid-missing-3211778-22-updates-only.patch"
+            }
+        },
         "drupal-scaffold": {
             "initial": {
                 ".editorconfig": "../.editorconfig",
