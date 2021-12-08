@@ -28,7 +28,7 @@
         "drupal/coffee": "^1.0@beta",
         "drupal/commerce": "^2.11",
         "drupal/commerce_reports": "^1.0@beta",
-        "drupal/commerce_stock": "1.x-dev",
+        "drupal/commerce_stock": "1.x-dev@dev",
         "drupal/commerce_stripe": "^1.0@RC",
         "drupal/computed_field": "^2.0",
         "drupal/console": "^1.0.2",
@@ -70,7 +70,6 @@
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
-    "require-dev": {},
     "conflict": {
         "drupal/drupal": "*"
     },
@@ -125,11 +124,6 @@
             "drush/Commands/{$name}": [
                 "type:drupal-drush"
             ]
-        },
-        "patches": {
-            "drupal/commerce_stock": {
-                "commerce_stock-fix-uid-missing-3211778-22-updates-only.patch": "https://www.drupal.org/files/issues/2021-08-10/commerce_stock-fix-uid-missing-3211778-22-updates-only.patch"
-            }
         },
         "drupal-scaffold": {
             "locations": {
