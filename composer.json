@@ -54,7 +54,6 @@
         "drupal/rules": "^3.0@alpha",
         "drupal/stage_file_proxy": "^1.2",
         "drupal/styles_api": "^1.0",
-        "drupal/swiftmailer": "^2.2",
         "drupal/upgrade_status": "^3.13",
         "drupal/views_bootstrap": "^4.1",
         "drupal/views_slideshow": "^4.6",
