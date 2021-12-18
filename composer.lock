@@ -181,16 +181,16 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "311040bd78ea2ea82105dd1f17205c449ac8de47"
+                "reference": "fb98dfc72f8a3d12fac55f69ab2477a0fbfa9860"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/311040bd78ea2ea82105dd1f17205c449ac8de47",
-                "reference": "311040bd78ea2ea82105dd1f17205c449ac8de47",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/fb98dfc72f8a3d12fac55f69ab2477a0fbfa9860",
+                "reference": "fb98dfc72f8a3d12fac55f69ab2477a0fbfa9860",
                 "shasum": ""
             },
             "require": {
@@ -238,22 +238,22 @@
             ],
             "support": {
                 "issues": "https://github.com/commerceguys/addressing/issues",
-                "source": "https://github.com/commerceguys/addressing/tree/v1.2.1"
+                "source": "https://github.com/commerceguys/addressing/tree/v1.2.2"
             },
-            "time": "2021-05-17T08:05:21+00:00"
+            "time": "2021-10-30T12:33:41+00:00"
         },
         {
             "name": "commerceguys/intl",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/intl.git",
-                "reference": "90b4f75c4917927a1960c0dcaa002a91ab97f5d5"
+                "reference": "cab3b55dbf8c1753fe54457404082c777a8c154f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/intl/zipball/90b4f75c4917927a1960c0dcaa002a91ab97f5d5",
-                "reference": "90b4f75c4917927a1960c0dcaa002a91ab97f5d5",
+                "url": "https://api.github.com/repos/commerceguys/intl/zipball/cab3b55dbf8c1753fe54457404082c777a8c154f",
+                "reference": "cab3b55dbf8c1753fe54457404082c777a8c154f",
                 "shasum": ""
             },
             "require": {
@@ -286,9 +286,9 @@
             "description": "Internationalization library powered by CLDR data.",
             "support": {
                 "issues": "https://github.com/commerceguys/intl/issues",
-                "source": "https://github.com/commerceguys/intl/tree/v1.1.0"
+                "source": "https://github.com/commerceguys/intl/tree/v1.1.1"
             },
-            "time": "2021-05-17T08:25:58+00:00"
+            "time": "2021-10-30T18:07:14+00:00"
         },
         {
             "name": "composer/installers",
@@ -2891,17 +2891,17 @@
         },
         {
             "name": "drupal/commerce",
-            "version": "2.27.0",
+            "version": "2.28.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce.git",
-                "reference": "8.x-2.27"
+                "reference": "8.x-2.28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.27.zip",
-                "reference": "8.x-2.27",
-                "shasum": "0dcbcd5c00c662bfc38e075e782bef731a620991"
+                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.28.zip",
+                "reference": "8.x-2.28",
+                "shasum": "8a8ff91603c7b69064ce16701e15d6945d731e03"
             },
             "require": {
                 "commerceguys/intl": "^1.0.0",
@@ -2911,15 +2911,16 @@
                 "drupal/entity_reference_revisions": "~1.0",
                 "drupal/inline_entity_form": "^1.0-rc6",
                 "drupal/profile": "^1.2",
-                "drupal/state_machine": "^1.4",
+                "drupal/state_machine": "^1.5",
                 "drupal/token": "^1.7",
                 "ext-bcmath": "*",
-                "php": ">=7.1"
+                "php": "^7.1 || ^8.0"
             },
             "conflict": {
                 "drupal/commerce_shipping": "<2.1"
             },
             "require-dev": {
+                "behat/mink-goutte-driver": "^1.2",
                 "drupal/commerce_cart": "*",
                 "drupal/commerce_number_pattern": "*",
                 "drupal/commerce_order": "*",
@@ -2936,8 +2937,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.27",
-                    "datestamp": "1632333931",
+                    "version": "8.x-2.28",
+                    "datestamp": "1636648407",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2978,7 +2979,7 @@
         },
         {
             "name": "drupal/commerce_number_pattern",
-            "version": "2.27.0",
+            "version": "2.28.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_store": "*",
@@ -2987,8 +2988,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.27",
-                    "datestamp": "1632333931",
+                    "version": "8.x-2.28",
+                    "datestamp": "1636648407",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3029,7 +3030,7 @@
         },
         {
             "name": "drupal/commerce_order",
-            "version": "2.27.0",
+            "version": "2.28.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_number_pattern": "*",
@@ -3043,8 +3044,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.27",
-                    "datestamp": "1632333931",
+                    "version": "8.x-2.28",
+                    "datestamp": "1636648407",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3085,7 +3086,7 @@
         },
         {
             "name": "drupal/commerce_payment",
-            "version": "2.27.0",
+            "version": "2.28.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_order": "*",
@@ -3095,8 +3096,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.27",
-                    "datestamp": "1632333931",
+                    "version": "8.x-2.28",
+                    "datestamp": "1636648407",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3137,7 +3138,7 @@
         },
         {
             "name": "drupal/commerce_price",
-            "version": "2.27.0",
+            "version": "2.28.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/core": "^8.9 || ^9"
@@ -3145,8 +3146,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.27",
-                    "datestamp": "1632333931",
+                    "version": "8.x-2.28",
+                    "datestamp": "1636648407",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3187,7 +3188,7 @@
         },
         {
             "name": "drupal/commerce_product",
-            "version": "2.27.0",
+            "version": "2.28.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
@@ -3197,8 +3198,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.27",
-                    "datestamp": "1632333931",
+                    "version": "8.x-2.28",
+                    "datestamp": "1636648407",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3378,7 +3379,7 @@
         },
         {
             "name": "drupal/commerce_store",
-            "version": "2.27.0",
+            "version": "2.28.0",
             "require": {
                 "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
@@ -3387,8 +3388,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.27",
-                    "datestamp": "1632333931",
+                    "version": "8.x-2.28",
+                    "datestamp": "1636648407",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3797,16 +3798,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.9.19",
+            "version": "8.9.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "96eb83b31d950f020cbc079ab960159c3735a033"
+                "reference": "39e2e1c32498338921923af66a90cb4a23a5b389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/96eb83b31d950f020cbc079ab960159c3735a033",
-                "reference": "96eb83b31d950f020cbc079ab960159c3735a033",
+                "url": "https://api.github.com/repos/drupal/core/zipball/39e2e1c32498338921923af66a90cb4a23a5b389",
+                "reference": "39e2e1c32498338921923af66a90cb4a23a5b389",
                 "shasum": ""
             },
             "require": {
@@ -4025,9 +4026,9 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/8.9.19"
+                "source": "https://github.com/drupal/core/tree/8.9.20"
             },
-            "time": "2021-09-14T22:08:18+00:00"
+            "time": "2021-11-17T21:24:28+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -6005,17 +6006,17 @@
         },
         {
             "name": "drupal/token",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/token.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "a5d234382a1a0e4ba61d4c7a2fa10671ca656be4"
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "8b81224ab0420221b292e8d3b66d0da726317400"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -6023,8 +6024,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1608284866",
+                    "version": "8.x-1.10",
+                    "datestamp": "1638619775",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6771,16 +6772,16 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "136a635e2b4a49b9d79e9c8fee267ffb257fdba0"
+                "reference": "fe752aedc9fd8fcca3fe7ad05d419d32998a06da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/136a635e2b4a49b9d79e9c8fee267ffb257fdba0",
-                "reference": "136a635e2b4a49b9d79e9c8fee267ffb257fdba0",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/fe752aedc9fd8fcca3fe7ad05d419d32998a06da",
+                "reference": "fe752aedc9fd8fcca3fe7ad05d419d32998a06da",
                 "shasum": ""
             },
             "require": {
@@ -6835,7 +6836,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/1.5.0"
+                "source": "https://github.com/guzzle/promises/tree/1.5.1"
             },
             "funding": [
                 {
@@ -6851,7 +6852,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-07T13:05:22+00:00"
+            "time": "2021-10-22T20:56:57+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -7151,16 +7152,16 @@
         },
         {
             "name": "laminas/laminas-feed",
-            "version": "2.15.0",
+            "version": "2.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-feed.git",
-                "reference": "3ef837a12833c74b438d2c3780023c4244e0abae"
+                "reference": "cbd0e10c867a1efa6594164d229d8caf4a4ae4c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/3ef837a12833c74b438d2c3780023c4244e0abae",
-                "reference": "3ef837a12833c74b438d2c3780023c4244e0abae",
+                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/cbd0e10c867a1efa6594164d229d8caf4a4ae4c7",
+                "reference": "cbd0e10c867a1efa6594164d229d8caf4a4ae4c7",
                 "shasum": ""
             },
             "require": {
@@ -7224,20 +7225,20 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-09-20T18:11:11+00:00"
+            "time": "2021-12-17T09:12:35+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
-            "version": "3.6.0",
+            "version": "3.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "c53d8537f108fac3fae652677a19735db730ba46"
+                "reference": "6fe0842909638ca6bea8401b7e8168fb154bffb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/c53d8537f108fac3fae652677a19735db730ba46",
-                "reference": "c53d8537f108fac3fae652677a19735db730ba46",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/6fe0842909638ca6bea8401b7e8168fb154bffb5",
+                "reference": "6fe0842909638ca6bea8401b7e8168fb154bffb5",
                 "shasum": ""
             },
             "require": {
@@ -7283,7 +7284,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-09-02T16:11:32+00:00"
+            "time": "2021-12-07T21:06:58+00:00"
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
@@ -8211,16 +8212,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.100.0",
+            "version": "v7.107.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "3dfc3dcd5d967a14d2852f34e544188af5f9b799"
+                "reference": "a90f74037261ed376c0d37066f396c48809c8e99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/3dfc3dcd5d967a14d2852f34e544188af5f9b799",
-                "reference": "3dfc3dcd5d967a14d2852f34e544188af5f9b799",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/a90f74037261ed376c0d37066f396c48809c8e99",
+                "reference": "a90f74037261ed376c0d37066f396c48809c8e99",
                 "shasum": ""
             },
             "require": {
@@ -8230,11 +8231,10 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "2.17.1",
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "^3.3",
-                "symfony/process": "~3.4"
+                "friendsofphp/php-cs-fixer": "3.2.1",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^5.7 || ^9.0",
+                "squizlabs/php_codesniffer": "^3.3"
             },
             "type": "library",
             "extra": {
@@ -8266,9 +8266,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.100.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.107.0"
             },
-            "time": "2021-10-11T20:05:45+00:00"
+            "time": "2021-12-09T20:40:29+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -10578,16 +10578,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v4.4.31",
+            "version": "v4.4.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "1f12cc0c2e880a5f39575c19af81438464717839"
+                "reference": "2d0c056b2faaa3d785bdbd5adecc593a5be9c16e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/1f12cc0c2e880a5f39575c19af81438464717839",
-                "reference": "1f12cc0c2e880a5f39575c19af81438464717839",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/2d0c056b2faaa3d785bdbd5adecc593a5be9c16e",
+                "reference": "2d0c056b2faaa3d785bdbd5adecc593a5be9c16e",
                 "shasum": ""
             },
             "require": {
@@ -10647,7 +10647,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v4.4.31"
+                "source": "https://github.com/symfony/var-dumper/tree/v4.4.34"
             },
             "funding": [
                 {
@@ -10663,7 +10663,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-24T15:30:11+00:00"
+            "time": "2021-11-12T10:50:54+00:00"
         },
         {
             "name": "symfony/yaml",
