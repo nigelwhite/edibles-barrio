@@ -19,7 +19,7 @@
         "composer/installers": "v1.9",
         "cweagans/composer-patches": "^1.6.5",
         "drupal/admin_toolbar": "^2.2",
-        "drupal/asset_injector": "^2.6",
+        "drupal/asset_injector": "^2.8",
         "drupal/backup_migrate": "^5.0",
         "drupal/block_styles": "^2.0",
         "drupal/blockgroup": "^1.1",
