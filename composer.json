@@ -44,7 +44,7 @@
         "drupal/examples": "1.x-dev",
         "drupal/field_formatter_class": "^1.1",
         "drupal/field_group": "^3.0",
-        "drupal/honeypot": "^1.30",
+        "drupal/honeypot": "^2.0",
         "drupal/image_widget_crop": "^2.2",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/libraries": "^3.0@alpha",
