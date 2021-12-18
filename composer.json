@@ -62,7 +62,7 @@
         "drupal/views_bootstrap": "^4.1",
         "drupal/views_slideshow": "^4.6",
         "drupal/views_taxonomy_term_name_depth": "6.x-dev",
-        "drush/drush": "^9.0.0",
+        "drush/drush": "^10",
         "symfony/validator": "3.4.41",
         "symfony/yaml": "3.4.41",
         "twig/twig": "1.42.5",
