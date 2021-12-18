@@ -1,6 +1,0 @@
-services:
-  edibles_boxscheme_event_subscriber:
-    class: '\Drupal\edibles_boxscheme\EventSubscriber\Edibles_boxschemeEventSubscriber'
-    arguments: []
-    tags:
-      - { name: 'event_subscriber' }
