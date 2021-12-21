@@ -1,5 +1,4 @@
-This is a drupal/core project so updating core is
-composer update drupal/core --with-dependencies
+This was a drupal/core project, now converted to recommended-project
 
 Remote is on php 7.3 on Graham's server, running composer v 2.1.12.
 
