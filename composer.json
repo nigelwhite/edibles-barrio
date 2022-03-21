@@ -53,6 +53,7 @@
         "drupal/pathauto": "^1.9",
         "drupal/profile": "^1.0",
         "drupal/rules": "^3.0@alpha",
+        "drupal/schema_metatag": "^2.3",
         "drupal/stage_file_proxy": "^1.2",
         "drupal/styles_api": "^1.0",
         "drupal/symfony_mailer": "^1.0@alpha",
