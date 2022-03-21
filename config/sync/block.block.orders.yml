@@ -12,28 +12,28 @@ dependencies:
 id: orders
 theme: barrio_sub
 region: sidebar_second
-weight: 0
+weight: -14
 provider: null
 plugin: 'system_menu_block:orders'
 settings:
   id: 'system_menu_block:orders'
-  label: Orders
-  provider: system
+  label: 'Shop admin'
   label_display: visible
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: "/cart\r\n/checkout/*/order_information\r\n/checkout/*/review\r\n/checkout/*/complete\r\n/product/*"
     negate: true
     context_mapping: {  }
+    pages: "/cart\r\n/checkout/*/order_information\r\n/checkout/*/review\r\n/checkout/*/complete\r\n/product/*"
   user_role:
     id: user_role
-    roles:
-      administrator: administrator
-      shop_manager: shop_manager
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      shop_manager: shop_manager

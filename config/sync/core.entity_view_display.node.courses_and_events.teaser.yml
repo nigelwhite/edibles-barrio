@@ -62,20 +62,20 @@ third_party_settings:
         - field_media_asset
         - node_title
         - field_date2
+      label: event-wrapper
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
       format_settings:
-        id: ''
         classes: event-wrapper
+        id: ''
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
-      label: event-wrapper
-      region: content
 id: node.courses_and_events.teaser
 targetEntityType: node
 bundle: courses_and_events
@@ -83,8 +83,6 @@ mode: teaser
 content:
   field_date2:
     type: daterange_default
-    weight: 3
-    region: main
     label: hidden
     settings:
       timezone_override: ''
@@ -93,17 +91,19 @@ content:
     third_party_settings:
       field_formatter_class:
         class: event-list-date
+    weight: 3
+    region: main
   field_media_asset:
     type: media_thumbnail
-    weight: 1
-    region: main
     label: hidden
     settings:
-      image_style: rectangle_style
       image_link: content
+      image_style: rectangle_style
     third_party_settings:
       field_formatter_class:
         class: event-teaser-img
+    weight: 1
+    region: main
 hidden:
   body: true
   field_attach: true

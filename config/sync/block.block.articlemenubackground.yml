@@ -18,14 +18,17 @@ plugin: 'block_content:dcca6b07-7edf-418d-81a4-e815ff90277f'
 settings:
   id: 'block_content:dcca6b07-7edf-418d-81a4-e815ff90277f'
   label: 'Menu bg no-slide by content type'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
-  node_type:
-    id: node_type
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
     bundles:
       article: article
       basic_page_2: basic_page_2
@@ -33,6 +36,3 @@ visibility:
       homeslider_image: homeslider_image
       produce: produce
       subslider_image: subslider_image
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'

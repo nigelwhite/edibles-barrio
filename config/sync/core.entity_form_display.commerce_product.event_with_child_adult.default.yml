@@ -5,12 +5,10 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.event_with_child_adult
     - field.field.commerce_product.event_with_child_adult.body
-    - field.field.commerce_product.event_with_child_adult.field_category
     - field.field.commerce_product.event_with_child_adult.field_date
+    - field.field.commerce_product.event_with_child_adult.field_event_type
     - field.field.commerce_product.event_with_child_adult.field_image
     - field.field.commerce_product.event_with_child_adult.field_short_description
-    - field.field.commerce_product.event_with_child_adult.stores
-    - field.field.commerce_product.event_with_child_adult.variations
     - image.style.thumbnail
   module:
     - commerce
@@ -26,64 +24,65 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 5
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
-    region: content
-  field_category:
-    weight: 7
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_date:
+    type: daterange_default
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: daterange_default
+  field_event_type:
+    type: options_select
+    weight: 9
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_image:
+    type: image_widget_crop
     weight: 3
+    region: content
     settings:
-      show_default_crop: true
-      warn_multiple_usages: true
+      progress_indicator: throbber
       preview_image_style: thumbnail
       crop_preview_image_style: crop_thumbnail
-      progress_indicator: throbber
       crop_list:
         - rectangle_crop
       crop_types_required: {  }
+      warn_multiple_usages: true
       show_crop_area: false
+      show_default_crop: true
     third_party_settings: {  }
-    type: image_widget_crop
-    region: content
   field_short_description:
+    type: string_textfield
     weight: 4
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 8
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   stores:
     type: commerce_entity_select
     weight: 0
+    region: content
     settings:
       hide_single_entity: true
       autocomplete_threshold: 7
       autocomplete_size: 60
       autocomplete_placeholder: ''
     third_party_settings: {  }
-    region: content
   title:
     type: string_textfield
     weight: 1
@@ -97,16 +96,17 @@ content:
     weight: 6
     region: content
     settings:
-      match_operator: CONTAINS
       form_mode: default
       override_labels: false
       label_singular: ''
       label_plural: ''
-      collapsible: false
-      collapsed: false
       allow_new: true
       allow_existing: false
+      match_operator: CONTAINS
       allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
     third_party_settings: {  }
 hidden:
   created: true

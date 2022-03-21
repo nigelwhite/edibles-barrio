@@ -1,7 +1,11 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   address: 0
   admin_toolbar: 0
+  admin_toolbar_search: 0
   admin_toolbar_tools: 0
+  asset_injector: 0
   automated_cron: 0
   backup_migrate: 0
   big_pipe: 0
@@ -20,6 +24,7 @@ module:
   commerce_cart: 0
   commerce_checkout: 0
   commerce_log: 0
+  commerce_number_pattern: 0
   commerce_order: 0
   commerce_payment: 0
   commerce_price: 0
@@ -32,8 +37,6 @@ module:
   commerce_stock_ui: 0
   commerce_store: 0
   commerce_stripe: 0
-  computed_field: 0
-  computed_field_php_formatter: 0
   config: 0
   contact: 0
   contextual: 0
@@ -60,6 +63,7 @@ module:
   filter: 0
   help: 0
   history: 0
+  honeypot: 0
   image: 0
   image_widget_crop: 0
   inline_entity_form: 0
@@ -69,14 +73,22 @@ module:
   media_library: 0
   menu_link_attributes: 0
   menu_ui: 0
+  metatag: 0
   module_filter: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
+  path_alias: 0
   profile: 0
   rdf: 0
   responsive_image: 0
+  schema_event: 0
+  schema_metatag: 0
+  schema_place: 0
+  schema_product: 0
+  schema_web_page: 0
+  schema_web_site: 0
   search: 0
   shortcut: 0
   stage_file_proxy: 0
@@ -88,7 +100,6 @@ module:
   token: 0
   toolbar: 0
   tour: 0
-  twitter_feed: 0
   update: 0
   user: 0
   views_bootstrap: 0
@@ -101,12 +112,8 @@ module:
   views: 10
   standard: 1000
 theme:
-  stable: 0
-  classy: 0
   bartik: 0
   seven: 0
   bootstrap_barrio: 0
   barrio_sub: 0
 profile: standard
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

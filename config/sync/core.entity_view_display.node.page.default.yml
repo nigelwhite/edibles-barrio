@@ -42,15 +42,15 @@ bundle: page
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 100
     region: main
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 101
     region: main
-    settings: {  }
-    third_party_settings: {  }
 hidden: {  }

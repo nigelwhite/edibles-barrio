@@ -1,0 +1,17 @@
+uuid: e26373a4-53ed-4526-9627-732ac120d92f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: products_listing_page
+label: 'Products listing page'
+code: ".product-img-nw {\r\n  max-height: 200px;\r\n  max-width: 200px;\r\n  margin: 0 auto;\r\n}\r\n\r\n.product-listing-subtitle {\r\n  font-size: 1.em;\r\n}\r\n\r\n#views-bootstrap-products-u-hope-page-1 h5 {\r\n  margin-top: 10px;\r\n  margin-bottom: 0;\r\n}\r\n\r\n.objectlist-subview-row {\r\n  text-align: center;\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /products
+conditions_require_all: true

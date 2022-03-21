@@ -1,0 +1,18 @@
+uuid: a76789f7-1bdf-406f-a80c-c79eb90cad03
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  robots: index
+  content_language: en
+  keywords: Permaculture
+  geo_placename: Slaithwaite
+  title: '[current-page:title] | [site:name]'
+  canonical_url: '[current-page:url]'
+  geo_region: UK
+  icbm: '53.61170082341503, -1.9145006823083544'
+  geo_position: '53.61170082341503, -1.9145006823083544'

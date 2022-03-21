@@ -69,25 +69,25 @@ mode: teaser
 content:
   body:
     type: text_summary_or_trimmed
-    weight: 2
-    region: right
+    label: hidden
     settings:
       trim_length: 100
     third_party_settings:
       field_formatter_class:
         class: ''
-    label: hidden
+    weight: 2
+    region: right
   field_image:
     type: image
-    weight: 0
-    region: left
+    label: hidden
     settings:
-      image_style: rectangle_style_w200
       image_link: content
+      image_style: rectangle_style_w200
     third_party_settings:
       field_formatter_class:
         class: blog-teaser-image
-    label: hidden
+    weight: 0
+    region: left
 hidden:
   field_attach: true
   field_enabled: true

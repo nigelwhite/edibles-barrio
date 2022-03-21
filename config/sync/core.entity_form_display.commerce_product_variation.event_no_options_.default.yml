@@ -14,14 +14,14 @@ bundle: event_no_options_
 mode: default
 content:
   field_available_tickets:
+    type: commerce_stock_level_simple_transaction
     weight: 3
+    region: content
     settings:
+      step: '1'
       custom_transaction_note: false
       default_transaction_note: 'Transaction issued by stock level field.'
-      step: '1'
     third_party_settings: {  }
-    type: commerce_stock_level_simple_transaction
-    region: content
   price:
     type: commerce_price_default
     weight: 2

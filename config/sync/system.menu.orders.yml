@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: orders
-label: Orders
+label: 'Shop admin'
 description: ''
 locked: false

@@ -1,5 +1,5 @@
-default_service_id: local_stock
 _core:
   default_config_hash: z4CtmoUxBut4Mcj1tjlQENFUSkRGQUNtX6e1z1xDhYU
+default_service_id: local_stock
 stock_events_plugin_id: core_stock_events
 commerce_product_variation_simple_with_drop_offs_without_st_service_id: always_in_stock

@@ -1,0 +1,25 @@
+uuid: a65f34fe-0d5e-4a9a-b21c-26140b97b423
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - system
+id: edgelarks_hide_buy_column
+label: 'Edgelarks - hide buy column'
+code: ".col-sm-4 {\r\n  display: none;\r\n}"
+media: all
+preprocess: true
+conditions:
+  'entity_bundle:commerce_product':
+    id: 'entity_bundle:commerce_product'
+    negate: false
+    context_mapping:
+      commerce_product: '@commerce_product.product_route_context:commerce_product'
+    bundles:
+      event_no_options_: event_no_options_
+  request_path:
+    id: request_path
+    negate: false
+    pages: /product/33
+conditions_require_all: true

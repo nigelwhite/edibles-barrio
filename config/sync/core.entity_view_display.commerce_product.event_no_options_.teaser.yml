@@ -6,12 +6,10 @@ dependencies:
     - commerce_product.commerce_product_type.event_no_options_
     - core.entity_view_mode.commerce_product.teaser
     - field.field.commerce_product.event_no_options_.body
-    - field.field.commerce_product.event_no_options_.field_category
     - field.field.commerce_product.event_no_options_.field_date
+    - field.field.commerce_product.event_no_options_.field_event_type
     - field.field.commerce_product.event_no_options_.field_image
     - field.field.commerce_product.event_no_options_.field_short_description
-    - field.field.commerce_product.event_no_options_.stores
-    - field.field.commerce_product.event_no_options_.variations
     - image.style.rectangle_style_w200
   module:
     - datetime_range
@@ -24,7 +22,7 @@ bundle: event_no_options_
 mode: teaser
 content:
   field_date:
-    weight: 3
+    type: daterange_default
     label: hidden
     settings:
       timezone_override: Europe/London
@@ -35,39 +33,39 @@ content:
         class: ''
       ds:
         ds_limit: ''
-    type: daterange_default
+    weight: 3
     region: content
   field_image:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: rectangle_style_w200
       image_link: content
+      image_style: rectangle_style_w200
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: image
+    weight: 1
     region: content
   field_short_description:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   title:
-    label: hidden
     type: string
-    weight: 0
-    region: content
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   created: true
-  field_category: true
+  field_event_type: true
   stores: true
   uid: true
   variations: true

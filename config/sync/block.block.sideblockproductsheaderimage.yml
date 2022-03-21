@@ -1,0 +1,31 @@
+uuid: 107301e4-ea2c-430f-916d-e83c075de857
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c28e80a0-506a-4d8e-ae5b-5bdb60647842'
+  module:
+    - block_content
+    - system
+  theme:
+    - barrio_sub
+id: sideblockproductsheaderimage
+theme: barrio_sub
+region: side_block_group
+weight: 0
+provider: null
+plugin: 'block_content:c28e80a0-506a-4d8e-ae5b-5bdb60647842'
+settings:
+  id: 'block_content:c28e80a0-506a-4d8e-ae5b-5bdb60647842'
+  label: 'Sideblock products header image'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

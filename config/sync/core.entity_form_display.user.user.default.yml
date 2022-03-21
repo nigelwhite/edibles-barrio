@@ -4,12 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.user.user.commerce_remote_id
-    - field.field.user.user.field_first_name
-    - field.field.user.user.field_last_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
+    - path
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -19,43 +18,37 @@ bundle: user
 mode: default
 content:
   account:
-    weight: 0
+    weight: -10
     region: content
     settings: {  }
     third_party_settings: {  }
   contact:
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_first_name:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
+  language:
+    weight: 0
     region: content
-  field_last_name:
-    weight: 2
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: string_textfield
+  path:
+    type: path
+    weight: 30
     region: content
+    settings: {  }
+    third_party_settings: {  }
   timezone:
     weight: 6
     region: content
   user_picture:
     type: image_image
+    weight: -1
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: 3
-    region: content
 hidden:
   commerce_remote_id: true
-  language: true
-  path: true
+  customer_profiles: true

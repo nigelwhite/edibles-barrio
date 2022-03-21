@@ -1,7 +1,13 @@
 uuid: 50ced5f0-c9c0-45a7-86a2-70ba26fc0812
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - commerce
+    - commerce_order
+    - commerce_product
+    - commerce_reports
+    - commerce_store
 id: shop_manager
 label: 'Shop manager'
 weight: 4
@@ -12,39 +18,41 @@ permissions:
   - 'access commerce_order overview'
   - 'access commerce_order_report overview'
   - 'access commerce_product overview'
+  - 'access user profiles'
+  - 'create commerce_order_report'
   - 'create commerce_product_attribute'
-  - 'create event_child_adult_tickets commerce_product'
   - 'create event_no_options_ commerce_product'
-  - 'create event_simplest commerce_product'
   - 'create event_with_child_adult commerce_product'
   - 'create event_with_child_adult_and_diets commerce_product'
-  - 'create salad_box commerce_product'
-  - 'delete any event_child_adult_tickets commerce_product'
-  - 'delete any event_simplest commerce_product'
+  - 'create misc_object_with_sizes commerce_product'
+  - 'create object_with_pickup_options_one_p commerce_product'
+  - 'delete any misc_object_with_sizes commerce_product'
+  - 'delete any object_with_pickup_options_one_p commerce_product'
+  - 'delete commerce_order_report'
   - 'delete default commerce_order'
+  - 'generate commerce order reports'
   - 'manage event_no_options_ commerce_product_variation'
   - 'manage event_with_child_adult commerce_product_variation'
   - 'manage event_with_child_adult_and_diets commerce_product_variation'
-  - 'manage salad_bag_scheme commerce_product_variation'
-  - 'update any event_child_adult_tickets commerce_product'
+  - 'manage misc_object_with_no_options commerce_product_variation'
+  - 'manage misc_object_with_sizes commerce_product_variation'
+  - 'update any default commerce_product'
   - 'update any event_no_options_ commerce_product'
-  - 'update any event_simplest commerce_product'
   - 'update any event_with_child_adult commerce_product'
   - 'update any event_with_child_adult_and_diets commerce_product'
-  - 'update any salad_bag_scheme commerce_product'
-  - 'update any salad_box commerce_product'
-  - 'update commerce_product_attribute'
+  - 'update any misc_object_with_sizes commerce_product'
+  - 'update any object_with_pickup_options_one_p commerce_product'
+  - 'update commerce_order_report'
   - 'update default commerce_order'
   - 'view commerce_order'
   - 'view commerce_order_report'
   - 'view commerce_product_attribute'
   - 'view commerce_store'
   - 'view default commerce_order'
-  - 'view event_child_adult_tickets commerce_product'
+  - 'view default commerce_product'
   - 'view event_no_options_ commerce_product'
-  - 'view event_simplest commerce_product'
   - 'view event_with_child_adult commerce_product'
   - 'view event_with_child_adult_and_diets commerce_product'
+  - 'view misc_object_with_sizes commerce_product'
+  - 'view object_with_pickup_options_one_p commerce_product'
   - 'view own unpublished commerce_product'
-  - 'view salad_bag_scheme commerce_product'
-  - 'view salad_box commerce_product'

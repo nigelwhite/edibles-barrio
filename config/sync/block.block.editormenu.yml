@@ -1,0 +1,40 @@
+uuid: 07b5c7b8-85d3-4e2a-a946-f54eab4ca958
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.editor-menu
+  module:
+    - system
+    - user
+  theme:
+    - barrio_sub
+id: editormenu
+theme: barrio_sub
+region: sidebar_second
+weight: -15
+provider: null
+plugin: 'system_menu_block:editor-menu'
+settings:
+  id: 'system_menu_block:editor-menu'
+  label: 'Content admin'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/cart\r\n/checkout/*/order_information\r\n/checkout/*/review\r\n/checkout/*/complete\r\n/product/*"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
+      shop_manager: shop_manager

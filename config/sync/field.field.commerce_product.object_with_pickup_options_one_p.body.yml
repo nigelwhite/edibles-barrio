@@ -1,0 +1,23 @@
+uuid: 2d159539-9a60-4bf7-b9ef-ff0fc7855c95
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.object_with_pickup_options_one_p
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.object_with_pickup_options_one_p.body
+field_name: body
+entity_type: commerce_product
+bundle: object_with_pickup_options_one_p
+label: 'Long description'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

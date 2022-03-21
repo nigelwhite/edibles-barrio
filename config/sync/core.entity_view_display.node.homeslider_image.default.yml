@@ -52,16 +52,16 @@ mode: default
 content:
   field_enabled:
     type: boolean
-    weight: 1
-    region: main
     label: inline
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
+    weight: 1
+    region: main
   field_image:
-    weight: 3
+    type: responsive_image
     label: hidden
     settings:
       responsive_image_style: sliderstyle_mainpage
@@ -69,7 +69,7 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: responsive_image
+    weight: 3
     region: main
 hidden:
   links: true

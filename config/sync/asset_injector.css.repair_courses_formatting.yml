@@ -1,0 +1,17 @@
+uuid: b5021af7-cd2b-40e7-95cb-9b8e4a689206
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: repair_courses_formatting
+label: 'repair courses formatting'
+code: "/* The Courses block changed its name during work. Don't know how. So original css, in stylesheet, no longer targets the right element\r\nin orignial css the block is still targetted as #block-views-block-products-u-hope-block-1-2 */\r\n\r\n#block-views-block-products-u-hope-block-1 h5 {\r\n  background-color: #707070;\r\n  border-radius: 5px;\r\n  color: white;\r\n  text-align: center;\r\n  margin-bottom: 1rem;\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /events
+conditions_require_all: true

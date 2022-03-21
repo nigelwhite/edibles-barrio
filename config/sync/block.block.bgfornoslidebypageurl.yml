@@ -18,14 +18,14 @@ plugin: 'block_content:ed302ab1-4a4e-415d-abf9-ca03dbeb8151'
 settings:
   id: 'block_content:ed302ab1-4a4e-415d-abf9-ca03dbeb8151'
   label: 'bg for no-slide by page url'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/event-management\r\n/user/*\r\n/media/*\r\n/taxonomy/term/*\r\n/term/*\r\n/tags/*\r\n/contact/edibles\r\n/events\r\n/product/*\r\n/cart\r\n/checkout/*\r\n/salad-box-management"
     negate: false
     context_mapping: {  }
+    pages: "/event-management\r\n/user/*\r\n/media/*\r\n/taxonomy/term/*\r\n/term/*\r\n/tags/*\r\n/contact/edibles\r\n/contact/feedback\r\n/events\r\n/product/*\r\n/cart\r\n/checkout/*\r\n/salad-box-management\r\n/order-ediblescustom\r\n/products\r\n/orders/custom"

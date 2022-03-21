@@ -1,0 +1,12 @@
+uuid: a9d025e2-a299-4b00-9684-0953d8eb6c0e
+langcode: en
+status: true
+dependencies: {  }
+id: object_with_pickup_options_one_p
+label: 'Object with pickup options (one price)'
+traits: {  }
+locked: false
+description: ''
+variationType: misc_object_with_no_options
+multipleVariations: false
+injectVariationFields: true

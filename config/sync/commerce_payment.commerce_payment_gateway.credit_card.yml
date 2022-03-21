@@ -1,19 +1,20 @@
 uuid: ebd40a3d-58e9-47d3-9d48-1d799c2e5db9
 langcode: en
-status: true
+status: false
 dependencies: {  }
 id: credit_card
 label: 'Credit card'
-weight: null
+weight: -10
 plugin: manual
 configuration:
-  instructions:
-    value: ''
-    format: plain_text
   display_label: Manual
   mode: n/a
   payment_method_types:
     - credit_card
+  collect_billing_information: true
+  instructions:
+    value: ''
+    format: plain_text
 conditions:
   -
     plugin: order_store

@@ -25,6 +25,8 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
+        classes:
+          layout_class: {  }
         wrappers:
           header: div
           image: div
@@ -34,8 +36,6 @@ third_party_settings:
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
     regions:
       header:
         - node_title
@@ -71,7 +71,7 @@ bundle: produce
 mode: card
 content:
   field_image:
-    weight: 1
+    type: responsive_image
     label: hidden
     settings:
       responsive_image_style: square
@@ -79,18 +79,18 @@ content:
     third_party_settings:
       field_formatter_class:
         class: card-img
-    type: responsive_image
+    weight: 1
     region: image
   field_short_description:
     type: string
-    weight: 2
-    region: body
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
         class: card-body
+    weight: 2
+    region: body
 hidden:
   body: true
   field_enabled: true

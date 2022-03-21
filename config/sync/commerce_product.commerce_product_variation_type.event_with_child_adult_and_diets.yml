@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: event_with_child_adult_and_diets
 label: 'Event with child/adult and diets'
-orderItemType: diet_picker
-generateTitle: true
 traits: {  }
 locked: false
+orderItemType: diet_picker
+generateTitle: true

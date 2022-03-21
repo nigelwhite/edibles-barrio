@@ -1,0 +1,19 @@
+uuid: e270ca84-4f8d-4e72-b5e9-a656c74d040f
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - profile
+id: manager
+label: Manager
+weight: 5
+is_admin: null
+permissions:
+  - 'access profile overview'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'administer users'
+  - 'update any customer profile'
+  - 'view any customer profile'
+  - 'view any profile'

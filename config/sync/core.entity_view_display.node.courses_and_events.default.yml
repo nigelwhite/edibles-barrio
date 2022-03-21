@@ -58,22 +58,22 @@ bundle: courses_and_events
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: main
   field_attach:
-    weight: 4
+    type: file_table
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_table
+    weight: 4
     region: main
   field_date2:
-    weight: 1
+    type: daterange_default
     label: hidden
     settings:
       timezone_override: ''
@@ -82,11 +82,10 @@ content:
     third_party_settings:
       field_formatter_class:
         class: event-date
-    type: daterange_default
+    weight: 1
     region: main
   field_media_asset:
     type: entity_reference_entity_view
-    weight: 2
     label: hidden
     settings:
       view_mode: event_image
@@ -94,9 +93,10 @@ content:
     third_party_settings:
       field_formatter_class:
         class: event-image
+    weight: 2
     region: main
   field_tags2:
-    weight: 5
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: default
@@ -106,7 +106,7 @@ content:
         class: ''
       ds:
         ds_limit: ''
-    type: entity_reference_entity_view
+    weight: 5
     region: main
 hidden:
   field_type: true

@@ -14,15 +14,15 @@ theme: barrio_sub
 region: content
 weight: 0
 provider: null
-plugin: 'block_group:24520de6-2d94-4938-a992-f9f91798d17d'
+plugin: 'block_group:event_products'
 settings:
-  id: 'block_group:24520de6-2d94-4938-a992-f9f91798d17d'
+  id: 'block_group:event_products'
   label: 'Event products'
-  provider: blockgroup
   label_display: '0'
+  provider: blockgroup
 visibility:
   request_path:
     id: request_path
-    pages: /events
     negate: false
     context_mapping: {  }
+    pages: /events

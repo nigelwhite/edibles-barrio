@@ -1,0 +1,23 @@
+uuid: c26aad33-a29b-42c7-bec4-82ae6a35aa5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.misc_object_with_sizes
+    - field.storage.commerce_product_variation.field_available_tickets
+  module:
+    - commerce_stock_field
+id: commerce_product_variation.misc_object_with_sizes.field_available_tickets
+field_name: field_available_tickets
+entity_type: commerce_product_variation
+bundle: misc_object_with_sizes
+label: Available
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: null
+default_value_callback: ''
+settings: {  }
+field_type: commerce_stock_level

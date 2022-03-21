@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: event_no_options_
 label: 'Event (no options)'
-orderItemType: default
-generateTitle: null
 traits: {  }
 locked: false
+orderItemType: default
+generateTitle: null

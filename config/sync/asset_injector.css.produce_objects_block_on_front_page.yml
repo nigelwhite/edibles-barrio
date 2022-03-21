@@ -1,0 +1,17 @@
+uuid: 76bfa53d-876a-46d1-a3b4-4aa470cfb56a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: produce_objects_block_on_front_page
+label: 'side block on front page'
+code: "/*.table td,*/\r\n/*.table tr {*/\r\n/*  border: none;*/\r\n/*}*/\r\n\r\n/*.table tr,*/\r\n/*.table td {*/\r\n/*  padding-top: 3px;*/\r\n/*  padding-bottom: 3px;*/\r\n/*}*/\r\n\r\n/*.product-img-nw div a img {*/\r\n/*  margin-left: 15px;*/\r\n/*  margin-right: 15px;*/\r\n/*}*/\r\n\r\n/*.product-img-nw {*/\r\n/*  margin-top: 0;*/\r\n/*}*/\r\n\r\n.view-products-u-hope .row {\r\n  margin-right: 0;\r\n  Margin-left:0;\r\n}\r\n\r\n#block-views-block-products-u-hope-block-4 h2 {\r\n  font-size: 16px;\r\n  color: #0071b3;\r\n  text-align: center;\r\n  margin-bottom: 20px;\r\n  margin-top: 15px;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  #block-views-block-products-u-hope-block-4 h2 {\r\n    color: white;\r\n  }\r\n}\r\n\r\n@media (min-width: 768px) and (max-width: 1050px) {\r\n  .view-products-u-hope .row {\r\n    display: none;\r\n  }\r\n}\r\n\r\n\r\n.product-title-nw {\r\n  max-width: 100%;\r\n}\r\n\r\n.product-title-nw a {\r\n  margin-left: 10px;\r\n}\r\n\r\n.objects-subview-row {\r\n  max-width: 80%;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.nav-newsletter {\r\n  margin-top: 50px;\r\n  text-align: center;\r\n  margin-bottom: 20px;\r\n  font-size: 1.4rem;\r\n}\r\n\r\n.nav-order-products {\r\n  text-align: center;\r\n  margin-bottom: 20px;\r\n  margin-top: 15px;\r\n  font-size: 1.4rem;\r\n}\r\n\r\n.social-icon-container img {\r\n  height: 40px;\r\n  width: 40px;\r\n}\r\n\r\n.picked-fresh {\r\n  font-size: 1rem;\r\n  color: white;\r\n}\r\n\r\n.social-icon-container {\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.beg-mix {\r\n  padding-right: 10px;\r\n  padding-left: 10px;\r\n  padding-bottom: 5px;\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+conditions_require_all: true

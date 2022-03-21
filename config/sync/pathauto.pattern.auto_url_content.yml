@@ -9,18 +9,18 @@ label: auto-url-content
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  c242fbac-d0c4-48a5-8f4b-30a56822d282:
+  70393ee1-dc2a-42bd-8651-c584a3f410b8:
     id: node_type
-    bundles:
-      courses_and_events: courses_and_events
-      article: article
-      basic_page_2: basic_page_2
-      page: page
-      produce: produce
     negate: false
+    uuid: 70393ee1-dc2a-42bd-8651-c584a3f410b8
     context_mapping:
       node: node
-    uuid: c242fbac-d0c4-48a5-8f4b-30a56822d282
+    bundles:
+      article: article
+      basic_page_2: basic_page_2
+      courses_and_events: courses_and_events
+      page: page
+      produce: produce
 selection_logic: and
 weight: -5
 relationships: {  }

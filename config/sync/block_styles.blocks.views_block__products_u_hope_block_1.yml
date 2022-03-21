@@ -5,4 +5,4 @@ dependencies: {  }
 id: views_block__products_u_hope_block_1
 theme: ''
 text: ''
-classes: ''
+classes: col-md-4

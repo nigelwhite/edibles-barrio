@@ -4,8 +4,7 @@ status: true
 dependencies:
   config:
     - commerce_order.commerce_order_item_type.dropoff_picker
-    - field.field.commerce_order_item.dropoff_picker.field_drop_off_preference
-    - field.field.commerce_order_item.dropoff_picker.field_last_date
+    - field.field.commerce_order_item.dropoff_picker.field_collection_point
   module:
     - commerce_order
     - commerce_product
@@ -14,33 +13,32 @@ targetEntityType: commerce_order_item
 bundle: dropoff_picker
 mode: default
 content:
-  field_drop_off_preference:
-    weight: 3
+  field_collection_point:
+    type: options_select
+    weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   purchased_entity:
     type: commerce_product_variation_attributes
     weight: 0
-    settings: {  }
     region: content
+    settings: {  }
     third_party_settings: {  }
   quantity:
     type: commerce_quantity
     weight: 1
     region: content
     settings:
-      step: '1'
       placeholder: ''
+      step: '1'
     third_party_settings: {  }
   unit_price:
     type: commerce_unit_price
     weight: 2
+    region: content
     settings:
       require_confirmation: true
-    region: content
     third_party_settings: {  }
 hidden:
   created: true
-  field_last_date: true

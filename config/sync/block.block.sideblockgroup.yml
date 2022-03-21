@@ -14,15 +14,15 @@ theme: barrio_sub
 region: featured_top
 weight: -8
 provider: null
-plugin: 'block_group:65a67127-f92d-4e5f-8b1d-4cb0e292a299'
+plugin: 'block_group:side_block_group'
 settings:
-  id: 'block_group:65a67127-f92d-4e5f-8b1d-4cb0e292a299'
+  id: 'block_group:side_block_group'
   label: 'Side block group'
-  provider: blockgroup
   label_display: '0'
+  provider: blockgroup
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

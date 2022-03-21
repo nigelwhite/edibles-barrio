@@ -1,3 +1,15 @@
+_core:
+  default_config_hash: LdPjc1VCTO3_q56LqMexIbDmRvhlTEdTFHajPe4laUs
+favicon:
+  use_default: true
+features:
+  comment_user_picture: false
+  comment_user_verification: false
+  favicon: false
+  node_user_picture: false
+logo:
+  path: themes/custom/barrio_sub/logo.svg
+  use_default: false
 bootstrap_barrio_library: production
 bootstrap_barrio_sidebar_position: both
 bootstrap_barrio_content_offset: '0'
@@ -16,18 +28,6 @@ bootstrap_barrio_navbar_top_color: navbar-dark
 bootstrap_barrio_navbar_position: ''
 bootstrap_barrio_navbar_color: navbar-dark
 bootstrap_barrio_table_hover: 1
-_core:
-  default_config_hash: LdPjc1VCTO3_q56LqMexIbDmRvhlTEdTFHajPe4laUs
-features:
-  node_user_picture: false
-  comment_user_picture: false
-  comment_user_verification: false
-  favicon: false
-logo:
-  use_default: false
-  path: themes/custom/barrio_sub/logo.svg
-favicon:
-  use_default: true
 bootstrap_barrio_region_clean_top_header: 0
 bootstrap_barrio_region_class_top_header: row
 bootstrap_barrio_region_clean_top_header_form: 0

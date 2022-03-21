@@ -56,35 +56,35 @@ bundle: produce
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: main
   field_image:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: max_325x325
       image_link: ''
+      image_style: max_325x325
     third_party_settings:
       field_formatter_class:
         class: feature-image
-    type: image
+    weight: 1
     region: main
   field_tags:
-    weight: 3
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings:
       field_formatter_class:
         class: tag-term
       ds:
         ds_limit: ''
-    type: entity_reference_entity_view
+    weight: 3
     region: main
 hidden:
   field_enabled: true

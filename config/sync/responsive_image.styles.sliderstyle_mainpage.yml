@@ -14,8 +14,6 @@ id: sliderstyle_mainpage
 label: 'Sliderstyle mainpage'
 image_style_mappings:
   -
-    breakpoint_id: responsive_image.viewport_sizing
-    multiplier: 1x
     image_mapping_type: sizes
     image_mapping:
       sizes: 100vw
@@ -27,5 +25,7 @@ image_style_mappings:
         - slidemain_maxw_650
         - slidemain_maxw_900
         - slide_main
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
 breakpoint_group: responsive_image
 fallback_image_style: slidemain_maxw_220

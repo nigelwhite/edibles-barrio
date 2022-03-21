@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - commerce_order.commerce_order_type.default
-    - field.field.commerce_order.default.order_items
   module:
     - commerce_order
     - commerce_price
@@ -17,99 +16,108 @@ targetEntityType: commerce_order
 bundle: default
 mode: default
 content:
-  billing_profile:
-    type: entity_reference_revisions_entity_view
-    weight: 10
-    region: content
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-  changed:
-    type: timestamp
-    weight: 4
-    label: inline
-    settings:
-      date_format: short
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
-    region: content
-  completed:
-    label: inline
-    type: timestamp
-    weight: 2
-    settings:
-      date_format: short
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
-    region: content
-  ip_address:
-    label: inline
-    type: string
-    weight: 7
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    region: content
-  mail:
-    label: inline
-    type: basic_string
-    weight: 6
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  order_items:
-    type: entity_reference_entity_view
-    weight: 0
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    label: above
-    region: content
-  order_number:
-    type: string
-    weight: 8
-    region: content
-    label: inline
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  placed:
-    label: inline
-    type: timestamp
-    weight: 3
-    settings:
-      date_format: short
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
-    region: content
-  total_paid:
+  balance:
     type: commerce_price_default
-    weight: 9
-    region: content
     label: inline
     settings:
       strip_trailing_zeroes: false
       currency_display: symbol
     third_party_settings: {  }
+    weight: 11
+    region: content
+  billing_profile:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  changed:
+    type: timestamp
+    label: inline
+    settings:
+      date_format: short
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  completed:
+    type: timestamp
+    label: inline
+    settings:
+      date_format: short
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  ip_address:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  mail:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  order_items:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  order_number:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  placed:
+    type: timestamp
+    label: inline
+    settings:
+      date_format: short
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  total_paid:
+    type: commerce_price_default
+    label: inline
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    weight: 9
+    region: content
   total_price:
     type: commerce_order_total_summary
-    weight: 1
+    label: inline
     settings: {  }
     third_party_settings: {  }
-    label: inline
+    weight: 1
     region: content
   uid:
-    label: inline
     type: author
-    weight: 5
+    label: inline
     settings: {  }
     third_party_settings: {  }
+    weight: 5
     region: content
 hidden:
   state: true

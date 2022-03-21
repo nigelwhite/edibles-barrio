@@ -1,0 +1,29 @@
+uuid: a20c2121-860c-436a-bae8-74aebdb42301
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.event_no_options_
+    - field.storage.commerce_product.field_event_type
+    - taxonomy.vocabulary.event_category
+id: commerce_product.event_no_options_.field_event_type
+field_name: field_event_type
+entity_type: commerce_product
+bundle: event_no_options_
+label: 'Event type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      event_category: event_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -12,13 +12,13 @@ bundle: size
 mode: default
 content:
   name:
-    label: hidden
     type: string
-    weight: 1
-    region: content
+    label: above
     settings:
       link_to_entity: false
     third_party_settings:
       field_formatter_class:
         class: ''
+    weight: 1
+    region: content
 hidden: {  }

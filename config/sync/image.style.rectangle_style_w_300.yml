@@ -1,15 +1,25 @@
 uuid: 0febec6a-bf28-45b7-a0db-bdf2d68f84a5
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - crop.type.rectangle_crop
+  module:
+    - crop
 name: rectangle_style_w_300
 label: 'Rectangle style w 300'
 effects:
   1599bdae-7d93-41c1-a5b6-00c643026a14:
     uuid: 1599bdae-7d93-41c1-a5b6-00c643026a14
     id: image_scale_and_crop
-    weight: 1
+    weight: -9
     data:
       width: 300
       height: 180
       anchor: center-center
+  6b9c56d3-61f5-4be0-aec9-566457ba8902:
+    uuid: 6b9c56d3-61f5-4be0-aec9-566457ba8902
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: rectangle_crop

@@ -5,8 +5,9 @@ dependencies: {  }
 id: edibles
 label: Edibles
 recipients:
+  - webdev@permaculture.org.uk
   - rosie@edibles.org.uk
 reply: ''
 weight: 0
 message: 'Thank you for contacting Edibles. We will get back to you soon.'
-redirect: /about
+redirect: /home

@@ -18,14 +18,14 @@ plugin: 'block_content:959c03e1-fa37-4713-a7b4-e58281286a57'
 settings:
   id: 'block_content:959c03e1-fa37-4713-a7b4-e58281286a57'
   label: 'Hero nav'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

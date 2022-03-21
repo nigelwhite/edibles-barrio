@@ -37,17 +37,17 @@ bundle: basic_page_2
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 101
     region: left
   links:
-    weight: 100
-    region: left
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: left
 hidden:
   field_attach: true

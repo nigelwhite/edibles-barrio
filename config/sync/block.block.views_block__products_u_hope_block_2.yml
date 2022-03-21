@@ -1,4 +1,4 @@
-uuid: 64be03cb-0bb3-4040-a6ce-fec5e6678574
+uuid: 7b6aa679-c236-4cc1-8184-5c29a6baf4f4
 langcode: en
 status: true
 dependencies:
@@ -17,8 +17,8 @@ plugin: 'views_block:products_u_hope-block_2'
 settings:
   id: 'views_block:products_u_hope-block_2'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
 visibility: {  }

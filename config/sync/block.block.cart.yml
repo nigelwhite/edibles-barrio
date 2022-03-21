@@ -10,18 +10,18 @@ dependencies:
 id: cart
 theme: barrio_sub
 region: sidebar_second
-weight: -14
+weight: -16
 provider: null
 plugin: commerce_cart
 settings:
   id: commerce_cart
   label: Cart
-  provider: commerce_cart
   label_display: visible
+  provider: commerce_cart
   dropdown: true
 visibility:
   request_path:
     id: request_path
-    pages: "/cart\r\n/checkout/*/order_information\r\n/checkout/*/review\r\n/checkout/*/complete"
     negate: true
     context_mapping: {  }
+    pages: "/cart\r\n/checkout/*/order_information\r\n/checkout/*/review\r\n/checkout/*/complete\r\n/gallery\r\n/about\r\n/volunteer-visit\r\n/venue-hire\r\n/blog\r\n/contact-edibles\r\n/contact/edibles"
