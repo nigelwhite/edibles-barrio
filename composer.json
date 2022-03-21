@@ -34,7 +34,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core-composer-scaffold": "~9.0.0@dev",
         "drupal/core-recommended": "9.3.8",
-        "drupal/crop": "^2.1",
+        "drupal/crop": "^2.2",
         "drupal/ctools": "^3.0",
         "drupal/daterange_compact": "1.x-dev",
         "drupal/ds": "^3.1",
