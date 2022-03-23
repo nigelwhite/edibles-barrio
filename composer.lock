@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fea54d181fcc71c49532f6b6916452df",
+    "content-hash": "136c337f391bf6bd807b050e152cbbf2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1843,17 +1843,17 @@
         },
         {
             "name": "drupal/asset_injector",
-            "version": "2.9.0",
+            "version": "2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/asset_injector.git",
-                "reference": "8.x-2.9"
+                "reference": "8.x-2.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/asset_injector-8.x-2.9.zip",
-                "reference": "8.x-2.9",
-                "shasum": "c9c6c94018da7c4bbb8267f62df11774c30ce6f6"
+                "url": "https://ftp.drupal.org/files/projects/asset_injector-8.x-2.10.zip",
+                "reference": "8.x-2.10",
+                "shasum": "c7912ce49cdfbb517bfecc6301d417f0c9ab9833"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9.0 || ^10.0"
@@ -1861,8 +1861,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.9",
-                    "datestamp": "1643764374",
+                    "version": "8.x-2.10",
+                    "datestamp": "1647880963",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
