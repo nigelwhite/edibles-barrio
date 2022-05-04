@@ -33,7 +33,7 @@
         "drupal/commerce_stripe": "^1.0@RC",
         "drupal/console": "^1.0.2",
         "drupal/core-composer-scaffold": "~9.0.0@dev",
-        "drupal/core-recommended": "9.3.9",
+        "drupal/core-recommended": "9.3.12",
         "drupal/crop": "^2.2",
         "drupal/ctools": "^3.0",
         "drupal/daterange_compact": "1.x-dev",
