@@ -59,7 +59,7 @@
         "drupal/styles_api": "^1.0",
         "drupal/symfony_mailer": "^1.0@alpha",
         "drupal/upgrade_status": "^3.13",
-        "drupal/views_bootstrap": "^4.1",
+        "drupal/views_bootstrap": "^5.4",
         "drupal/views_slideshow": "^4.6",
         "drupal/views_taxonomy_term_name_depth": "^7.0",
         "drush/drush": "^10",
