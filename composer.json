@@ -65,7 +65,7 @@
         "drush/drush": "^10",
         "symfony/validator": "^4",
         "symfony/yaml": "4.4.37",
-        "twig/twig": "2.15.1",
+        "twig/twig": "2.15.3",
         "typo3/phar-stream-wrapper": "3.1.7",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
