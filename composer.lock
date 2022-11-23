@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de69c8c078221061dc24b30e91263743",
+    "content-hash": "0a6d0000975e6ca5ff76b211a3ad2f93",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5182,17 +5182,17 @@
         },
         {
             "name": "drupal/symfony_mailer",
-            "version": "1.0.0-alpha10",
+            "version": "1.1.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/symfony_mailer.git",
-                "reference": "1.0.0-alpha10"
+                "reference": "1.1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/symfony_mailer-1.0.0-alpha10.zip",
-                "reference": "1.0.0-alpha10",
-                "shasum": "0493bb4525ed5a1dfe0137841f6689625528909b"
+                "url": "https://ftp.drupal.org/files/projects/symfony_mailer-1.1.0-beta2.zip",
+                "reference": "1.1.0-beta2",
+                "shasum": "67fc7026877119b79068c0dafba63dd2cd31e18c"
             },
             "require": {
                 "drupal/core": "^9.1",
@@ -5203,8 +5203,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-alpha10",
-                    "datestamp": "1655569040",
+                    "version": "1.1.0-beta2",
+                    "datestamp": "1666550275",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -11651,7 +11651,7 @@
         "drupal/inline_entity_form": 5,
         "drupal/libraries": 15,
         "drupal/rules": 15,
-        "drupal/symfony_mailer": 15
+        "drupal/symfony_mailer": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
