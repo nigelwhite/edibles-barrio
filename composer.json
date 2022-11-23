@@ -21,7 +21,6 @@
         "drupal/address": "^1.10",
         "drupal/admin_toolbar": "^3.2",
         "drupal/asset_injector": "^2.10",
-        "drupal/backup_migrate": "^5.0",
         "drupal/block_styles": "^2.0",
         "drupal/blockgroup": "^1.1",
         "drupal/bootstrap_barrio": "^5.5",
