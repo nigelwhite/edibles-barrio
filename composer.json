@@ -143,11 +143,7 @@
         },
         "extra": {
             "enable-patching": true,
-            "patches": {
-                "drupal/core": {
-                    "PHP warning Undefined variable $optional_details on uninstall confirmaition page": "https://www.drupal.org/files/issues/2020-07-25/Solution.patch"
-                }
-            }
+            "patches": {}
         }
     }
 }
