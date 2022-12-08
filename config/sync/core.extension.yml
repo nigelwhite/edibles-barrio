@@ -83,6 +83,7 @@ module:
   path_alias: 0
   profile: 0
   rdf: 0
+  recreate_block_content: 0
   responsive_image: 0
   schema_event: 0
   schema_metatag: 0
