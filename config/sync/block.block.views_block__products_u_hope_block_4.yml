@@ -12,7 +12,7 @@ dependencies:
 id: views_block__products_u_hope_block_4
 theme: barrio_sub
 region: side_block_group
-weight: 0
+weight: -12
 provider: null
 plugin: 'views_block:products_u_hope-block_4'
 settings:
