@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.restricted_html
     - media.type.embedded_image
     - media.type.file
     - media.type.image
@@ -15,9 +16,9 @@ dependencies:
     - node.type.subslider_image
     - taxonomy.vocabulary.tags
   module:
-    - backup_migrate
     - entity_browser
     - file
+    - filter
     - media
     - node
     - search
@@ -58,9 +59,9 @@ permissions:
   - 'edit any remote_video media'
   - 'edit any subslider_image content'
   - 'edit terms in tags'
-  - 'perform backup'
   - 'update any media'
   - 'use advanced search'
+  - 'use text format restricted_html'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view the administration theme'

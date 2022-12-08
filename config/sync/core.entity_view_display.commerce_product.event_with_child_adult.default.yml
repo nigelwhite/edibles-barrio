@@ -47,6 +47,8 @@ content:
     settings:
       image_link: ''
       image_style: rectangle_style_w_300
+      image_loading:
+        attribute: lazy
     third_party_settings:
       field_formatter_class:
         class: ''

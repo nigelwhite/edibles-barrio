@@ -23,10 +23,13 @@ content:
     settings:
       image_link: content
       image_style: thumbnail
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   commerce_remote_id: true
+  customer_profiles: true
   member_for: true
   profile_customer: true
