@@ -11,8 +11,8 @@ dependencies:
     - barrio_sub
 id: useraccountsecondary
 theme: barrio_sub
-region: sidebar_second
-weight: -12
+region: footer_fifth
+weight: -15
 provider: null
 plugin: 'system_menu_block:user-account-secondary'
 settings:
@@ -24,15 +24,13 @@ settings:
   depth: 0
   expand_all_items: false
 visibility:
-  request_path:
-    id: request_path
-    negate: true
-    context_mapping: {  }
-    pages: "/cart\r\n/checkout/*/order_information\r\n/checkout/*/review\r\n/checkout/*/complete\r\n/product/*"
   user_role:
     id: user_role
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
     roles:
-      authenticated: authenticated
+      administrator: administrator
+      editor: editor
+      shop_manager: shop_manager
+      manager: manager
