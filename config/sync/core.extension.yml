@@ -15,6 +15,7 @@ module:
   blockgroup: 0
   bootstrap_layouts: 0
   breakpoint: 0
+  checklistapi: 0
   ckeditor: 0
   coffee: 0
   color: 0
@@ -94,6 +95,7 @@ module:
   schema_web_page: 0
   schema_web_site: 0
   search: 0
+  seo_checklist: 0
   shortcut: 0
   state_machine: 0
   styles_api: 0
