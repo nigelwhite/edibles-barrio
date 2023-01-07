@@ -68,7 +68,7 @@
         "drupal/views_slideshow": "^4.6",
         "drupal/views_taxonomy_term_name_depth": "^7.0",
         "drupal/xmlsitemap": "^1.4",
-        "drush/drush": "^10",
+        "drush/drush": "^11",
         "symfony/validator": "^4",
         "symfony/yaml": "4.4.37",
         "twig/twig": "2.15.3",
