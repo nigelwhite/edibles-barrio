@@ -47,6 +47,7 @@
         "drupal/field_formatter_class": "^1.1",
         "drupal/field_group": "^3.0",
         "drupal/filefield_paths": "^1.0@beta",
+        "drupal/google_analytics": "^4.0",
         "drupal/honeypot": "^2.1",
         "drupal/hreflang": "^1.9",
         "drupal/image_widget_crop": "^2.2",
