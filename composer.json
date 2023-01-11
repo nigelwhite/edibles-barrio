@@ -23,6 +23,7 @@
         "drupal/asset_injector": "^2.10",
         "drupal/block_styles": "^2.0",
         "drupal/blockgroup": "^1.1",
+        "drupal/bootstrap5": "^2.0",
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/bootstrap_layouts": "^5.1",
         "drupal/coffee": "^1.0@beta",
