@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:basic:28f993e8-691f-4923-9efc-dddd3ee16071'
   module:
     - block_content
-    - system
   theme:
     - barrio_sub
 id: customfooter
@@ -23,9 +22,4 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    negate: true
-    context_mapping: {  }
-    pages: '<front>'
+visibility: {  }

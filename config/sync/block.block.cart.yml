@@ -24,4 +24,4 @@ visibility:
     id: request_path
     negate: true
     context_mapping: {  }
-    pages: "/cart\r\n/checkout/*/order_information\r\n/checkout/*/review\r\n/checkout/*/complete\r\n/gallery\r\n/about\r\n/volunteer-visit\r\n/venue-hire\r\n/blog\r\n/contact-edibles\r\n/contact/edibles\r\n/veg-boxes-are-go"
+    pages: "/cart\r\n/checkout/*/order_information\r\n/checkout/*/review\r\n/checkout/*/complete\r\n/gallery\r\n/about\r\n/volunteer-visit\r\n/venue-hire\r\n/blog\r\n/events\r\n/contact-edibles\r\n/contact/edibles\r\n/veg-boxes-are-go"
