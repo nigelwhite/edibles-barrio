@@ -7,6 +7,12 @@ _core:
 id: node
 label: Content
 tags:
-  title: '[node:title] | [site:name]'
-  description: '[node:summary]'
   canonical_url: '[node:url]'
+  description: '[node:summary]'
+  schema_article_date_published: '[node:created:html_datetime]'
+  schema_article_description: '[node:summary]'
+  schema_article_headline: '[node:title]'
+  schema_article_image: 'a:4:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:31:"[node:field_image:0:entity:url]";s:5:"width";s:26:"[node:field_image:0:width]";s:6:"height";s:27:"[node:field_image:0:height]";}'
+  schema_article_name: '[node:title]'
+  schema_article_type: BackgroundNewsArticle
+  title: '[node:title] | [site:name]'
