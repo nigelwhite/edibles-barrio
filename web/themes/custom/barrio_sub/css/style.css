@@ -403,11 +403,10 @@ Medium devices (tablets, 768px and up)
 
   /* Social Navigation */
 
-  #block-sideblockgroup {
+  /* #block-sideblockgroup {
     display: block;
     padding-top: 0.5em;
     border-radius: 20px;
-    /* background-color: rgb(239, 241, 240, 0.3); */
     background-color: #292f33;
     width: 20%;
     height: auto;
@@ -417,7 +416,7 @@ Medium devices (tablets, 768px and up)
     left: 85%;
     transform: translate(-50%, 1%);
     z-index: 1;
-  }
+  } */
 
   /* #block-twitterfeedblock li{
         border: none;
@@ -448,10 +447,10 @@ Medium devices (tablets, 768px and up)
     width: 100%;
   }
 
-  #block-sideblockgroup a {
+  /* #block-sideblockgroup a {
     color: white;
     text-transform: lowercase;
-  }
+  } */
 
   #main-wrapper {
     margin-right: 10%;
