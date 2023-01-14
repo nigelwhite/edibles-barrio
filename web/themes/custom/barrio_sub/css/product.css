@@ -148,7 +148,7 @@ div[id^="edit-purchased-entity-wrapper--"],
   display: none;
 }
 
-#block-views-block-products-u-hope-block-1-2 h5,
+#block-views-block-products-u-hope-block-1 h5,
 #block-views-block-products-u-hope-block-2 h5,
 #block-views-block-products-u-hope-block-3 h5 {
   background-color: #707070;
@@ -178,3 +178,11 @@ div[id^="edit-purchased-entity-wrapper--"],
     padding: 0;
   }
 }
+
+.region-featured-bottom-first {
+  justify-content: center;
+}
+
+/* =========================================
+Medium devices (tablets, 768px and up)
+============================================ */
