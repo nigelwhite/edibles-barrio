@@ -5,14 +5,14 @@ dependencies: {  }
 id: short
 label: Short
 date_settings:
-  default_pattern: j.n.y
-  separator: '-'
+  default_pattern: 'j M y'
+  separator: ' - '
   same_month_start_pattern: j
-  same_month_end_pattern: j.n.y
-  same_year_start_pattern: j.n
-  same_year_end_pattern: j.n.y
+  same_month_end_pattern: 'j M y'
+  same_year_start_pattern: 'j M'
+  same_year_end_pattern: 'j M y'
 datetime_settings:
-  default_pattern: 'j.n.y H:i'
-  separator: '-'
-  same_day_start_pattern: 'j.n.y H:i'
+  default_pattern: 'j M y H:i'
+  separator: ' - '
+  same_day_start_pattern: 'j M y H:i'
   same_day_end_pattern: 'H:i'
