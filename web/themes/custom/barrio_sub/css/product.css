@@ -1,169 +1,180 @@
 /* Commerce stuff */
 
 .highlight {
-    background-color: purple;
+  background-color: purple;
 }
 
 #block-cart {
-    background-color: rgb(209, 117, 92);
-    border-radius: 20px;
-    padding: 5px 15px;
+  background-color: rgb(209, 117, 92);
+  border-radius: 20px;
+  padding: 5px 15px;
 }
 
 .button--add-to-cart {
-    background-color: rgb(209, 117, 92) !important;
-    border-radius: 20px;
-    text-align: center;
-    border: none;
-    padding: 3px 10px;
+  background-color: rgb(209, 117, 92) !important;
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+  padding: 3px 10px;
 }
 
 .form-number.form-control {
-max-width: 80px;
+  max-width: 80px;
 }
 
 .cart-block--summary__icon img {
-    width: 20px;
+  width: 20px;
 }
 
 .sidebar h2 {
-    /* text-shadow: none;
+  /* text-shadow: none;
     border-bottom: none; */
-    display: none;
+  display: none;
 }
 
 .cart-block--summary__count {
-    font-size: 1.25em;
-    margin-left: 10%;
-    color: #fff;
+  font-size: 1.25em;
+  margin-left: 10%;
+  color: #fff;
 }
 
 .cart-block--contents__links {
-    background-color: rgb(209, 117, 92);
-    border-radius: 5px;
-    width: 100px;
-    height: 30px;
-    margin-right: 20px;
-    float: right;
-    text-align: center;
-    margin-bottom: 10px;
+  background-color: rgb(209, 117, 92);
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  margin-right: 20px;
+  float: right;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .cart-block--contents__links a {
-    text-transform: capitalize;
-    margin-top: 10px;
-    line-height: 30px;
-    font-size: 1.5em;
+  text-transform: capitalize;
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 1.5em;
 }
 
 .checkout-progress {
-    background-color: rgb(209, 117, 92);
-    border-radius: 5px;
-    padding: 5px;
-    text-align: center;
-    color: #fff;
+  background-color: rgb(209, 117, 92);
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
 }
 
 /* new */
 
 .product-title-nw {
-    display: block;
-    width: 100%;
-    font-size: 2rem;
-    font-weight: bold;
+  display: block;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .product-title-nw a {
-    display: block;
-    width: 100%;
-    font-size: 1rem;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
 }
 
 .product-desc-short-nw {
-    display: block;
-    width: 100%;
-    margin-bottom: 0.75rem;
-    font-size: 1.25rem;
+  display: block;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
 }
 
 .product-col-nw {
-    padding-left: 0;
-    margin-left: 0;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .product-img-nw,
 .product-stock-nw {
-    margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 #edit-field-drop-off-preference--wrapper .fieldset-legend {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .field--name-quantity,
 .js-form-item-quantity-0-value {
-    padding-left: 0;
-    margin-left: 0;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .field--name-field-dietary-preferences .form-group,
 .field--name-field-dietary-preferences,
 .field--name-field-drop-off-preference .form-group,
 .field--name-field-drop-off-preference {
-    padding-left: 0;
-    margin-left: 0;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .commerce-order-item-add-to-cart-form .form-group#edit-actions {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .product-variations-nw {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 #edit-purchased-entity-wrapper,
 #edit-purchased-entity-0-attributes {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 /* Adult/child option on the product */
 
-fieldset[id^='edit-purchased-entity-0-attributes-attribute-customer-age'] .fieldset-legend {
-    display: none;
+fieldset[id^="edit-purchased-entity-0-attributes-attribute-customer-age"]
+  .fieldset-legend {
+  display: none;
 }
 
-fieldset[id^='edit-purchased-entity-0-attributes-attribute-customer-age'],
-div[id^='edit-purchased-entity-0-attributes'],
-div[id^='edit-purchased-entity-wrapper--'],
+fieldset[id^="edit-purchased-entity-0-attributes-attribute-customer-age"],
+div[id^="edit-purchased-entity-0-attributes"],
+div[id^="edit-purchased-entity-wrapper--"],
 #edit-purchased-entity-0-attributes-attribute-customer-age--wrapper {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 /* Diet option on the product */
 
 /* fieldset[id^='edit-purchased-entity-0-attributes-attribute-customer-age'] .fieldset-legend */
 #edit-field-dietary-preferences--wrapper .fieldset-legend {
-    display: none;
+  display: none;
 }
 
 #block-views-block-products-u-hope-block-1-2 h5,
 #block-views-block-products-u-hope-block-2 h5,
 #block-views-block-products-u-hope-block-3 h5 {
-    background-color: #707070;
-    border-radius: 5px;
-    color: white;
-    text-align: center;
-    margin-bottom: 1rem;
+  background-color: #707070;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+#block-views-block-products-u-hope-block-5 {
+  padding: 10px;
+}
+
+#block-views-block-products-u-hope-block-5 .row {
+  display: flex;
+  flex-direction: column;
 }
 
 .events-uberclass .view-content {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 500px) {
-    .views-field-edit-quantity .form-control {
-        padding: 0;
-    }
+  .views-field-edit-quantity .form-control {
+    padding: 0;
+  }
 }

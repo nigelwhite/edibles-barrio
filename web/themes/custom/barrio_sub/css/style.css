@@ -299,6 +299,10 @@ figcaption {
   margin-top: 20px;
 }
 
+.twitter-timeline {
+  padding: 10px;
+}
+
 /* =========================================
 Medium devices (tablets, 768px and up)
 ============================================ */
