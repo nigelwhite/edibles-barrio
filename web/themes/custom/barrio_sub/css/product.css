@@ -159,16 +159,21 @@ div[id^="edit-purchased-entity-wrapper--"],
   margin-top: 2rem;
 }
 
-#block-views-block-products-u-hope-block-5 {
+#block-views-block-products-u-hope-block-5,
+#block-sideblockproductsheaderimage {
   padding: 10px;
-  margin-top: 7rem;
+  margin-top: 4rem;
 }
 
-#block-views-block-products-u-hope-block-5 h2 {
-  margin-bottom: 3rem;
-  font-size: 1.5vw;
+.link-to-events-page {
+  font-size: 1.4rem;
   font-weight: 500;
   text-align: center;
+}
+
+.nav-order-products {
+  font-size: 1.5vw;
+  font-weight: 500;
 }
 
 #block-views-block-products-u-hope-block-5 .row {
@@ -191,13 +196,18 @@ div[id^="edit-purchased-entity-wrapper--"],
   }
 }
 
-.region-featured-bottom-first {
+.region-featured-bottom-first,
+.region-featured-bottom-second {
   justify-content: center;
 }
 
 .products-header-img {
   max-width: 650px;
   margin: 0 auto;
+}
+
+.products-header-img img {
+  border-radius: 3%;
 }
 
 /* =========================================

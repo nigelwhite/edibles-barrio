@@ -90,3 +90,16 @@ bootstrap_barrio_region_clean_events_group: 0
 bootstrap_barrio_region_class_events_group: row
 bootstrap_barrio_region_clean_side_block_group: 0
 bootstrap_barrio_region_class_side_block_group: row
+bootstrap_barrio_source: '0'
+bootstrap_barrio_region_clean_event_products: 0
+bootstrap_barrio_region_class_event_products: row
+bootstrap_barrio_hide_node_label: 0
+bootstrap_barrio_image_fluid: 0
+bootstrap_barrio_navbar_top_class: ''
+bootstrap_barrio_navbar_class: ''
+bootstrap_barrio_navbar_offcanvas: ''
+bootstrap_barrio_navbar_flyout: 0
+bootstrap_barrio_navbar_slide: 0
+bootstrap_barrio_tabs_style: ''
+bootstrap_barrio_messages_widget: default
+bootstrap_barrio_bootstrap_icons: 0

@@ -1727,7 +1727,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      title: 'Upcoming events at Edibles'
+      title: ''
       fields:
         field_image:
           id: field_image
@@ -2037,8 +2037,23 @@ display:
         fields: false
         filters: false
         filter_groups: false
+        header: false
       css_class: ''
       display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<p class="link-to-events-page"><a href="/events">Upcoming events at Edibles</a></p>'
+            format: full_html
+          tokenize: false
       display_extenders: {  }
       block_description: 'All events'
       block_category: Product

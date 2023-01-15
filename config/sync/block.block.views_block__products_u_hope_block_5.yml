@@ -11,8 +11,8 @@ dependencies:
     - barrio_sub
 id: views_block__products_u_hope_block_5
 theme: barrio_sub
-region: featured_bottom_first
-weight: 0
+region: featured_bottom_second
+weight: -16
 provider: null
 plugin: 'views_block:products_u_hope-block_5'
 settings:
