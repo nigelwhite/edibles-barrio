@@ -1727,7 +1727,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      title: ''
+      title: 'Upcoming events at Edibles'
       fields:
         field_image:
           id: field_image
