@@ -2,7 +2,7 @@ _core:
   default_config_hash: 9rAU4Pku7eMBQxauQqAgjzlcicFZ2As6zEa6zvTlCB8
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: themes/custom/barrio_sub/edibles-favicon.ico
+  path: 'public://edibles-favicon.ico'
   url: ''
   use_default: false
 features:
