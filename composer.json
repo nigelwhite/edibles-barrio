@@ -63,6 +63,7 @@
         "drupal/schema_metatag": "^2.4",
         "drupal/seo_checklist": "^5.1",
         "drupal/stage_file_proxy": "^2.0",
+        "drupal/structure_sync": "^2.0",
         "drupal/styles_api": "^1.0",
         "drupal/symfony_mailer": "^1.1@beta",
         "drupal/upgrade_status": "^3.13",
