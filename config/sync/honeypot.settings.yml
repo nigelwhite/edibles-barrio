@@ -15,8 +15,7 @@ form_settings:
   user_register_form: false
   user_pass: false
   contact_message_edibles_form: true
-  contact_message_feedback_form: false
-  contact_message_personal_form: false
+  contact_message_personal_form: true
   node_article_form: false
   node_basic_page_2_form: false
   node_courses_and_events_form: false

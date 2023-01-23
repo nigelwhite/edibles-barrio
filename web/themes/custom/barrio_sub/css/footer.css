@@ -1,76 +1,75 @@
 .page-nonhome {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .main-wrapper-nonhome {
-    flex-grow: 1;
-    padding-top: 30px;
+  flex-grow: 1;
+  padding-top: 30px;
 }
 
 .site-footer {
-    padding: 0;
-    width: 100%;
+  padding: 0;
+  width: 100%;
 }
 
 .site-footer .container-fluid {
-    padding: 0;
+  padding: 0;
 }
 
 .site-footer .block {
-    margin: 0;
+  margin: 0;
 }
 
 .site-footer__top .content {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .site-footer__top .content li a {
-    border: 0;
+  padding: 0.5em 2px 0.5em 20px;
+  border: 0;
 }
 
-#block-customfooter {
-    width: 100%;
-    text-align: center;
-    background-color: #707070;
-    color: white;
-    font-size: 1.25rem;
+#block-sociallinksforfooter {
+  width: 100%;
+  text-align: center;
+  background-color: #707070;
+  color: white;
+  font-size: 1.25rem;
 }
 
-#block-customfooter ul {
-    list-style: none;
-    margin-bottom: 0;
-    padding-left: 0;
+#block-sociallinksforfooter ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-#block-customfooter ul a {
-    color: white;
+#block-sociallinksforfooter ul a {
+  color: white;
 }
 
-#block-customfooter li {
-    padding-bottom: 5px;
+#block-sociallinksforfooter li {
+  padding-bottom: 5px;
 }
 
 /* =========================================
 Medium devices (tablets, 768px and up)
 ============================================ */
 @media (min-width: 768px) {
-
-    #block-customfooter li {
-        display: inline-block;
-        padding: 5px 20px;
-    }
-
+  #block-sociallinksforfooter li {
+    display: inline-block;
+    padding: 5px 20px;
+  }
 }
 
 /* =========================================
 Large devices (desktops, 992px and up)
 ============================================ */
 @media (min-width: 992px) {
-
-    #block-customfooter li {
-        padding: 5px 40px;
-    }
-
+  #block-sociallinksforfooter li {
+    padding: 5px 40px;
+  }
+  #block-sociallinksforfooter ul {
+    font-size: 1.75vw;
 }
+
