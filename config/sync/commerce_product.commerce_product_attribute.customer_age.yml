@@ -1,7 +1,0 @@
-uuid: 3f352bc4-daaf-4fce-981b-8aa61b66e77c
-langcode: en
-status: true
-dependencies: {  }
-id: customer_age
-label: Child/adult
-elementType: radios

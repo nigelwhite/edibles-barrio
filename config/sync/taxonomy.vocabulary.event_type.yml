@@ -1,8 +1,0 @@
-uuid: 215a9e8b-6f64-4244-aeb6-44b40e5637ef
-langcode: en
-status: true
-dependencies: {  }
-name: 'Physical product category'
-vid: event_type
-description: ''
-weight: 0

@@ -1,8 +1,0 @@
-uuid: f624a53d-9c6e-40ad-96e7-9a6baed507e3
-langcode: en
-status: true
-dependencies: {  }
-id: vshort_t
-label: 'Vshort t'
-locked: false
-pattern: 'd/m/y g:i a'

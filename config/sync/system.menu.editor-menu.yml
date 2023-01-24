@@ -1,8 +1,0 @@
-uuid: aaefd0d3-c84d-409f-b519-ef5a0f82106f
-langcode: en
-status: true
-dependencies: {  }
-id: editor-menu
-label: 'Content admin'
-description: ''
-locked: false

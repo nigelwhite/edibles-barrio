@@ -1,8 +1,0 @@
-uuid: 17df48b0-14b3-4646-9805-6d6594e94182
-langcode: en
-status: true
-dependencies: {  }
-id: vshort
-label: Vshort
-locked: false
-pattern: d/m/y
