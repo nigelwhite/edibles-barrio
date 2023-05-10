@@ -169,10 +169,19 @@ div[id^="edit-purchased-entity-wrapper--"],
   margin-top: 2rem;
 }
 
-.link-to-events-page {
+.nav-order-products a,
+.link-to-events-page a {
   font-size: 1.4rem;
   font-weight: 500;
   text-align: center;
+  background-color: #707070;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 3rem;
+}
+
+.link-to-events-page a {
+  color: white;
 }
 
 .nav-order-products {
@@ -224,7 +233,7 @@ Extra large devices (large desktops, 1200px and up)
   #block-views-block-products-u-hope-block-5 .row {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
   }
   #block-views-block-products-u-hope-block-5 img {
@@ -232,5 +241,8 @@ Extra large devices (large desktops, 1200px and up)
   }
   #block-views-block-products-u-hope-block-5 {
     text-align: center;
+  }
+  #block-views-block-products-u-hope-block-5 .product-title-nw {
+    margin: 1rem 0;
   }
 }
