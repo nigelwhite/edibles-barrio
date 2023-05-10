@@ -41,3 +41,5 @@
 # ignore local dev resources
 /localdev
 readmeNW.txt
+
+/config/sync/*stripe*
