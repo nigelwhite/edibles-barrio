@@ -171,6 +171,7 @@ div[id^="edit-purchased-entity-wrapper--"],
 
 .nav-order-products a,
 .link-to-events-page a {
+  display: inline-block;
   font-size: 1.4rem;
   font-weight: 500;
   text-align: center;
@@ -178,10 +179,17 @@ div[id^="edit-purchased-entity-wrapper--"],
   border-radius: 5px;
   margin-bottom: 1rem;
   padding: 0.5rem 3rem;
+  color: white;
+  width: 40rem;
 }
 
-.link-to-events-page a {
+.nav-order-products a:hover,
+.link-to-events-page a:hover {
   color: white;
+}
+
+.picked-freshly {
+  color: black;
 }
 
 .nav-order-products {
