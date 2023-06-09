@@ -43,3 +43,4 @@
 readmeNW.txt
 
 /config/sync/*stripe*
+/config/sync/ignore/
