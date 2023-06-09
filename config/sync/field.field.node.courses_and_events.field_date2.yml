@@ -1,0 +1,21 @@
+uuid: f18f6528-cb56-4270-99e0-7d171fd3f8af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date2
+    - node.type.courses_and_events
+  module:
+    - datetime_range
+id: node.courses_and_events.field_date2
+field_name: field_date2
+entity_type: node
+bundle: courses_and_events
+label: 'Date and times'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

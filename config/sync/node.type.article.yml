@@ -1,0 +1,20 @@
+uuid: 4305d695-1fd3-4ceb-ab8a-9d09e21aa714
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
+name: Article
+type: article
+description: 'Blog posts and other time-sensitive content like news, press releases. Optionally add to Blog Stream. Optionally upload a new rectangular image (min 400x240px max 1mb), using manual crop.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

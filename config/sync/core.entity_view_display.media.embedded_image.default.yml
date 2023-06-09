@@ -1,0 +1,34 @@
+uuid: 2130d3bd-2302-40d7-b55f-a92979f2f9f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.embedded_image.field_media_image_1
+    - image.style.rectangle_style_w_300
+    - media.type.embedded_image
+  module:
+    - field_formatter_class
+    - image
+id: media.embedded_image.default
+targetEntityType: media
+bundle: embedded_image
+mode: default
+content:
+  field_media_image_1:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: rectangle_style_w_300
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

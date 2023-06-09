@@ -1,0 +1,19 @@
+uuid: d7e24d54-9b11-4adf-bc94-c26549ad9e72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_description
+    - node.type.produce
+id: node.produce.field_short_description
+field_name: field_short_description
+entity_type: node
+bundle: produce
+label: 'Short description'
+description: 'Max 50 characters'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

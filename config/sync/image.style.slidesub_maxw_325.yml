@@ -1,0 +1,25 @@
+uuid: ddf9572b-a516-4f51-96c9-016390db5702
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.slide_sub_crop
+  module:
+    - crop
+name: slidesub_maxw_325
+label: 'Slidesub maxw 325'
+effects:
+  3ddd844d-518b-484a-8c36-3c0d7392fc14:
+    uuid: 3ddd844d-518b-484a-8c36-3c0d7392fc14
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: slide_sub_crop
+  579ad98b-f411-4d00-9413-edde0127032f:
+    uuid: 579ad98b-f411-4d00-9413-edde0127032f
+    id: image_scale
+    weight: 2
+    data:
+      width: 325
+      height: null
+      upscale: false

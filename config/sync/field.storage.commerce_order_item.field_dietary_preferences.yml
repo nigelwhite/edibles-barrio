@@ -1,0 +1,30 @@
+uuid: 69cba8b1-4c09-4aad-b324-123aea452313
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+    - options
+id: commerce_order_item.field_dietary_preferences
+field_name: field_dietary_preferences
+entity_type: commerce_order_item
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Vegetarian
+      label: Vegetarian
+    -
+      value: Vegan
+      label: Vegan
+    -
+      value: 'Gluten free'
+      label: 'Gluten free'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

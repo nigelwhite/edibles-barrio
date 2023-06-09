@@ -1,0 +1,23 @@
+uuid: 2f372348-89d9-4190-a54e-6cc2cc110a8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enabled
+    - node.type.produce
+id: node.produce.field_enabled
+field_name: field_enabled
+entity_type: node
+bundle: produce
+label: Available
+description: 'Is this category of produce available at the moment. If ticked, the category will appear on the Produce page.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

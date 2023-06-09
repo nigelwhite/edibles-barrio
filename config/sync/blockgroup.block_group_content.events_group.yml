@@ -1,0 +1,6 @@
+uuid: f8b8cb82-c952-40ce-843e-9b4f73eb26b5
+langcode: en
+status: true
+dependencies: {  }
+id: events_group
+label: 'Events group'

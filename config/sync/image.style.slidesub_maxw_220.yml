@@ -1,0 +1,25 @@
+uuid: 974668a0-520b-4837-8056-f73e3507f71e
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.slide_sub_crop
+  module:
+    - crop
+name: slidesub_maxw_220
+label: 'Slidesub maxw 220'
+effects:
+  4c75b05d-9ca7-4622-9a64-5a0ede8feaac:
+    uuid: 4c75b05d-9ca7-4622-9a64-5a0ede8feaac
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: slide_sub_crop
+  99f55343-39e2-45be-bfdc-eb59e82e8fe9:
+    uuid: 99f55343-39e2-45be-bfdc-eb59e82e8fe9
+    id: image_scale
+    weight: 2
+    data:
+      width: 220
+      height: null
+      upscale: false

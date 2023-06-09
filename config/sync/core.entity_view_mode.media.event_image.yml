@@ -1,0 +1,10 @@
+uuid: 6c73b97b-2a7d-400d-9a60-2254578641a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.event_image
+label: 'Event image'
+targetEntityType: media
+cache: true

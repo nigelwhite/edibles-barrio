@@ -1,0 +1,36 @@
+uuid: ba1daaab-9a24-43d2-bf10-3adc6490392e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.user-account-secondary
+  module:
+    - system
+    - user
+  theme:
+    - barrio_sub
+id: useraccountsecondary
+theme: barrio_sub
+region: footer_fifth
+weight: -15
+provider: null
+plugin: 'system_menu_block:user-account-secondary'
+settings:
+  id: 'system_menu_block:user-account-secondary'
+  label: 'User Account secondary'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      editor: editor
+      shop_manager: shop_manager
+      manager: manager

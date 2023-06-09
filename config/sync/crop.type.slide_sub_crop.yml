@@ -1,0 +1,12 @@
+uuid: 0b48e070-90b9-47f9-92a2-19ea1e15ea3b
+langcode: en
+status: true
+dependencies: {  }
+label: slide-sub-crop
+id: slide_sub_crop
+description: ''
+aspect_ratio: '96:25'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 2600
+hard_limit_height: 677

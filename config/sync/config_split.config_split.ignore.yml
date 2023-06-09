@@ -1,0 +1,16 @@
+uuid: da6f8e27-a588-472c-9cdd-4d565b339df4
+langcode: en
+status: true
+dependencies: {  }
+id: ignore
+label: ignore
+description: ''
+weight: 0
+folder: ../config/ignore
+module:
+  commerce_stripe: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

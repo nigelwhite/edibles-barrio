@@ -1,0 +1,27 @@
+uuid: 7bbd8f0b-c693-47e8-a861-4d1b48126517
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attach
+    - node.type.article
+  module:
+    - file
+id: node.article.field_attach
+field_name: field_attach
+entity_type: node
+bundle: article
+label: Attach
+description: 'It is best to convert your file to .pdf before attaching. PDF means Portable Document Format and it is designed so anyone can view it, on any device.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: true
+field_type: file

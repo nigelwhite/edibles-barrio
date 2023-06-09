@@ -1,0 +1,35 @@
+uuid: c9ee452e-2262-46c4-b79c-0ff08b5dd715
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.max_1300x1300
+    - image.style.max_2600x2600
+    - image.style.max_325x325
+    - image.style.max_650x650
+    - image.style.max_900x900
+    - image.style.medium
+    - image.style.square_style
+    - image.style.thumbnail
+id: square
+label: 'Square responsive'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - large
+        - max_1300x1300
+        - max_2600x2600
+        - max_325x325
+        - max_650x650
+        - max_900x900
+        - medium
+        - square_style
+        - thumbnail
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: thumbnail

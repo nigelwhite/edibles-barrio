@@ -1,0 +1,82 @@
+uuid: acf90b68-f4dc-41f5-9ea6-c5a7bde5275b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.courses_and_events.body
+    - field.field.node.courses_and_events.field_attach
+    - field.field.node.courses_and_events.field_date2
+    - field.field.node.courses_and_events.field_media_asset
+    - field.field.node.courses_and_events.field_tags2
+    - field.field.node.courses_and_events.field_type
+    - node.type.courses_and_events
+  module:
+    - datetime_range
+    - file
+    - media_library
+    - text
+id: node.courses_and_events.default
+targetEntityType: node
+bundle: courses_and_events
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_attach:
+    type: file_generic
+    weight: 6
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_date2:
+    type: daterange_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_asset:
+    type: media_library_widget
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tags2:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_type:
+    type: options_buttons
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

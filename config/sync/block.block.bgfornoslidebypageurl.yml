@@ -1,0 +1,31 @@
+uuid: ba53a3c3-a1d7-4483-b16c-0c5b8c7e79c6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ed302ab1-4a4e-415d-abf9-ca03dbeb8151'
+  module:
+    - block_content
+    - system
+  theme:
+    - barrio_sub
+id: bgfornoslidebypageurl
+theme: barrio_sub
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'block_content:ed302ab1-4a4e-415d-abf9-ca03dbeb8151'
+settings:
+  id: 'block_content:ed302ab1-4a4e-415d-abf9-ca03dbeb8151'
+  label: 'bg for no-slide by page url'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/event-management\r\n/user/*\r\n/media/*\r\n/taxonomy/term/*\r\n/term/*\r\n/tags/*\r\n/contact/edibles\r\n/contact/feedback\r\n/events\r\n/product/*\r\n/cart\r\n/checkout/*\r\n/salad-box-management\r\n/order-ediblescustom\r\n/products\r\n/orders/custom\r\n/contact"

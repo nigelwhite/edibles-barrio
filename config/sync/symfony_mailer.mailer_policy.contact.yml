@@ -1,0 +1,12 @@
+uuid: 80dcaaf7-0a95-4078-8ef4-a1dc486fdf70
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+_core:
+  default_config_hash: hNnHk1jtvS_lezOW8CXkrFUEg3SlVaH8SEIilXxmC0Y
+id: contact
+configuration:
+  email_subject:
+    value: 'Email from edibles.org.uk web site'

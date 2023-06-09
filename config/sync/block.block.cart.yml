@@ -1,0 +1,27 @@
+uuid: eaada0f9-7f14-4d1e-b644-e24e1bae5e32
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+    - system
+  theme:
+    - barrio_sub
+id: cart
+theme: barrio_sub
+region: sidebar_second
+weight: -16
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  label_display: visible
+  provider: commerce_cart
+  dropdown: true
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/cart\r\n/checkout/*/order_information\r\n/checkout/*/review\r\n/checkout/*/complete\r\n/gallery\r\n/about\r\n/volunteer-visit\r\n/venue-hire\r\n/blog\r\n/events\r\n/contact-edibles\r\n/contact/edibles\r\n/veg-boxes-are-go"

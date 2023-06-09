@@ -1,0 +1,25 @@
+uuid: ca9e45d4-7105-4b89-ac82-fb9df40ec473
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.square_crop
+  module:
+    - crop
+name: square_style
+label: 'Square 650'
+effects:
+  57ccc77d-154f-4d2d-ac1b-62adf9ab237f:
+    uuid: 57ccc77d-154f-4d2d-ac1b-62adf9ab237f
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: square_crop
+  a0b00c18-aafa-4c2c-bc89-04344f09c2f6:
+    uuid: a0b00c18-aafa-4c2c-bc89-04344f09c2f6
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 650
+      height: 650
+      anchor: center-center

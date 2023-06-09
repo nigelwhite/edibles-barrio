@@ -1,0 +1,24 @@
+uuid: 573ae5fc-eafa-4943-b221-3001f7b1bf15
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.products_u_hope
+  module:
+    - views
+  theme:
+    - barrio_sub
+id: views_block__products_u_hope_block_1
+theme: barrio_sub
+region: event_products
+weight: 0
+provider: null
+plugin: 'views_block:products_u_hope-block_1'
+settings:
+  id: 'views_block:products_u_hope-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

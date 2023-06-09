@@ -1,0 +1,8 @@
+uuid: a0f10a60-0d14-45be-9c06-fc264fbe950f
+langcode: en
+status: true
+dependencies: {  }
+id: views_block__products_u_hope_block_2
+theme: ''
+text: ''
+classes: col-md-4

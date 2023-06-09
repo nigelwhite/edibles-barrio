@@ -1,0 +1,21 @@
+uuid: d3cb03ff-6182-4818-9b72-12afddbbc191
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_stripe
+id: stripe_edibles
+label: 'Stripe Edibles'
+weight: -10
+plugin: stripe
+configuration:
+  display_label: Stripe
+  mode: live
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  publishable_key: pk_live_FXVNjfRUiIMU1bCwizQhJmYp00dTRNOB8w
+  secret_key: ***REMOVED***
+  enable_credit_card_icons: true
+conditions: {  }
+conditionOperator: AND

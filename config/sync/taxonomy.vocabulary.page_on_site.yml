@@ -1,0 +1,8 @@
+uuid: 0295b7fb-e68c-4227-a600-e230a2612cf6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Page on site'
+vid: page_on_site
+description: ''
+weight: 0

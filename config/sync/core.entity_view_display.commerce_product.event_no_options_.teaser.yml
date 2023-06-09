@@ -1,0 +1,73 @@
+uuid: 8c8c7787-04cb-471a-a498-c1354aa90cad
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.event_no_options_
+    - core.entity_view_mode.commerce_product.teaser
+    - field.field.commerce_product.event_no_options_.body
+    - field.field.commerce_product.event_no_options_.field_date
+    - field.field.commerce_product.event_no_options_.field_event_type
+    - field.field.commerce_product.event_no_options_.field_image
+    - field.field.commerce_product.event_no_options_.field_short_description
+    - image.style.rectangle_style_w200
+  module:
+    - datetime_range
+    - ds
+    - field_formatter_class
+    - image
+id: commerce_product.event_no_options_.teaser
+targetEntityType: commerce_product
+bundle: event_no_options_
+mode: teaser
+content:
+  field_date:
+    type: daterange_default
+    label: hidden
+    settings:
+      timezone_override: Europe/London
+      format_type: rosie_long
+      separator: '-'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+    weight: 3
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: rectangle_style_w200
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 1
+    region: content
+  field_short_description:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  created: true
+  field_event_type: true
+  stores: true
+  uid: true
+  variations: true

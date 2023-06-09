@@ -1,0 +1,8 @@
+uuid: dd4b5282-b5b5-4763-9d73-f81222e65c4c
+langcode: en
+status: true
+dependencies: {  }
+id: orders
+label: 'Shop admin'
+description: ''
+locked: false

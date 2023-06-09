@@ -1,0 +1,21 @@
+uuid: 5fb3970a-0dd6-4378-a91a-a7eb8dbdce57
+langcode: en
+status: true
+dependencies:
+  module:
+    - update
+_core:
+  default_config_hash: JOcNPf-ezI7vLCxZg4K9wpGqKYj6vMHlfsmhx_WGbTM
+id: update.status_notify
+configuration:
+  email_to:
+    addresses:
+      -
+        value: xm2@btinternet.com
+        display: ''
+  email_body:
+    content:
+      value: "<p>You need to take action to secure your server {{ site_name }}.</p>\r\n<ul>\r\n{% for message in messages %}\r\n  <li>{{ message }}</li>\r\n{% endfor %}\r\n</ul>\r\n\r\n<p>See the <a href=\"{{ update_status }}\">available updates</a> page for more information.\r\n{% if update_manager %}\r\n  You can automatically install your updates using the <a href=\"{{ update_manager }}\">Update manager</a>.\r\n{% endif %}\r\nYou can <a href=\"{{ update_settings }}\">change your settings</a> for what update notifications you receive.</p>"
+      format: email_html
+  email_subject:
+    value: 'New release(s) available for Edibles'

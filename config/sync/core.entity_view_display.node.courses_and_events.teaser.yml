@@ -1,0 +1,112 @@
+uuid: 88234dd6-c418-4f8b-a3ef-76d58a1b406b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.courses_and_events.body
+    - field.field.node.courses_and_events.field_attach
+    - field.field.node.courses_and_events.field_date2
+    - field.field.node.courses_and_events.field_media_asset
+    - field.field.node.courses_and_events.field_tags2
+    - field.field.node.courses_and_events.field_type
+    - image.style.rectangle_style
+    - node.type.courses_and_events
+  module:
+    - datetime_range
+    - ds
+    - field_formatter_class
+    - field_group
+    - media
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - group_div
+        - field_media_asset
+        - node_title
+        - field_date2
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: p
+          class: event-list-title
+  field_group:
+    group_div:
+      children:
+        - field_media_asset
+        - node_title
+        - field_date2
+      label: event-wrapper
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: event-wrapper
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.courses_and_events.teaser
+targetEntityType: node
+bundle: courses_and_events
+mode: teaser
+content:
+  field_date2:
+    type: daterange_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: vshort
+      separator: ''
+    third_party_settings:
+      field_formatter_class:
+        class: event-list-date
+    weight: 3
+    region: main
+  field_media_asset:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: rectangle_style
+    third_party_settings:
+      field_formatter_class:
+        class: event-teaser-img
+    weight: 1
+    region: main
+hidden:
+  body: true
+  field_attach: true
+  field_tags2: true
+  field_type: true
+  links: true

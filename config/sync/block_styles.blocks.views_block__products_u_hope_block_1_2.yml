@@ -1,0 +1,8 @@
+uuid: 2d5fc229-6473-4795-b7cd-eea42bc179cb
+langcode: en
+status: true
+dependencies: {  }
+id: views_block__products_u_hope_block_1_2
+theme: ''
+text: ''
+classes: col-md-4

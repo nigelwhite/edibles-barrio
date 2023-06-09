@@ -1,0 +1,67 @@
+uuid: af5011e7-9e8e-4097-9983-ce879500ad92
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+    - media.type.embedded_image
+    - media.type.file
+    - media.type.image
+    - media.type.remote_video
+    - node.type.article
+    - node.type.basic_page_2
+    - node.type.courses_and_events
+    - node.type.homeslider_image
+    - node.type.page
+    - node.type.subslider_image
+    - taxonomy.vocabulary.tags
+  module:
+    - entity_browser
+    - file
+    - filter
+    - media
+    - node
+    - search
+    - system
+    - taxonomy
+id: editor
+label: 'Content Editor'
+weight: 3
+is_admin: null
+permissions:
+  - 'access assets_library entity browser pages'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access media overview'
+  - 'create article content'
+  - 'create embedded_image media'
+  - 'create file media'
+  - 'create homeslider_image content'
+  - 'create image media'
+  - 'create media'
+  - 'create remote_video media'
+  - 'create subslider_image content'
+  - 'create terms in tags'
+  - 'delete any article content'
+  - 'delete any embedded_image media'
+  - 'delete any file media'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any remote_video media'
+  - 'edit any article content'
+  - 'edit any basic_page_2 content'
+  - 'edit any courses_and_events content'
+  - 'edit any embedded_image media'
+  - 'edit any file media'
+  - 'edit any homeslider_image content'
+  - 'edit any image media'
+  - 'edit any page content'
+  - 'edit any remote_video media'
+  - 'edit any subslider_image content'
+  - 'edit terms in tags'
+  - 'update any media'
+  - 'use advanced search'
+  - 'use text format restricted_html'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'

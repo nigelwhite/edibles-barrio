@@ -1,0 +1,21 @@
+uuid: dd36ea68-e6b3-42eb-9f1e-7dc454d14206
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.dropoff_picker
+    - field.storage.commerce_order_item.field_collection_point
+  module:
+    - options
+id: commerce_order_item.dropoff_picker.field_collection_point
+field_name: field_collection_point
+entity_type: commerce_order_item
+bundle: dropoff_picker
+label: 'Collection point'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

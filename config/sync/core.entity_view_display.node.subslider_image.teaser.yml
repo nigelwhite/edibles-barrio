@@ -1,0 +1,26 @@
+uuid: 7d3c91ba-b7f5-4b2e-99ca-c1d8c863e834
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.subslider_image.field_enabled
+    - field.field.node.subslider_image.field_for_page
+    - field.field.node.subslider_image.field_image
+    - node.type.subslider_image
+  module:
+    - user
+id: node.subslider_image.teaser
+targetEntityType: node
+bundle: subslider_image
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_enabled: true
+  field_for_page: true
+  field_image: true

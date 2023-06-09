@@ -1,0 +1,17 @@
+uuid: 8859321c-49cc-4c77-8bfe-880a14e6c554
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  abstract: 'We currently supply veg direct to customers; supply produce for veg boxes and to local restaurants.'
+  canonical_url: '[site:url]'
+  description: 'Edibles is a no dig, no chemicals permaculture smallholding and emerging market garden in the Colne Valley, South Pennines'
+  geo_placename: Slaithwaite
+  keywords: Permaculture
+  robots: 'index, follow'
+  shortlink: '[site:url]'
+  title: 'Edibles Permaculture small holding and market garden'

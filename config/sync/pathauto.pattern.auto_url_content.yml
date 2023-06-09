@@ -1,0 +1,26 @@
+uuid: 82c97f1a-b87b-4d4c-a78e-2252e6bde6ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: auto_url_content
+label: auto-url-content
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  70393ee1-dc2a-42bd-8651-c584a3f410b8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 70393ee1-dc2a-42bd-8651-c584a3f410b8
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      basic_page_2: basic_page_2
+      courses_and_events: courses_and_events
+      page: page
+      produce: produce
+selection_logic: and
+weight: -5
+relationships: {  }

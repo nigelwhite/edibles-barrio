@@ -1,0 +1,23 @@
+uuid: 18c41dd0-fa83-45f5-824a-26682c96b5f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enabled
+    - node.type.subslider_image
+id: node.subslider_image.field_enabled
+field_name: field_enabled
+entity_type: node
+bundle: subslider_image
+label: 'Insert in slide sequence'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

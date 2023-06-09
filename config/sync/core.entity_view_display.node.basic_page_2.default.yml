@@ -1,0 +1,60 @@
+uuid: 7b7a97d4-31a3-4424-b091-bd5ae359ce44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page_2.body
+    - field.field.node.basic_page_2.field_attach
+    - node.type.basic_page_2
+  module:
+    - ds
+    - file
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - body
+        - field_attach
+id: node.basic_page_2.default
+targetEntityType: node
+bundle: basic_page_2
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: main
+  field_attach:
+    type: file_table
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: main
+hidden:
+  links: true

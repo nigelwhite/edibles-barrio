@@ -1,0 +1,30 @@
+uuid: 4ffe5fba-a2fe-48d6-ae07-aff2be8a2dc4
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - file
+    - image
+id: commerce_product.field_image
+field_name: field_image
+entity_type: commerce_product
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: 'Locally Grown Salad Selection'
+    title: 'Locally Grown Salad Selection'
+    width: null
+    height: null
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

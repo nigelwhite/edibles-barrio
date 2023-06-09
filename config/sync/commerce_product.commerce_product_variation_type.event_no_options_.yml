@@ -1,0 +1,10 @@
+uuid: cac6a8ca-4114-4562-8027-265f7ca4a4cd
+langcode: en
+status: true
+dependencies: {  }
+id: event_no_options_
+label: 'Event (no options)'
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: null

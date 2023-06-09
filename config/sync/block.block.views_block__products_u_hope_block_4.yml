@@ -1,0 +1,30 @@
+uuid: cc3dbbf5-0102-47e2-8582-389f9e381ed4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.products_u_hope
+  module:
+    - system
+    - views
+  theme:
+    - barrio_sub
+id: views_block__products_u_hope_block_4
+theme: barrio_sub
+region: side_block_group
+weight: -12
+provider: null
+plugin: 'views_block:products_u_hope-block_4'
+settings:
+  id: 'views_block:products_u_hope-block_4'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'
