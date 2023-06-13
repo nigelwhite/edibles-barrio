@@ -1,5 +1,5 @@
 (function($, window, Drupal) {
-  Drupal.behaviors.hidePayment = {
+  Drupal.behaviors.barrio_subhidePayment = {
     attach: function(context, settings) {
       if ($("div.product-hide-payment div div.field__item").text() == "1") {
         $(".col-sm-4").hide();
