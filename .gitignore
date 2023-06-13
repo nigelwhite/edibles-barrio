@@ -42,5 +42,6 @@
 /localdev
 readmeNW.txt
 
+# hopefully will ignore keys
 /config/sync/*stripe*
 /config/ignore/
