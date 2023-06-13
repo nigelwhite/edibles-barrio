@@ -2,6 +2,8 @@ global-styling:
   version: VERSION
   js:
     js/global.js: {}
+    js/saladbox.js: {}
+    js/hidePayment.js: {}
   css:
     component:
       css/style.css: {}
@@ -29,9 +31,3 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
-saladbox:
-  js:
-    js/saladbox.js: {}
-  dependencies:
-    - core/jquery
-    - core/jquery.once
