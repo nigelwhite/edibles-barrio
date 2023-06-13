@@ -1,0 +1,23 @@
+uuid: d2a78c13-a79a-4f33-9db9-f6e0bf4f8c63
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.event_with_child_adult_and_diets
+    - field.storage.commerce_product.field_hide_edibles_payment_optio
+id: commerce_product.event_with_child_adult_and_diets.field_hide_edibles_payment_optio
+field_name: field_hide_edibles_payment_optio
+entity_type: commerce_product
+bundle: event_with_child_adult_and_diets
+label: 'Hide Edibles payment option'
+description: 'NB. You have to fill in the Product Information (below) even though it won''t be used. Just pretend.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

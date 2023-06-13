@@ -7,6 +7,7 @@ dependencies:
     - field.field.commerce_product.misc_object_with_sizes.body
     - field.field.commerce_product.misc_object_with_sizes.field_details_above_picture
     - field.field.commerce_product.misc_object_with_sizes.field_display_group
+    - field.field.commerce_product.misc_object_with_sizes.field_hide_edibles_payment_optio
     - field.field.commerce_product.misc_object_with_sizes.field_image
     - field.field.commerce_product.misc_object_with_sizes.field_short_description
     - image.style.square_300
@@ -44,6 +45,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 8
+    region: content
+  field_hide_edibles_payment_optio:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 9
     region: content
   field_image:
     type: image

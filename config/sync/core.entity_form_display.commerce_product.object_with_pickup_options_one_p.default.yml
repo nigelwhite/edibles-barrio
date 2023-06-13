@@ -7,6 +7,7 @@ dependencies:
     - field.field.commerce_product.object_with_pickup_options_one_p.body
     - field.field.commerce_product.object_with_pickup_options_one_p.field_details_above_picture
     - field.field.commerce_product.object_with_pickup_options_one_p.field_display_group
+    - field.field.commerce_product.object_with_pickup_options_one_p.field_hide_edibles_payment_optio
     - field.field.commerce_product.object_with_pickup_options_one_p.field_image
     - field.field.commerce_product.object_with_pickup_options_one_p.field_short_description
     - image.style.thumbnail
@@ -43,6 +44,13 @@ content:
     weight: 6
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_hide_edibles_payment_optio:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_image:
     type: image_widget_crop

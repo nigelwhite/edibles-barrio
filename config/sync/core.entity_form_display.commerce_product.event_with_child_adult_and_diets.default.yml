@@ -7,6 +7,7 @@ dependencies:
     - field.field.commerce_product.event_with_child_adult_and_diets.body
     - field.field.commerce_product.event_with_child_adult_and_diets.field_date
     - field.field.commerce_product.event_with_child_adult_and_diets.field_event_type
+    - field.field.commerce_product.event_with_child_adult_and_diets.field_hide_edibles_payment_optio
     - field.field.commerce_product.event_with_child_adult_and_diets.field_image
     - field.field.commerce_product.event_with_child_adult_and_diets.field_short_description
     - image.style.thumbnail
@@ -42,6 +43,13 @@ content:
     weight: 9
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_hide_edibles_payment_optio:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_image:
     type: image_widget_crop
@@ -93,7 +101,7 @@ content:
     third_party_settings: {  }
   variations:
     type: inline_entity_form_complex
-    weight: 6
+    weight: 7
     region: content
     settings:
       form_mode: default
@@ -107,6 +115,7 @@ content:
       collapsible: false
       collapsed: false
       revision: false
+      removed_reference: optional
     third_party_settings: {  }
 hidden:
   created: true

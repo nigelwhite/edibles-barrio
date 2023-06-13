@@ -8,6 +8,7 @@ dependencies:
     - field.field.commerce_product.event_no_options_.body
     - field.field.commerce_product.event_no_options_.field_date
     - field.field.commerce_product.event_no_options_.field_event_type
+    - field.field.commerce_product.event_no_options_.field_hide_edibles_payment_optio
     - field.field.commerce_product.event_no_options_.field_image
     - field.field.commerce_product.event_no_options_.field_short_description
     - image.style.rectangle_style_w200
@@ -68,6 +69,7 @@ hidden:
   body: true
   created: true
   field_event_type: true
+  field_hide_edibles_payment_optio: true
   stores: true
   uid: true
   variations: true

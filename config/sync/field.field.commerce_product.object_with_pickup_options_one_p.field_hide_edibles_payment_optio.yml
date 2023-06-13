@@ -1,0 +1,23 @@
+uuid: e10859d0-4f01-4a2f-9103-fcd4118290fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.object_with_pickup_options_one_p
+    - field.storage.commerce_product.field_hide_edibles_payment_optio
+id: commerce_product.object_with_pickup_options_one_p.field_hide_edibles_payment_optio
+field_name: field_hide_edibles_payment_optio
+entity_type: commerce_product
+bundle: object_with_pickup_options_one_p
+label: 'Hide Edibles payment option'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
