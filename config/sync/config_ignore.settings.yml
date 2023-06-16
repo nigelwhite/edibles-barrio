@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
+ignored_config_entities:
+  - commerce_checkout.commerce_checkout_flow.default.yml
+  - commerce_payment.commerce_payment_gateway.stripe_edibles.yml
+  - commerce_payment.commerce_payment_gateway.stripe_test.yml
