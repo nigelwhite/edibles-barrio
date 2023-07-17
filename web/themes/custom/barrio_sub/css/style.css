@@ -91,6 +91,18 @@ a.nav-link:hover {
   width: 40px;
 }
 
+.member-icon-container {
+  margin-top: 30px;
+}
+.member-la img {
+  height: 125px;
+  padding-right: 30px;
+}
+
+.member-pa img {
+  height: 100px;
+}
+
 .sidebar nav ul.nav {
   display: block;
 }
