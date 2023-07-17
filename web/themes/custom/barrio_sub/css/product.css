@@ -186,7 +186,7 @@ div[id^="edit-purchased-entity-wrapper--"],
   margin-bottom: 1rem;
   padding: 0.5rem 3rem;
   color: white;
-  width: 40rem;
+  max-width: 40rem;
 }
 
 .nav-order-products a:hover,
