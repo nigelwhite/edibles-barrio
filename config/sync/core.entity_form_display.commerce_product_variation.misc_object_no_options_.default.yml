@@ -1,0 +1,69 @@
+uuid: a7ac4a9e-4fae-4f65-9c49-13a6379b7c27
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.misc_object_no_options_
+    - field.field.commerce_product_variation.misc_object_no_options_.field_available_tickets
+  module:
+    - commerce_price
+    - commerce_stock_field
+id: commerce_product_variation.misc_object_no_options_.default
+targetEntityType: commerce_product_variation
+bundle: misc_object_no_options_
+mode: default
+content:
+  commerce_stock_always_in_stock:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_available_tickets:
+    type: commerce_stock_level_simple_transaction
+    weight: 91
+    region: content
+    settings:
+      step: '1'
+      custom_transaction_note: false
+      default_transaction_note: 'Transaction issued by stock level field.'
+    third_party_settings: {  }
+  list_price:
+    type: commerce_list_price
+    weight: -1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 90
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

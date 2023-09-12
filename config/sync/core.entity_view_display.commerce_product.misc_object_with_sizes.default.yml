@@ -10,11 +10,11 @@ dependencies:
     - field.field.commerce_product.misc_object_with_sizes.field_hide_edibles_payment_optio
     - field.field.commerce_product.misc_object_with_sizes.field_image
     - field.field.commerce_product.misc_object_with_sizes.field_short_description
-    - image.style.square_300
+    - responsive_image.styles.square
   module:
     - commerce_product
     - field_formatter_class
-    - image
+    - responsive_image
     - text
     - user
 id: commerce_product.misc_object_with_sizes.default
@@ -27,7 +27,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   created:
     type: timestamp_ago
@@ -57,17 +57,15 @@ content:
     weight: 9
     region: content
   field_image:
-    type: image
+    type: responsive_image
     label: hidden
     settings:
+      responsive_image_style: square
       image_link: ''
-      image_style: square_300
-      image_loading:
-        attribute: lazy
     third_party_settings:
       field_formatter_class:
         class: ''
-    weight: 5
+    weight: 1
     region: content
   field_short_description:
     type: string
@@ -75,7 +73,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   stores:
     type: entity_reference_entity_view
@@ -92,7 +90,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   uid:
     type: author
@@ -107,7 +105,7 @@ content:
     settings:
       combine: true
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden:
   field_display_group: true

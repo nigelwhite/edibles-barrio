@@ -6,7 +6,9 @@ id: misc_object_with_sizes
 label: 'Object with pickup options and price per size'
 traits: {  }
 locked: false
-description: 'A physical object with pickup choice - with price per size'
+description: ''
 variationType: misc_object_with_sizes
+variationTypes:
+  - misc_object_with_sizes
 multipleVariations: true
 injectVariationFields: true

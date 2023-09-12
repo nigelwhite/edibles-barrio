@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: misc_object_with_no_options
-label: 'Misc object (no options)'
+label: 'Misc object with pickups'
 traits: {  }
 locked: false
 orderItemType: dropoff_picker

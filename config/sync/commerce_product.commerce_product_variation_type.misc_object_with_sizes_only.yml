@@ -1,0 +1,10 @@
+uuid: 373aa8ae-3a0e-42d7-b8e3-f4d84f842901
+langcode: en
+status: true
+dependencies: {  }
+id: misc_object_with_sizes_only
+label: 'Misc object with sizes'
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: false

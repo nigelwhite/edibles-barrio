@@ -7,13 +7,14 @@ dependencies:
     - commerce_product.commerce_product_type.event_with_child_adult
     - commerce_product.commerce_product_type.event_with_child_adult_and_diets
     - commerce_product.commerce_product_type.misc_object_with_sizes
+    - commerce_product.commerce_product_type.object_with_no_options
     - commerce_product.commerce_product_type.object_with_pickup_options_one_p
+    - commerce_product.commerce_product_type.object_with_sizes
     - field.storage.commerce_product.field_date
     - field.storage.commerce_product.field_image
     - field.storage.commerce_product.field_short_description
     - image.style.rectangle_style
     - image.style.rectangle_style_w200
-    - image.style.square_200
     - taxonomy.vocabulary.event_category
   content:
     - 'taxonomy_term:event_category:34249bd8-0567-4fc5-8206-7721de84e2d8'
@@ -1556,6 +1557,72 @@ display:
     display_options:
       title: 'order our products'
       fields:
+        field_image:
+          id: field_image
+          table: commerce_product__field_image
+          field: field_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_link: content
+            image_style: rectangle_style
+            image_loading:
+              attribute: lazy
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         title:
           id: title
           table: commerce_product_field_data
@@ -1596,7 +1663,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: div
-          element_class: 'product-title-nw align-self-center'
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -1649,11 +1716,12 @@ display:
           entity_type: commerce_product
           entity_field: type
           plugin_id: commerce_entity_bundle
-          operator: 'not in'
+          operator: in
           value:
-            event_no_options_: event_no_options_
-            event_with_child_adult: event_with_child_adult
-            event_with_child_adult_and_diets: event_with_child_adult_and_diets
+            object_with_no_options: object_with_no_options
+            object_with_pickup_options_one_p: object_with_pickup_options_one_p
+            misc_object_with_sizes: misc_object_with_sizes
+            object_with_sizes: object_with_sizes
           group: 1
           exposed: false
           expose:
@@ -1671,7 +1739,7 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            hide_single_bundle: true
+            hide_single_bundle: false
           is_grouped: false
           group_info:
             label: ''
@@ -1692,7 +1760,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: 'd-flex flex-row justify-content-start'
+          row_class: 'd-flex flex-col'
           default_row_class: false
       row:
         type: fields
@@ -1713,14 +1781,28 @@ display:
         header: false
       css_class: ''
       display_description: ''
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<p class="link-to-events-page"><a href="/products">Buy Edibles Produce</a></p>'
+            format: full_html
+          tokenize: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-      tags: {  }
+      tags:
+        - 'config:field.storage.commerce_product.field_image'
   block_5:
     id: block_5
     display_title: 'All events'
@@ -2127,7 +2209,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: square_200
+            image_style: rectangle_style
             image_loading:
               attribute: lazy
           group_column: ''
@@ -2326,8 +2408,10 @@ display:
           plugin_id: commerce_entity_bundle
           operator: in
           value:
+            object_with_no_options: object_with_no_options
             object_with_pickup_options_one_p: object_with_pickup_options_one_p
             misc_object_with_sizes: misc_object_with_sizes
+            object_with_sizes: object_with_sizes
           group: 1
           exposed: false
           expose:
@@ -2405,7 +2489,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<h2>Order our produce</h2>\r\n<h4>Picked fresh for you on the day of collection</h4>\r\n<h5>Thank you to all our customers for your support this summer. You can still order anything listed below, and we will be back with more variety next year. We're expanding our growing area over winter! See you in April 2021.</h5>\r\n<p>Place your order anytime (up to 7am on the morning of your pick up) and collect either on Thursday from <a href=\"https://www.edibles.org.uk/contact-edibles\" target=\"_blank\">Edibles at Paddock Farm, West Slaithwaite</a> from 9am or from <a href=\"https://www.zerowasteyorkshire.com\" target=\"_blank\">Zero Waste Yorkshire in Slaithwaite</a> on a Friday (open 10 - 2).</p>\r\n<p>&nbsp;</p>"
+            value: "<h2>Order our produce</h2>\r\n<h4>Picked fresh for you on the day of collection</h4>\r\n\r\n<p>&nbsp;</p>"
             format: basic_html
           tokenize: false
       display_extenders: {  }

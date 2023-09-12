@@ -1,7 +1,9 @@
 uuid: 96f9b411-af3d-4856-a2be-6a595065985a
 langcode: en
-status: false
+status: true
 dependencies:
+  module:
+    - system
   theme:
     - barrio_sub
 _core:
@@ -9,7 +11,7 @@ _core:
 id: barrio_sub_page_title
 theme: barrio_sub
 region: content
-weight: -5
+weight: -14
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /product/74

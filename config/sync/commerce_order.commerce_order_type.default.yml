@@ -9,8 +9,10 @@ third_party_settings:
   commerce_cart:
     cart_block_view: commerce_cart_block
     cart_form_view: commerce_cart_form
+    cart_expiration: {  }
+    enable_cart_message: true
   commerce_checkout:
-    checkout_flow: default
+    checkout_flow: default_edibles
 _core:
   default_config_hash: pGvuJjaRPhhEY9oSM5EGsAtKWgGNSA-0aq4RIvd4BBE
 id: default
@@ -18,7 +20,9 @@ label: Default
 traits: {  }
 locked: false
 workflow: order_default
+numberPattern: null
 refresh_mode: customer
 refresh_frequency: 300
 sendReceipt: true
 receiptBcc: rosie@edibles.org.uk
+receiptSubject: ''

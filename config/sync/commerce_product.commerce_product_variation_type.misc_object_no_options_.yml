@@ -1,0 +1,10 @@
+uuid: d2fe8902-c81a-45b8-8641-2cba54ae2b9c
+langcode: en
+status: true
+dependencies: {  }
+id: misc_object_no_options_
+label: 'Misc object (no options)'
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: false

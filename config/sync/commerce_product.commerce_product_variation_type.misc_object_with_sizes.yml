@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: misc_object_with_sizes
-label: 'Misc object with sizes'
+label: 'Misc object with pickups and sizes'
 traits: {  }
 locked: false
 orderItemType: dropoff_picker

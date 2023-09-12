@@ -1,6 +1,6 @@
 uuid: 4bd978e7-db5e-4a54-b33c-ec6bedb017b3
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:bc58499a-0bcb-4b68-ba63-a251f2ba0c79'
@@ -11,7 +11,7 @@ dependencies:
 id: twitter
 theme: barrio_sub
 region: side_block_group
-weight: -13
+weight: -16
 provider: null
 plugin: 'block_content:bc58499a-0bcb-4b68-ba63-a251f2ba0c79'
 settings:

@@ -1,0 +1,27 @@
+uuid: 42d928de-2835-410e-81f6-aab5504d6ca6
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.event_products
+  module:
+    - blockgroup
+    - system
+  theme:
+    - barrio_sub
+id: eventproducts_3
+theme: barrio_sub
+region: events_group
+weight: 0
+provider: null
+plugin: 'block_group:event_products'
+settings:
+  id: 'block_group:event_products'
+  label: 'Event products'
+  label_display: '0'
+  provider: blockgroup
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

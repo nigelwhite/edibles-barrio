@@ -1,0 +1,44 @@
+uuid: 24e5798d-bf14-4b75-929a-f109b51e0058
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.misc_object_no_options_
+    - field.field.commerce_product_variation.misc_object_no_options_.field_available_tickets
+  module:
+    - commerce_price
+    - commerce_stock_field
+id: commerce_product_variation.misc_object_no_options_.default
+targetEntityType: commerce_product_variation
+bundle: misc_object_no_options_
+mode: default
+content:
+  field_available_tickets:
+    type: commerce_stock_level_simple
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  list_price:
+    type: commerce_price_default
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  price:
+    type: commerce_price_default
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  product_id: true
+  sku: true
+  title: true

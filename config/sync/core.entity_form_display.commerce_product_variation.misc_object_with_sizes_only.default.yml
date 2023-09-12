@@ -1,0 +1,76 @@
+uuid: 187f03c8-0ce8-428c-85cd-9e231c513a43
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.misc_object_with_sizes_only
+    - field.field.commerce_product_variation.misc_object_with_sizes_only.attribute_size
+    - field.field.commerce_product_variation.misc_object_with_sizes_only.field_available_tickets
+  module:
+    - commerce_price
+    - commerce_stock_field
+id: commerce_product_variation.misc_object_with_sizes_only.default
+targetEntityType: commerce_product_variation
+bundle: misc_object_with_sizes_only
+mode: default
+content:
+  attribute_size:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  commerce_stock_always_in_stock:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_available_tickets:
+    type: commerce_stock_level_simple_transaction
+    weight: 91
+    region: content
+    settings:
+      step: '1'
+      custom_transaction_note: false
+      default_transaction_note: 'Transaction issued by stock level field.'
+    third_party_settings: {  }
+  list_price:
+    type: commerce_list_price
+    weight: -1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 90
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

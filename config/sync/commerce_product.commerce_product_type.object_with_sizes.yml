@@ -1,0 +1,14 @@
+uuid: 8a3b781e-e069-4168-ab29-9fae726f3ea7
+langcode: en
+status: true
+dependencies: {  }
+id: object_with_sizes
+label: 'Object with price per size'
+traits: {  }
+locked: false
+description: ''
+variationType: null
+variationTypes:
+  - misc_object_with_sizes_only
+multipleVariations: true
+injectVariationFields: true

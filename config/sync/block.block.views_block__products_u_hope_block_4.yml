@@ -1,4 +1,4 @@
-uuid: cc3dbbf5-0102-47e2-8582-389f9e381ed4
+uuid: b5436897-7858-40ff-be10-4e062935c05a
 langcode: en
 status: true
 dependencies:
@@ -11,8 +11,8 @@ dependencies:
     - barrio_sub
 id: views_block__products_u_hope_block_4
 theme: barrio_sub
-region: side_block_group
-weight: -12
+region: featured_bottom_first
+weight: -18
 provider: null
 plugin: 'views_block:products_u_hope-block_4'
 settings:
@@ -26,5 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    context_mapping: {  }
     pages: '<front>'

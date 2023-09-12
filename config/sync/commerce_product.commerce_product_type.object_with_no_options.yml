@@ -1,0 +1,14 @@
+uuid: 4077e164-9089-4149-8ae6-7b0e9b325d13
+langcode: en
+status: true
+dependencies: {  }
+id: object_with_no_options
+label: 'Object (no options)'
+traits: {  }
+locked: false
+description: ''
+variationType: null
+variationTypes:
+  - misc_object_no_options_
+multipleVariations: false
+injectVariationFields: false

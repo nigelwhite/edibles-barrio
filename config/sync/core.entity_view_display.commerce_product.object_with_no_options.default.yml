@@ -1,0 +1,106 @@
+uuid: 165fabb1-6e8d-44c6-ad46-0a3a85d315ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.object_with_no_options
+    - field.field.commerce_product.object_with_no_options.body
+    - field.field.commerce_product.object_with_no_options.field_image
+    - responsive_image.styles.square
+  module:
+    - commerce_product
+    - ds
+    - field_formatter_class
+    - responsive_image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: bs_2col_stacked
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          top:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+          left:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+          bottom:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      left:
+        - field_image
+        - body
+      top:
+        - title
+      right:
+        - variations
+id: commerce_product.object_with_no_options.default
+targetEntityType: commerce_product
+bundle: object_with_no_options
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: left
+  field_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: square
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 0
+    region: left
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: top
+  variations:
+    type: commerce_add_to_cart
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+    weight: 3
+    region: right
+hidden:
+  created: true
+  stores: true
+  uid: true

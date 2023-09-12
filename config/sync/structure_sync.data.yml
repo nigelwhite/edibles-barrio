@@ -66,7 +66,7 @@ blocks:
     fields:
       body:
         -
-          value: "<div class=\"nav-order-products\">\r\n<p><a href=\"/node/69\">Our produce</a></p>\r\n\r\n<p class=\"picked-fresh\"><a href=\"/node/69\">Picked fresh for you on the day of collection</a></p>\r\n</div>\r\n\r\n<p><a href=\"/node/69\"><img alt=\"Mixed produce\" class=\"beg-mix\" src=\"./themes/custom/barrio_sub/images/beautiful-beg-mix-450.jpg\" /></a></p>\r\n"
+          value: "<div class=\"nav-order-products\"><button class=\"btn mb-4\" style=\"background-color: #707070; font-weight: 500; font-size: 1.4rem; color: white;\" type=\"button\">BUY</button>\r\n<p><a href=\"/product/74\">Fresh, local veg (and fruit) box</a></p>\r\n\r\n<p class=\"picked-freshly\">Picked fresh for you on the day of collection</p>\r\n</div>\r\n\r\n<div><a href=\"/product/74\"><img alt=\"Mixed produce\" class=\"beg-mix img-fluid\" src=\"./themes/custom/barrio_sub/images/beautiful-beg-mix-450.jpg\" /></a></div>\r\n"
           summary: ''
           format: full_html
   -
@@ -92,7 +92,7 @@ blocks:
     fields:
       body:
         -
-          value: "<div class=\"links-to-social\">\r\n<ul>\r\n\t<li><a href=\"/contact-edibles\">contact</a></li>\r\n\t<li><a href=\"https://edibles.us4.list-manage.com/subscribe?u=1bb32a7a1de147bd963b9eb30&amp;id=d971712b3a\" target=\"_blank\">newsletter</a></li>\r\n</ul>\r\n\r\n<div class=\"social-icon-container d-flex justify-content-center\"><a href=\"https://twitter.com/EdiblesWYorks\" target=\"_blank\"><img alt=\"twitter\" src=\"./themes/custom/barrio_sub/images/twitter.png\" /></a> <a href=\"https://www.facebook.com/EdiblesUK\" target=\"_blank\"><img alt=\"Facebook\" src=\"./themes/custom/barrio_sub/images/fb.png\" /></a><a href=\"https://www.instagram.com/edibleswyorks/\" target=\"_blank\"><img alt=\"Instagram\" src=\"./themes/custom/barrio_sub/images/instagram.png\" /></a></div>\r\n</div>\r\n"
+          value: "<div class=\"links-to-social\">\r\n<ul>\r\n\t<li><a href=\"/contact-edibles\">contact</a></li>\r\n\t<li><a href=\"https://edibles.us4.list-manage.com/subscribe?u=1bb32a7a1de147bd963b9eb30&amp;id=d971712b3a\" target=\"_blank\">newsletter</a></li>\r\n</ul>\r\n\r\n<div class=\"social-icon-container d-flex justify-content-center\"><a href=\"https://twitter.com/EdiblesWYorks\" target=\"_blank\"><img alt=\"twitter\" src=\"/themes/custom/barrio_sub/images/twitter.png\" /></a> <a href=\"https://www.facebook.com/EdiblesUK\" target=\"_blank\"><img alt=\"Facebook\" src=\"/themes/custom/barrio_sub/images/fb.png\" /></a><a href=\"https://www.instagram.com/edibleswyorks/\" target=\"_blank\"><img alt=\"Instagram\" src=\"/themes/custom/barrio_sub/images/instagram.png\" /></a></div>\r\n</div>\r\n\r\n<div class=\"member-icon-container d-flex justify-content-center align-items-center\"><a class=\"member-la\" href=\"https://landworkersalliance.org.uk/\" target=\"_blank\"><img alt=\"Landworkers' Alliance\" class=\"img-fluid\" src=\"/themes/custom/barrio_sub/images/landworkers_alliance.png\" /></a> <a class=\"member-pa\" href=\"https://www.permaculture.org.uk\" target=\"_blank\"><img alt=\"Permaculture Association\" class=\"img-fluid\" src=\"/themes/custom/barrio_sub/images/pa.png\" /></a></div>\r\n"
           summary: ''
           format: full_html
 menus:
@@ -148,7 +148,7 @@ menus:
     menu_name: main
     title: produce
     parent: null
-    uri: 'internal:/node/69'
+    uri: 'internal:/product/74'
     link_title: ''
     description: null
     enabled: true

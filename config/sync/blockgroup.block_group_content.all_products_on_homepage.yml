@@ -1,0 +1,6 @@
+uuid: d6c6a962-f2b8-4056-83bb-ad9a8b3b6136
+langcode: en
+status: true
+dependencies: {  }
+id: all_products_on_homepage
+label: 'All products on homepage'
