@@ -187,6 +187,10 @@ a.nav-link:hover {
   margin-bottom: 1.5rem;
 }
 
+#views-bootstrap-products-u-hope-page-1 .img-on-page {
+  margin-top: 2rem;
+}
+
 .event-teaser-image a img {
   max-width: 200px;
 }
