@@ -76,7 +76,8 @@
 .product-title-nw a {
   display: block;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin: 15px 0 5px 0;
 }
 
 .product-desc-short-nw,
@@ -166,9 +167,11 @@ div[id^="edit-purchased-entity-wrapper--"],
 }
 
 #block-views-block-products-u-hope-block-5,
+#block-views-block-products-u-hope-block-4,
 #block-sideblockproductsheaderimage {
   padding: 10px;
   margin-bottom: 4rem;
+  text-align: center;
 }
 
 #block-sideblockproductsheaderimage {

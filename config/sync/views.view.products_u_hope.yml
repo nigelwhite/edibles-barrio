@@ -1595,7 +1595,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
+          element_class: product-img-nw
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -1663,7 +1663,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: div
-          element_class: ''
+          element_class: product-title-nw
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -1677,7 +1677,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1760,7 +1760,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: 'd-flex flex-col'
+          row_class: ''
           default_row_class: false
       row:
         type: fields
