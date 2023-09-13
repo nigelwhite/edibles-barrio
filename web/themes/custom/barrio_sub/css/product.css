@@ -215,6 +215,7 @@ div[id^="edit-purchased-entity-wrapper--"],
 #block-views-block-products-u-hope-block-4 img,
 #block-views-block-products-u-hope-block-5 img {
   border-radius: 5px;
+  margin-top: 2rem;
 }
 
 /* .events-uberclass .view-content {
