@@ -1,0 +1,54 @@
+{#
+/**
+ * NW override of commerce product to add title
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{# <article{{ attributes }}>
+  <div{{ attributes.addClass('product-title-buythis') }}>{{ product.title }}</div>
+  {{- product|without('variation_attributes') -}}
+</article> #}
+
+<article>
+    <div class="container">
+        
+        <div class="row">
+            <div class="product-title-nw">{{ product.title }}</div>
+            <div class="product-desc-short-nw">{{ product.field_short_description }}</div>
+            <div class="product-desc-details-above-picture">{{ product.field_details_above_picture }}</div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-6 product-col-nw">
+                <div class="product-img-nw">{{ product.field_image }}</div>
+            </div>
+            <div class="col-sm-6">
+                <div class="product-variations-nw">{{ product.variations }}</div>
+                <div>{{ product.variation_price }}</div>
+                <div class="product-stock-nw">{{ product.variation_field_available_tickets }}</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>{{ product.body }}</div>
+        </div>
+
+    </div>
+</article>
