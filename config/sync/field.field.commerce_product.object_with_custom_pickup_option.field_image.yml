@@ -1,9 +1,9 @@
-uuid: 552d6786-3047-40cb-9080-6b4c642fd955
+uuid: 7e17153a-728e-4e14-9e27-40f531de4665
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_type.object_with_pickup_options_one_p
+    - commerce_product.commerce_product_type.object_with_custom_pickup_option
     - field.storage.commerce_product.field_image
   module:
     - filefield_paths
@@ -26,10 +26,10 @@ third_party_settings:
     redirect: false
     retroactive_update: false
     active_updating: false
-id: commerce_product.object_with_pickup_options_one_p.field_image
+id: commerce_product.object_with_custom_pickup_option.field_image
 field_name: field_image
 entity_type: commerce_product
-bundle: object_with_pickup_options_one_p
+bundle: object_with_custom_pickup_option
 label: Image
 description: 'Start with an image larger than 400 x 400 px. Drupal will do the rest.'
 required: true

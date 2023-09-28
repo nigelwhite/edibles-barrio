@@ -31,7 +31,7 @@ field_name: field_image
 entity_type: commerce_product
 bundle: object_with_sizes
 label: Image
-description: ''
+description: 'Start with an image larger than 400 x 400 px. Drupal will do the rest.'
 required: false
 translatable: true
 default_value: {  }

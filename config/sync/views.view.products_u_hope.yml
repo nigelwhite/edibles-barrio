@@ -2194,7 +2194,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: div
-          element_class: product-img-nw
+          element_class: 'product-img-nw img-on-page'
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false

@@ -1,0 +1,20 @@
+uuid: e3125fc3-b566-4a60-b623-f05f4ce69f0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+    - taxonomy
+id: commerce_order_item.field_custom_pickup_options
+field_name: field_custom_pickup_options
+entity_type: commerce_order_item
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

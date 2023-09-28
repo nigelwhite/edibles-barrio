@@ -1,0 +1,10 @@
+uuid: 8b55e72d-53ee-44b3-bdd4-db6f27e040bf
+langcode: en
+status: true
+dependencies: {  }
+id: misc_object_with_custom_pickups
+label: 'Misc object with custom pickups'
+traits: {  }
+locked: false
+orderItemType: custom_pickups
+generateTitle: false

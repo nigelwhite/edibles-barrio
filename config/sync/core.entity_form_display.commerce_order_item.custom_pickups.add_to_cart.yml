@@ -1,0 +1,41 @@
+uuid: a59745ab-d85a-4539-98b8-c6f799572a1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.custom_pickups
+    - core.entity_form_mode.commerce_order_item.add_to_cart
+    - field.field.commerce_order_item.custom_pickups.field_custom_pickup_options
+  module:
+    - commerce_order
+    - commerce_product
+id: commerce_order_item.custom_pickups.add_to_cart
+targetEntityType: commerce_order_item
+bundle: custom_pickups
+mode: add_to_cart
+content:
+  field_custom_pickup_options:
+    type: options_buttons
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  purchased_entity:
+    type: commerce_product_variation_attributes
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  quantity:
+    type: commerce_quantity
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      step: '1'
+    third_party_settings: {  }
+hidden:
+  adjustments: true
+  created: true
+  total_price: true
+  unit_price: true

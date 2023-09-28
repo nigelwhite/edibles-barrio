@@ -1,0 +1,23 @@
+uuid: 46419dcf-9b0e-41ad-98e7-20a627fae8bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pickyuppy
+id: taxonomy_term.pickyuppy.default
+targetEntityType: taxonomy_term
+bundle: pickyuppy
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  status: true

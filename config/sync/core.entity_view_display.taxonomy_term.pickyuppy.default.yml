@@ -1,0 +1,13 @@
+uuid: fffce11c-ce10-4d19-94af-3ed293252c5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pickyuppy
+id: taxonomy_term.pickyuppy.default
+targetEntityType: taxonomy_term
+bundle: pickyuppy
+mode: default
+content: {  }
+hidden:
+  description: true

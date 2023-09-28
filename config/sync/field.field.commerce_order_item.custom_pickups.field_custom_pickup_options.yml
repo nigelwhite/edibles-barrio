@@ -1,0 +1,29 @@
+uuid: b53259dd-6814-4491-97b9-e573e2dd8812
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.custom_pickups
+    - field.storage.commerce_order_item.field_custom_pickup_options
+    - taxonomy.vocabulary.pickyuppy
+id: commerce_order_item.custom_pickups.field_custom_pickup_options
+field_name: field_custom_pickup_options
+entity_type: commerce_order_item
+bundle: custom_pickups
+label: 'Custom pickup options'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pickyuppy: pickyuppy
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

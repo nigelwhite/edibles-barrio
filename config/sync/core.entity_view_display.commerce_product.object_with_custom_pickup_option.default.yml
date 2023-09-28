@@ -1,0 +1,85 @@
+uuid: 3e78ea83-b7bb-48f5-a7c2-09d510cbb14c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.object_with_custom_pickup_option
+    - field.field.commerce_product.object_with_custom_pickup_option.body
+    - field.field.commerce_product.object_with_custom_pickup_option.field_details_above_picture
+    - field.field.commerce_product.object_with_custom_pickup_option.field_display_group
+    - field.field.commerce_product.object_with_custom_pickup_option.field_hide_edibles_payment_optio
+    - field.field.commerce_product.object_with_custom_pickup_option.field_image
+    - field.field.commerce_product.object_with_custom_pickup_option.field_short_description
+    - responsive_image.styles.square
+  module:
+    - commerce_product
+    - field_formatter_class
+    - responsive_image
+    - text
+id: commerce_product.object_with_custom_pickup_option.default
+targetEntityType: commerce_product
+bundle: object_with_custom_pickup_option
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_details_above_picture:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: square
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    weight: 1
+    region: content
+  field_short_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  stores:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  variations:
+    type: commerce_add_to_cart
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  created: true
+  field_display_group: true
+  field_hide_edibles_payment_optio: true
+  uid: true

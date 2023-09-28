@@ -1,0 +1,19 @@
+uuid: 247a877b-8d3e-4867-a0fb-e040edc7e54d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.object_with_custom_pickup_option
+    - field.storage.commerce_product.field_short_description
+id: commerce_product.object_with_custom_pickup_option.field_short_description
+field_name: field_short_description
+entity_type: commerce_product
+bundle: object_with_custom_pickup_option
+label: 'Short description'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

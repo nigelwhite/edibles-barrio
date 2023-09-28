@@ -1,0 +1,8 @@
+uuid: fd6f5147-8c17-458c-88ce-9f00bb21ba48
+langcode: en
+status: true
+dependencies: {  }
+name: Pickyuppy
+vid: pickyuppy
+description: 'Custom Pickup/dropoff options'
+weight: 0

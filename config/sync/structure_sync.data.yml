@@ -474,6 +474,37 @@ taxonomies:
       weight: '0'
       parent: '0'
       uuid: 9e5664ac-f691-4223-bcd0-3d875a6083a3
+  pickyuppy:
+    -
+      vid: pickyuppy
+      tid: '44'
+      langcode: en
+      name: 'When I feel like it'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: ed4d8f76-8cea-41f1-894b-3494f77b633a
+    -
+      vid: pickyuppy
+      tid: '43'
+      langcode: en
+      name: 'When the headless horseman appears on the ridge'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 721b6574-5f7c-4a57-8630-e5cd96f02c84
+    -
+      vid: pickyuppy
+      tid: '42'
+      langcode: en
+      name: 'When the moon is full'
+      description__value: null
+      description__format: null
+      weight: '0'
+      parent: '0'
+      uuid: 159b1319-7a17-4db9-aecb-9057049e3b61
   tags:
     -
       vid: tags

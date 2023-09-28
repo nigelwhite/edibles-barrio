@@ -1,0 +1,10 @@
+uuid: ef2356b7-6a19-4a55-b45b-cd156a5c87b4
+langcode: en
+status: true
+dependencies: {  }
+id: custom_pickups
+label: 'Custom pickups'
+traits: {  }
+locked: false
+purchasableEntityType: commerce_product_variation
+orderType: default
