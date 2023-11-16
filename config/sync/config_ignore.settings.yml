@@ -5,4 +5,3 @@ ignored_config_entities:
   - commerce_payment.commerce_payment_gateway.stripe_edibles.yml
   - commerce_payment.commerce_payment_gateway.stripe_test.yml
   - commerce_payment.commerce_payment_gateway.edibles_live.yml
-  - google_analytics.settings.yml
