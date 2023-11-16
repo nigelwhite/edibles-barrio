@@ -56,7 +56,7 @@
         "drupal/module_filter": "^4.0",
         "drupal/pathauto": "^1.10",
         "drupal/profile": "^1.0",
-        "drupal/recreate_block_content": "^2.1",
+        "drupal/recreate_block_content": "^3.0",
         "drupal/redirect": "^1.8",
         "drupal/schema_metatag": "^2.4",
         "drupal/seo_checklist": "^5.1",
