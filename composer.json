@@ -67,7 +67,6 @@
         "drupal/symfony_mailer": "^1.1@beta",
         "drupal/upgrade_status": "^4.0",
         "drupal/views_bootstrap": "^5.4",
-        "drupal/views_slideshow": "^4.6",
         "drupal/views_taxonomy_term_name_depth": "^7.0",
         "drupal/xmlsitemap": "^1.4",
         "drush/drush": "^11",
