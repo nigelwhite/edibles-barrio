@@ -2,12 +2,15 @@ uuid: 50ced5f0-c9c0-45a7-86a2-70ba26fc0812
 langcode: en
 status: true
 dependencies:
+  config:
+    - taxonomy.vocabulary.pickyuppy
   module:
     - commerce
     - commerce_order
     - commerce_product
     - commerce_reports
     - commerce_store
+    - taxonomy
 id: shop_manager
 label: 'Shop manager'
 weight: 4
@@ -19,17 +22,23 @@ permissions:
   - 'access commerce_order_report overview'
   - 'access commerce_product overview'
   - 'access user profiles'
+  - 'administer taxonomy'
   - 'create commerce_order_report'
   - 'create commerce_product_attribute'
   - 'create event_no_options_ commerce_product'
   - 'create event_with_child_adult commerce_product'
   - 'create event_with_child_adult_and_diets commerce_product'
   - 'create misc_object_with_sizes commerce_product'
+  - 'create object_with_custom_pickup_option commerce_product'
   - 'create object_with_no_options commerce_product'
   - 'create object_with_pickup_options_one_p commerce_product'
   - 'create object_with_sizes commerce_product'
+  - 'create terms in pickyuppy'
+  - 'delete any object_with_custom_pickup_option commerce_product'
   - 'delete commerce_order_report'
   - 'delete default commerce_order'
+  - 'delete terms in pickyuppy'
+  - 'edit terms in pickyuppy'
   - 'generate commerce order reports'
   - 'manage event_no_options_ commerce_product_variation'
   - 'manage event_with_child_adult commerce_product_variation'
@@ -41,6 +50,7 @@ permissions:
   - 'update any event_with_child_adult commerce_product'
   - 'update any event_with_child_adult_and_diets commerce_product'
   - 'update any misc_object_with_sizes commerce_product'
+  - 'update any object_with_custom_pickup_option commerce_product'
   - 'update any object_with_no_options commerce_product'
   - 'update any object_with_pickup_options_one_p commerce_product'
   - 'update any object_with_sizes commerce_product'
@@ -57,6 +67,7 @@ permissions:
   - 'view event_with_child_adult commerce_product'
   - 'view event_with_child_adult_and_diets commerce_product'
   - 'view misc_object_with_sizes commerce_product'
+  - 'view object_with_custom_pickup_option commerce_product'
   - 'view object_with_no_options commerce_product'
   - 'view object_with_pickup_options_one_p commerce_product'
   - 'view object_with_sizes commerce_product'

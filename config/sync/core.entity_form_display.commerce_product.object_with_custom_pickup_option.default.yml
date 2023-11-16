@@ -23,7 +23,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 5
+    weight: 4
     region: content
     settings:
       rows: 9
@@ -33,20 +33,20 @@ content:
     third_party_settings: {  }
   field_display_group:
     type: options_select
-    weight: 6
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_hide_edibles_payment_optio:
     type: boolean_checkbox
-    weight: 9
+    weight: 8
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_image:
     type: image_widget_crop
-    weight: 4
+    weight: 3
     region: content
     settings:
       progress_indicator: throbber
@@ -69,7 +69,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 7
     region: content
     settings:
       display_label: true
@@ -92,9 +92,19 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 9
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   variations:
     type: commerce_product_single_variation
-    weight: 7
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -102,4 +112,3 @@ hidden:
   created: true
   field_details_above_picture: true
   path: true
-  uid: true

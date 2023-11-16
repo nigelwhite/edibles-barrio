@@ -10,7 +10,7 @@ id: commerce_order_item.custom_pickups.field_custom_pickup_options
 field_name: field_custom_pickup_options
 entity_type: commerce_order_item
 bundle: custom_pickups
-label: 'Custom pickup options'
+label: 'When/where will you pick up?'
 description: ''
 required: true
 translatable: false

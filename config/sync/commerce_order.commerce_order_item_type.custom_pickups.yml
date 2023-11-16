@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: custom_pickups
-label: 'Custom pickups'
+label: 'When/where will you pick up?'
 traits: {  }
 locked: false
 purchasableEntityType: commerce_product_variation

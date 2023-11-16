@@ -23,8 +23,8 @@ dependencies:
   module:
     - commerce
     - commerce_product
-    - daterange_compact
     - datetime
+    - datetime_range
     - image
     - taxonomy
     - views_bootstrap
@@ -225,7 +225,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: daterange_compact
+          type: string
           settings:
             format_type: short
           group_column: value
@@ -616,10 +616,12 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: daterange_compact
+          click_sort_column: end_value
+          type: daterange_default
           settings:
+            timezone_override: ''
             format_type: short
+            separator: '-'
           group_column: value
           group_columns: {  }
           group_rows: false
@@ -990,9 +992,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: daterange_compact
+          type: daterange_default
           settings:
+            timezone_override: ''
             format_type: short
+            separator: '-'
           group_column: value
           group_columns: {  }
           group_rows: false
@@ -1364,9 +1368,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: daterange_compact
+          type: daterange_default
           settings:
+            timezone_override: ''
             format_type: short
+            separator: '-'
           group_column: value
           group_columns: {  }
           group_rows: false
@@ -1992,9 +1998,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: daterange_compact
+          type: daterange_default
           settings:
+            timezone_override: ''
             format_type: short
+            separator: '-'
           group_column: value
           group_columns: {  }
           group_rows: false

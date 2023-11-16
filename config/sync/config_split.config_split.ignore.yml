@@ -7,10 +7,11 @@ label: ignore
 description: ''
 weight: 0
 folder: ../config/ignore
-module:
-  commerce_stripe: 0
+module: {  }
 theme: {  }
-blacklist: {  }
+blacklist:
+  - commerce_payment.commerce_payment_gateway.edibles_live
+  - google_analytics.settings
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

@@ -4,16 +4,15 @@ status: true
 dependencies:
   module:
     - commerce_product
-    - ctools
 id: products
 label: Products
 type: 'canonical_entities:commerce_product'
 pattern: '[commerce_product:title]'
 selection_criteria:
-  0c49b6a6-a7ca-4332-a24e-79b0d9201403:
+  e5c15789-12be-4d4d-a974-c984a4fbbff9:
     id: 'entity_bundle:commerce_product'
     negate: false
-    uuid: 0c49b6a6-a7ca-4332-a24e-79b0d9201403
+    uuid: e5c15789-12be-4d4d-a974-c984a4fbbff9
     context_mapping:
       commerce_product: commerce_product
     bundles:
@@ -21,7 +20,11 @@ selection_criteria:
       event_no_options_: event_no_options_
       event_with_child_adult: event_with_child_adult
       event_with_child_adult_and_diets: event_with_child_adult_and_diets
-      salad_bag_scheme: salad_bag_scheme
+      misc_object_with_sizes: misc_object_with_sizes
+      object_with_custom_pickup_option: object_with_custom_pickup_option
+      object_with_no_options: object_with_no_options
+      object_with_pickup_options_one_p: object_with_pickup_options_one_p
+      object_with_sizes: object_with_sizes
 selection_logic: and
 weight: -5
 relationships: {  }

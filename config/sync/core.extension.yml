@@ -16,9 +16,7 @@ module:
   bootstrap_layouts: 0
   breakpoint: 0
   checklistapi: 0
-  ckeditor: 0
   coffee: 0
-  color: 0
   comment: 0
   commerce: 0
   commerce_cart: 0
@@ -36,6 +34,7 @@ module:
   commerce_stock_local: 0
   commerce_stock_ui: 0
   commerce_store: 0
+  commerce_stripe: 0
   config: 0
   config_filter: 0
   config_ignore: 0
@@ -45,12 +44,10 @@ module:
   crop: 0
   ctools: 0
   ctools_block: 0
-  daterange_compact: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
   dynamic_page_cache: 0
-  easy_install: 0
   editor: 0
   embed: 0
   entity: 0
@@ -88,7 +85,6 @@ module:
   path: 0
   path_alias: 0
   profile: 0
-  rdf: 0
   recreate_block_content: 0
   redirect: 0
   responsive_image: 0
@@ -115,6 +111,7 @@ module:
   toolbar: 0
   tour: 0
   update: 0
+  upgrade_status: 0
   user: 0
   views_bootstrap: 0
   views_taxonomy_term_name_depth: 0
@@ -130,6 +127,4 @@ theme:
   bootstrap_barrio: 0
   barrio_sub: 0
   claro: 0
-  stable: 0
-  classy: 0
 profile: standard
