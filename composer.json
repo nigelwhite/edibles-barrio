@@ -32,8 +32,9 @@
         "drupal/commerce_stripe": "^1.0@RC",
         "drupal/config_ignore": "^2.4",
         "drupal/config_split": "^1.9",
-        "drupal/core-composer-scaffold": "~9.0.0@dev",
-        "drupal/core-recommended": "9.5.11",
+        "drupal/core-composer-scaffold": "^10",
+        "drupal/core-project-message": "^10",
+        "drupal/core-recommended": "^10",
         "drupal/crop": "^2.3",
         "drupal/ctools": "^3.13",
         "drupal/devel_entity_updates": "^4.1",
@@ -67,10 +68,10 @@
         "drupal/views_bootstrap": "^5.4",
         "drupal/views_taxonomy_term_name_depth": "^7.0",
         "drupal/xmlsitemap": "^1.4",
-        "drush/drush": "^11",
-        "symfony/validator": "^4",
-        "symfony/yaml": "4.4.45",
-        "twig/twig": "2.15.4",
+        "drush/drush": "^12",
+        "symfony/validator": "6.2.0",
+        "symfony/yaml": "^6.2",
+        "twig/twig": "^3.4.3",
         "typo3/phar-stream-wrapper": "3.1.7",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -88,7 +89,8 @@
             "composer/installers": true,
             "drupal/console-extend-plugin": true,
             "cweagans/composer-patches": true,
-            "drupal/core-composer-scaffold": true
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
         }
     },
     "autoload": {
