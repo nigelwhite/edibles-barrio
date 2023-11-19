@@ -1,7 +1,0 @@
-cache:
-  page:
-    max_age: 5
-css:
-  preprocess: true
-js:
-  preprocess: true
