@@ -2,6 +2,10 @@ uuid: 4c5239c8-1e7b-421c-a950-b46e1f25b2e3
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.event_image
+    - core.entity_view_mode.media.gallery_teaser
+    - core.entity_view_mode.media.media_library
   module:
     - media
 _core:
@@ -16,7 +20,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid data-align data-caption> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <p>'
+      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <a hreflang href> <blockquote cite> <ul type> <ol type start> <img src alt data-entity-type data-entity-uuid data-align data-caption> <drupal-media data-view-mode data-caption title data-entity-type data-entity-uuid alt data-align> <strong> <em> <li>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_autop:
@@ -45,6 +49,9 @@ filters:
     weight: 100
     settings:
       default_view_mode: default
-      allowed_view_modes: {  }
+      allowed_view_modes:
+        event_image: event_image
+        gallery_teaser: gallery_teaser
+        media_library: media_library
       allowed_media_types:
         embedded_image: embedded_image

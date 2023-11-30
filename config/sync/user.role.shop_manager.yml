@@ -10,6 +10,7 @@ dependencies:
     - commerce_product
     - commerce_reports
     - commerce_store
+    - file
     - taxonomy
 id: shop_manager
 label: 'Shop manager'
@@ -37,6 +38,7 @@ permissions:
   - 'delete any object_with_custom_pickup_option commerce_product'
   - 'delete commerce_order_report'
   - 'delete default commerce_order'
+  - 'delete own files'
   - 'delete terms in pickyuppy'
   - 'edit terms in pickyuppy'
   - 'generate commerce order reports'

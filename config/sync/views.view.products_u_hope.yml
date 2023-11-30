@@ -23,6 +23,7 @@ dependencies:
   module:
     - commerce
     - commerce_product
+    - daterange_compact
     - datetime
     - datetime_range
     - image
@@ -617,11 +618,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: end_value
-          type: daterange_default
+          type: daterange_compact
           settings:
-            timezone_override: ''
-            format_type: short
-            separator: '-'
+            daterange_compact_format: medium_datetime
           group_column: value
           group_columns: {  }
           group_rows: false
@@ -992,11 +991,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: daterange_default
+          type: daterange_compact
           settings:
-            timezone_override: ''
-            format_type: short
-            separator: '-'
+            daterange_compact_format: medium_datetime
           group_column: value
           group_columns: {  }
           group_rows: false
@@ -1368,11 +1365,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: daterange_default
+          type: daterange_compact
           settings:
-            timezone_override: ''
-            format_type: short
-            separator: '-'
+            daterange_compact_format: medium_date
           group_column: value
           group_columns: {  }
           group_rows: false
@@ -1998,11 +1993,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: daterange_default
+          type: daterange_compact
           settings:
-            timezone_override: ''
-            format_type: short
-            separator: '-'
+            daterange_compact_format: medium_datetime
           group_column: value
           group_columns: {  }
           group_rows: false

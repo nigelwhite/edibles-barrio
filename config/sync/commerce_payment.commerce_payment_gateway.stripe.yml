@@ -1,0 +1,21 @@
+uuid: 46638434-effb-465e-97c0-b5a9d3c62cc9
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_stripe
+id: stripe
+label: Stripe
+weight: null
+plugin: stripe
+configuration:
+  display_label: 'Stripe Card Element'
+  mode: live
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  publishable_key: pk_live_FXVNjfRUiIMU1bCwizQhJmYp00dTRNOB8w
+  secret_key: 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
+  enable_credit_card_icons: true
+conditions: {  }
+conditionOperator: AND

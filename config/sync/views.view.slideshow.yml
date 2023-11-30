@@ -89,6 +89,8 @@ display:
           settings:
             responsive_image_style: sliderstyle_mainpage
             image_link: ''
+            image_loading:
+              attribute: eager
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -342,6 +344,8 @@ display:
           settings:
             responsive_image_style: sliderstyle_mainpage
             image_link: ''
+            image_loading:
+              attribute: eager
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -528,6 +532,8 @@ display:
           settings:
             responsive_image_style: sliderstyle_subpage
             image_link: ''
+            image_loading:
+              attribute: eager
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -761,6 +767,8 @@ display:
           settings:
             responsive_image_style: sliderstyle_subpage
             image_link: ''
+            image_loading:
+              attribute: eager
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -994,6 +1002,8 @@ display:
           settings:
             responsive_image_style: sliderstyle_subpage
             image_link: ''
+            image_loading:
+              attribute: eager
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1227,6 +1237,8 @@ display:
           settings:
             responsive_image_style: sliderstyle_subpage
             image_link: ''
+            image_loading:
+              attribute: eager
           group_column: ''
           group_columns: {  }
           group_rows: true

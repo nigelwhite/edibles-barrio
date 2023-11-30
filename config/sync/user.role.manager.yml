@@ -5,6 +5,7 @@ dependencies:
   module:
     - commerce_payment
     - contact
+    - file
     - profile
 id: manager
 label: Manager
@@ -16,6 +17,7 @@ permissions:
   - 'access user profiles'
   - 'administer commerce_payment_gateway'
   - 'administer users'
+  - 'delete own files'
   - 'update any customer profile'
   - 'view any customer profile'
   - 'view any profile'

@@ -48,6 +48,7 @@ permissions:
   - 'delete any image media'
   - 'delete any media'
   - 'delete any remote_video media'
+  - 'delete own files'
   - 'edit any article content'
   - 'edit any basic_page_2 content'
   - 'edit any courses_and_events content'
