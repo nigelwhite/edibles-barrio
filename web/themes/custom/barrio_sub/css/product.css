@@ -136,8 +136,7 @@
 
 /* Adult/child option on the product */
 
-fieldset[id^="edit-purchased-entity-0-attributes-attribute-customer-age"]
-  .fieldset-legend {
+fieldset[id^="edit-purchased-entity-0-attributes-attribute-customer-age"] .fieldset-legend {
   display: none;
 }
 
@@ -206,22 +205,22 @@ div[id^="edit-purchased-entity-wrapper--"],
   font-weight: 500;
 }
 
-#block-views-block-products-u-hope-block-4 .row,
-#block-views-block-products-u-hope-block-5 .row {
+#block-views-block-products-u-hope-block-4 .card-group,
+#block-views-block-products-u-hope-block-5 .card-group {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+#block-views-block-products-u-hope-block-4 .card-group .card,
+#block-views-block-products-u-hope-block-5 .card-group .card {
+  margin-bottom: 3rem;
 }
 
 #block-views-block-products-u-hope-block-4 img,
 #block-views-block-products-u-hope-block-5 img {
   border-radius: 5px;
-  margin-top: 2rem;
 }
-
-/* .events-uberclass .view-content {
-  display: flex;
-  justify-content: center;
-} */
 
 @media (max-width: 500px) {
   .views-field-edit-quantity .form-control {
@@ -247,10 +246,12 @@ div[id^="edit-purchased-entity-wrapper--"],
 Extra large devices (large desktops, 1200px and up)
 ============================================ */
 @media (min-width: 1200px) {
+
   #block-views-block-products-u-hope-block-4,
   #block-views-block-products-u-hope-block-5 {
     width: 1000px;
   }
+
   #block-views-block-products-u-hope-block-4 .row,
   #block-views-block-products-u-hope-block-5 .row {
     display: flex;
@@ -258,14 +259,17 @@ Extra large devices (large desktops, 1200px and up)
     /* flex-direction: row; */
     justify-content: space-between;
   }
+
   #block-views-block-products-u-hope-block-4 img,
   #block-views-block-products-u-hope-block-5 img {
     max-width: 300px;
   }
+
   #block-views-block-products-u-hope-block-4,
   #block-views-block-products-u-hope-block-5 {
     text-align: center;
   }
+
   #block-views-block-products-u-hope-block-4 .product-title-nw,
   #block-views-block-products-u-hope-block-5 .product-title-nw {
     margin: 1rem 0;

@@ -94,6 +94,7 @@ a.nav-link:hover {
 .member-icon-container {
   margin-top: 30px;
 }
+
 .member-la img {
   max-height: 125px;
   padding-right: 30px;
@@ -106,6 +107,7 @@ a.nav-link:hover {
 .sidebar nav ul.nav {
   display: block;
 }
+
 /* .tweet p {
     margin-bottom: 0;
 } */
@@ -321,105 +323,106 @@ Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   /* Carousel */
 
-  #views-bootstrap-slideshow-block-1 .carousel-inner .carousel-item {
+  /* #views-bootstrap-slideshow-block-1 .carousel-inner .carousel-item {
     height: 100vh; /* so scroll bars don't show */
-  }
+}
 
-  /* Primary Navigation */
+*/
+/* Primary Navigation */
 
-  #block-barrio-sub-main-menu {
-    display: block;
-    text-align: center;
-    font-size: 1.5vw;
-    font-weight: 500;
-    /* margin: 0 auto; */
-    width: 95%;
-    /* float: left; */
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    /* top: 0%;
+#block-barrio-sub-main-menu {
+  display: block;
+  text-align: center;
+  font-size: 1.5vw;
+  font-weight: 500;
+  /* margin: 0 auto; */
+  width: 95%;
+  /* float: left; */
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* top: 0%;
       left: 50%;
       -webkit-transform: translateX(-50%, 5%);
       transform: translateX(-50%, 5%); */
-    z-index: 99;
-  }
+  z-index: 99;
+}
 
-  #block-articlemenubackground {
-    display: block;
-    background-color: #707070;
-    height: 6vw;
-    width: 100%;
-  }
+#block-articlemenubackground {
+  display: block;
+  background-color: #707070;
+  height: 6vw;
+  width: 100%;
+}
 
-  #block-bgfornoslidebypageurl {
-    background-color: #707070;
-    height: 6vw;
-    width: 100%;
-  }
+#block-bgfornoslidebypageurl {
+  background-color: #707070;
+  height: 6vw;
+  width: 100%;
+}
 
-  #block-barrio-sub-main-menu ul {
-    display: inline-block;
-    list-style: none;
-    font-size: 1.75vw;
-  }
+#block-barrio-sub-main-menu ul {
+  display: inline-block;
+  list-style: none;
+  font-size: 1.75vw;
+}
 
-  #block-barrio-sub-main-menu li {
-    display: inline-block;
-    margin: 1em;
-  }
+#block-barrio-sub-main-menu li {
+  display: inline-block;
+  margin: 1em;
+}
 
-  #block-barrio-sub-main-menu a {
-    float: left;
-    padding: 1px 0.5vw;
-  }
+#block-barrio-sub-main-menu a {
+  float: left;
+  padding: 1px 0.5vw;
+}
 
-  #navbar-main {
-    padding: 0;
-  }
+#navbar-main {
+  padding: 0;
+}
 
-  /* Hero Navigation */
+/* Hero Navigation */
 
-  #block-heronav {
-    /* border: 1px solid black; */
-    display: block;
-    width: 35%;
-    height: auto;
-    overflow: hidden;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 1%);
-    z-index: 1;
-  }
+#block-heronav {
+  /* border: 1px solid black; */
+  display: block;
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 1%);
+  z-index: 1;
+}
 
-  #block-heronav ul {
-    display: block;
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    font-size: 2vw;
-    font-weight: 600;
-    width: 90%;
-    /* border: 1px solid black; */
-  }
+#block-heronav ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 2vw;
+  font-weight: 600;
+  width: 90%;
+  /* border: 1px solid black; */
+}
 
-  #block-heronav li {
-    display: inline-block;
-    margin: 0 1vw;
-  }
+#block-heronav li {
+  display: inline-block;
+  margin: 0 1vw;
+}
 
-  #block-heronav a {
-    color: white;
-    padding: 1px 0.5vw;
-  }
+#block-heronav a {
+  color: white;
+  padding: 1px 0.5vw;
+}
 
-  /* Social Navigation */
+/* Social Navigation */
 
-  /* #block-sideblockgroup {
+/* #block-sideblockgroup {
     display: block;
     padding-top: 0.5em;
     border-radius: 20px;
@@ -434,7 +437,7 @@ Medium devices (tablets, 768px and up)
     z-index: 1;
   } */
 
-  /* #block-twitterfeedblock li{
+/* #block-twitterfeedblock li{
         border: none;
         color: white;
         padding-top: 1em;
@@ -447,71 +450,72 @@ Medium devices (tablets, 768px and up)
         font-size: 1vw;
     } */
 
-  #block-useraccountmenu ul,
-  #block-socialnavigation ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: 1.2vw;
-    line-height: 1em;
-    font-weight: 400;
-    width: 100%;
-  }
+#block-useraccountmenu ul,
+#block-socialnavigation ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.2vw;
+  line-height: 1em;
+  font-weight: 400;
+  width: 100%;
+}
 
-  #block-useraccountmenu li,
-  #block-socialnavigation li {
-    text-align: center;
-    width: 100%;
-  }
+#block-useraccountmenu li,
+#block-socialnavigation li {
+  text-align: center;
+  width: 100%;
+}
 
-  /* #block-sideblockgroup a {
+/* #block-sideblockgroup a {
     color: white;
     text-transform: lowercase;
   } */
 
-  #main-wrapper {
-    margin-right: 10%;
-    margin-left: 10%;
-    padding-top: 0;
-    margin-bottom: 2vw;
-  }
+#main-wrapper {
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-top: 0;
+  margin-bottom: 2vw;
+}
 
-  #main-wrapper.main-wrapper-nonhome {
-    padding-top: 20px;
-  }
+#main-wrapper.main-wrapper-nonhome {
+  padding-top: 20px;
+}
 
-  .event-wrapper {
-    min-height: 13rem;
-  }
+.event-wrapper {
+  min-height: 13rem;
+}
 
-  .card {
-    width: 13rem;
-  }
+/* .card {
+  width: 13rem;
+} */
 
-  #block-socialnavigation li {
-    border-bottom: none;
-  }
+#block-socialnavigation li {
+  border-bottom: none;
+}
 
-  #block-useraccountmenu .nav-link {
-    border-bottom: none;
-  }
+#block-useraccountmenu .nav-link {
+  border-bottom: none;
+}
 
-  #block-barrio-sub-main-menu li {
-    border-bottom: none;
-  }
+#block-barrio-sub-main-menu li {
+  border-bottom: none;
+}
 
-  /* #block-twitterfeedblock .list-group-item {
+/* #block-twitterfeedblock .list-group-item {
         background-color: rgb(239, 241, 240, 0);
     } */
 
-  .event-list-title a {
-    font-size: 1rem;
-  }
+.event-list-title a {
+  font-size: 1rem;
 }
+
 
 /* =========================================
 Large devices (desktops, 992px and up)
 ============================================ */
 @media (min-width: 992px) {
+
   /* Hero Navigation */
   #block-heronav {
     top: 15%;
@@ -555,6 +559,7 @@ Large devices (desktops, 992px and up)
 Extra large devices (large desktops, 1200px and up)
 ============================================ */
 @media (min-width: 1200px) {
+
   /* Hero Navigation */
   #block-heronav {
     top: 20%;
