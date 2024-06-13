@@ -29,7 +29,9 @@ a.nav-link:hover {
 }
 
 #block-heronav {
-  display: none;
+  display: block;
+  margin: 2rem auto;
+  max-width: 300px;
 }
 
 #block-barrio-sub-main-menu ul {
@@ -197,6 +199,10 @@ a.nav-link:hover {
 
 /* Carousel */
 
+#views-bootstrap-slideshow-block-1 {
+  display: none;
+}
+
 #views-bootstrap-slideshow-block-1 .carousel-inner .carousel-item {
   /* height: 100vh; only used on larger displays */
   min-height: 200px;
@@ -320,6 +326,10 @@ Medium devices (tablets, 768px and up)
 ============================================ */
 @media (min-width: 768px) {
   /* Carousel */
+
+  #views-bootstrap-slideshow-block-1 {
+    display: block;
+  }
 
   #views-bootstrap-slideshow-block-1 .carousel-inner .carousel-item {
     height: 100vh; /* so scroll bars don't show */
