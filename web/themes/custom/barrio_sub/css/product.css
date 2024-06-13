@@ -172,7 +172,7 @@ div[id^="edit-purchased-entity-wrapper--"],
   padding: 10px;
   margin-bottom: 4rem;
   text-align: center;
-  width: 90%;
+  width: 260px;
 }
 
 #block-sideblockproductsheaderimage {
@@ -251,7 +251,7 @@ Small devices (tablets, 500px and up)
   #block-views-block-products-u-hope-block-5,
   #block-views-block-products-u-hope-block-4,
   #block-sideblockproductsheaderimage {
-    width: 400px;
+    width:320px;
   }
 }
 
