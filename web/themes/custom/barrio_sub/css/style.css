@@ -325,15 +325,24 @@ figcaption {
 Medium devices (tablets, 768px and up)
 ============================================ */
 @media (min-width: 768px) {
-  /* Carousel */
-
+  
   #views-bootstrap-slideshow-block-1 {
     display: block;
   }
 
-  #views-bootstrap-slideshow-block-1 .carousel-inner .carousel-item {
-    height: 100vh; /* so scroll bars don't show */
+  /* Hero Navigation */
+  #block-heronav {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 1%);
+    z-index: 1;
+    top: 15%;
   }
+
+  /* #views-bootstrap-slideshow-block-1 .carousel-inner .carousel-item {
+    height: 100vh; /* so scroll bars don't show
+  } */
 
   /* Primary Navigation */
 
@@ -399,11 +408,11 @@ Medium devices (tablets, 768px and up)
     width: 35%;
     height: auto;
     overflow: hidden;
-    position: absolute;
+    /* position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%, 1%);
-    z-index: 1;
+    z-index: 1; */
   }
 
   #block-heronav ul {
@@ -522,10 +531,7 @@ Medium devices (tablets, 768px and up)
 Large devices (desktops, 992px and up)
 ============================================ */
 @media (min-width: 992px) {
-  /* Hero Navigation */
-  #block-heronav {
-    top: 15%;
-  }
+
 
   Social Navigation */ #block-sideblockgroup {
     display: block;
