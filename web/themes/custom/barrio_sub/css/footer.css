@@ -34,9 +34,10 @@
 #block-sociallinksforfooter {
   width: 100%;
   text-align: center;
-  background-color: #707070;
-  color: white;
+  background-color: #ccc8c8;
+  color: #707070;
   font-size: 1.25rem;
+  padding: 2rem 0;
 }
 
 #block-sociallinksforfooter ul {
@@ -45,11 +46,27 @@
 }
 
 #block-sociallinksforfooter ul a {
-  color: white;
+  color: #707070;
 }
 
 #block-sociallinksforfooter li {
   padding-bottom: 5px;
+}
+
+.member-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.member-pa {
+  width: 220px;
+  margin-top: 30px;
+}
+
+.member-la {
+  width: 150px;
 }
 
 /* =========================================
@@ -59,6 +76,12 @@ Medium devices (tablets, 768px and up)
   #block-sociallinksforfooter li {
     display: inline-block;
     padding: 5px 20px;
+  }
+  .member-icon-container {
+    flex-direction: row;
+  }
+  .member-pa {
+    margin-top: 0;
   }
 }
 
