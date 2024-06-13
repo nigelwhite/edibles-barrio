@@ -172,6 +172,7 @@ div[id^="edit-purchased-entity-wrapper--"],
   padding: 10px;
   margin-bottom: 4rem;
   text-align: center;
+  width: 90%;
 }
 
 #block-sideblockproductsheaderimage {
@@ -241,6 +242,17 @@ div[id^="edit-purchased-entity-wrapper--"],
 
 .products-header-img img {
   border-radius: 3%;
+}
+
+/* =========================================
+Small devices (tablets, 500px and up)
+============================================ */
+@media (min-width: 500px) {
+  #block-views-block-products-u-hope-block-5,
+  #block-views-block-products-u-hope-block-4,
+  #block-sideblockproductsheaderimage {
+    width: 400px;
+  }
 }
 
 /* =========================================
