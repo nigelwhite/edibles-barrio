@@ -4,6 +4,9 @@ global-styling:
     js/global.js: {}
   css:
     component:
+      css/colors.css: {}
+      css/footer.css: {}
+      css/product.css: {}
       css/style.css: {}
       css/users.css: {}
 bootstrap:
