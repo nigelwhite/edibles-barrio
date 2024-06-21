@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dc1ae9448549a34dc22a5e4446705d90",
+    "content-hash": "05da241ea508ebae7e70df5b92a255fc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2126,6 +2126,53 @@
             "homepage": "https://www.drupal.org/project/bootstrap_layouts",
             "support": {
                 "source": "https://git.drupalcode.org/project/bootstrap_layouts"
+            }
+        },
+        {
+            "name": "drupal/bootstrap_simple_carousel",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_simple_carousel.git",
+                "reference": "2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_simple_carousel-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "c2ae803a06768b352d561a9b34d6741e7533a829"
+            },
+            "require": {
+                "drupal/core": "^8.9 || ^9 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.1",
+                    "datestamp": "1708294756",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Dzianis Kel (asmdk)",
+                    "homepage": "https://www.drupal.org/u/asmdk",
+                    "email": "asm32dk@gmail.com",
+                    "role": "maintainer"
+                }
+            ],
+            "description": "The module provides the simple bootstrap carousel.",
+            "homepage": "https://drupal.org/project/bootstrap_simple_carousel",
+            "support": {
+                "source": "https://cgit.drupalcode.org/bootstrap_simple_carousel",
+                "issues": "https://drupal.org/project/issues/bootstrap_simple_carousel"
             }
         },
         {

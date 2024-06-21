@@ -26,6 +26,7 @@
         "drupal/blockgroup": "^2.0",
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/bootstrap_layouts": "^5.1",
+        "drupal/bootstrap_simple_carousel": "^2.0",
         "drupal/coffee": "^1.0@beta",
         "drupal/commerce": "^2.37",
         "drupal/commerce_reports": "1.x-dev@dev",
