@@ -188,7 +188,7 @@ a.nav-link:hover {
 /* Carousel */
 
 #views-bootstrap-slideshow-block-1 {
-  display: none;
+  display: block;
 }
 
 #views-bootstrap-slideshow-block-1 .carousel-inner .carousel-item {
