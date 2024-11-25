@@ -36,7 +36,7 @@
         "drupal/config_split": "^1.9",
         "drupal/core-composer-scaffold": "10.2.2",
         "drupal/core-project-message": "10.2.2",
-        "drupal/core-recommended": "10.3.2",
+        "drupal/core-recommended": "10.3.10",
         "drupal/crop": "^2.3",
         "drupal/ctools": "^3.13",
         "drupal/daterange_compact": "^2.0",
