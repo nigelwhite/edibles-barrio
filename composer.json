@@ -61,7 +61,7 @@
         "drupal/profile": "^1.0",
         "drupal/recreate_block_content": "^3.0",
         "drupal/redirect": "^1.8",
-        "drupal/schema_metatag": "^2.4",
+        "drupal/schema_metatag": "^3.0",
         "drupal/seo_checklist": "^5.1",
         "drupal/stage_file_proxy": "^3.0@alpha",
         "drupal/structure_sync": "^2.0",
