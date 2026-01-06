@@ -52,7 +52,7 @@
         "drupal/google_analytics": "^4.0",
         "drupal/honeypot": "^2.1",
         "drupal/hreflang": "^1.9",
-        "drupal/image_widget_crop": "^2.2",
+        "drupal/image_widget_crop": "^3.0",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/jquery_ui_autocomplete": "^2.0",
         "drupal/menu_link_attributes": "^1.0",
