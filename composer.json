@@ -28,7 +28,7 @@
         "drupal/bootstrap_layouts": "^5.1",
         "drupal/bootstrap_simple_carousel": "^2.0",
         "drupal/coffee": "^1.0@beta",
-        "drupal/commerce": "3.1.0",
+        "drupal/commerce": "^3.2",
         "drupal/commerce_reports": "1.x-dev@dev",
         "drupal/commerce_stock": "^3.0@beta",
         "drupal/commerce_stripe": "^1.0@RC",
